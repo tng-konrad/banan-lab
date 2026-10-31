@@ -8,6 +8,10 @@ The completed companion article is **[`post.md`](post.md)**. It embeds all twelv
 
 The current default is **`CFG.mode = 'replay'`**, **`CFG.study_profile = 'mini_3h'`**, **`CFG.run_budget_hours = 3.0`**. Restart the kernel and Run All to recompute the saved study's metrics, 10,000-draw paired dialogue bootstrap, figures and tables **without new model calls**. Replay runtime is never reported as inference speed. The notebook imports no project helper scripts.
 
+Under **Setup**, edit the fields inside `class CFG`, then restart and Run All. `CFG.experiment` holds the model, retrieval, context and bootstrap settings; the other fields hold paths, prompts, display settings and asset specifications. Plotting uses `seaborn-v0_8` with `CFG.img_dim1` × `CFG.img_dim2` inches (9.5 × 6.5 by default), exported at `CFG.export_dpi` (200). No plotting function overrides that size, and no separate seaborn installation is needed.
+
+All functions and helper classes are in **Utils**, grouped into boilerplate/evidence files, corpus preparation, judgment requests/local serving, ranking/navigation, experiment orchestration, metrics/uncertainty, and plotting/publication. Every code cell has an immediate explanation. The eleven narrative sections use top-level headings with the same titles and order as the post; Setup and Utils contain notebook-specific mechanics.
+
 ```bash
 uv venv .venv --python python3
 uv pip install --python .venv/bin/python -r requirements.txt

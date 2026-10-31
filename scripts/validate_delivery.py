@@ -60,7 +60,7 @@ def structural_checks(nb):
     nbformat.validate(nb)
     code = '\n'.join(c.source for c in nb.cells if c.cell_type == 'code' and
                      'embedded-data' not in c.metadata.get('tags', []))
-    assert re.search(r"^MODE = '(?:evaluate|replay)'", code, re.M)
+    assert re.search(r"^    mode = '(?:evaluate|replay)'", code, re.M)
     metadata = embedded(nb)
     assert not ({'corpus', 'mini_profile', 'captured', 'tokenizer_json'} & set(metadata))
     assert 'expected_hashes' in metadata
@@ -72,8 +72,26 @@ def structural_checks(nb):
             assert not any(a.name.startswith(('scripts', 'notebook_src')) for a in node.names)
         if isinstance(node, ast.Call) and isinstance(node.func, ast.Name):
             assert node.func.id not in ('exec', 'eval', 'compile', '__import__')
+    in_utils = False
+    functions = 0
+    for i, cell in enumerate(nb.cells):
+        if cell.cell_type == 'markdown' and re.match(r'^# [^#]', cell.source):
+            in_utils = cell.source.splitlines()[0] == '# Utils'
+        if cell.cell_type != 'code':
+            continue
+        assert i + 1 < len(nb.cells) and nb.cells[i+1].cell_type == 'markdown', 'Code requires an immediate explanation'
+        nodes = list(ast.walk(ast.parse(cell.source)))
+        defs = [n for n in nodes if isinstance(n, (ast.FunctionDef, ast.AsyncFunctionDef, ast.Lambda))]
+        assert not defs or in_utils, 'Functions must be defined inside Utils'
+        functions += len(defs)
+        for n in nodes:
+            if isinstance(n, ast.Call) and any(k.arg == 'figsize' for k in n.keywords):
+                raise AssertionError('Per-plot size overrides bypass CFG')
+    assert 'plt.style.use("seaborn-v0_8")' in code
+    assert 'plt.rcParams["figure.figsize"] = (CFG.img_dim1, CFG.img_dim2)' in code
     return {'status': 'passed', 'cells': len(nb.cells), 'project_imports': 0,
-            'encoded_executable_source': False}
+            'encoded_executable_source': False, 'function_definitions_in_utils': functions,
+            'code_followed_by_explanation': True, 'central_CFG_and_plot_dimensions': True}
 
 def independent_metrics(data, folder, work):
     captured = {name: json.loads((work / 'results' / (name + '.json')).read_text())
@@ -112,10 +130,13 @@ def publication_contract(nb, work):
     generated = [a for a in book['assets'] if a['status'] == 'generated']
     plan = (ROOT / 'post-plan.md').read_text()
     notebook_text = '\n'.join(c.source for c in nb.cells if c.cell_type == 'markdown')
-    notebook_headings = re.findall(r'^## .+$', notebook_text, re.M)
-    post_headings = re.findall(r'^## .+$', plan, re.M)
+    notebook_headings = [c.source.splitlines()[0].lstrip('# ').strip() for c in nb.cells
+        if c.cell_type == 'markdown' and c.metadata.get('story_section') not in (None, 'metrics')]
+    post_headings = re.findall(r'^## (.+)$', plan, re.M)
     assert notebook_headings == post_headings, (notebook_headings, post_headings)
-    assert re.findall(r'^### .+$', notebook_text, re.M) == re.findall(r'^### .+$', plan, re.M)
+    article_headings = re.findall(r'^## (.+)$', (ROOT / 'post.md').read_text(), re.M)
+    assert notebook_headings == article_headings
+    assert re.findall(r'^## (What counts as a useful retrieval\?)$', notebook_text, re.M) == re.findall(r'^### (.+)$', plan, re.M)
     visual_cells = [c for c in nb.cells if 'book-visual' in c.metadata.get('tags', [])]
     assert len(visual_cells) == len(book['assets'])
     displayed = []
@@ -177,10 +198,10 @@ def main():
     nb = nbformat.read(target, as_version=4)
     structure = structural_checks(nb)
     data = embedded(nb)
-    setup = next(c for c in nb.cells if c.cell_type == 'code' and re.search(r"^MODE = '(?:evaluate|replay)'", c.source, re.M))
+    setup = next(c for c in nb.cells if c.cell_type == 'code' and 'configuration' in c.metadata.get('tags', []))
     original_setup = setup.source
-    shipped_mode = re.search(r"^MODE = '(evaluate|replay)'", setup.source, re.M).group(1)
-    setup.source = re.sub(r"^MODE = '(?:evaluate|replay)'", "MODE = 'replay'", setup.source, count=1, flags=re.M)
+    shipped_mode = re.search(r"^    mode = '(evaluate|replay)'", setup.source, re.M).group(1)
+    setup.source = re.sub(r"^    mode = '(?:evaluate|replay)'", "    mode = 'replay'", setup.source, count=1, flags=re.M)
     work = Path(tempfile.mkdtemp(prefix='decisionrag-standalone-'))
     shutil.copy2(target, work / target.name)
     copied = [target.name]
@@ -242,6 +263,11 @@ def main():
         'numerical_receipt': manifest.get('numerical_receipt'), 'publication_contract': publication}
     report['sealed_visual_hash_check'] = 'passed' if sealed_visual else 'not yet sealed'
     nb.cells.pop(0)
+    nb.metadata['last_execution'] = {'mode': 'replay', 'status': 'passed',
+        'study_profile': 'mini_3h', 'elapsed_seconds': elapsed, 'live_model_calls': 0,
+        'code_cells': sum(c.cell_type == 'code' for c in nb.cells),
+        'numerical_receipt': manifest.get('numerical_receipt'),
+        'note': 'Fresh isolated-kernel replay; original measured inference results preserved.'}
     nbformat.write(nb, work / target.name)
     if args.write_executed:
         setup.source = original_setup

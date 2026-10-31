@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "captured_at": "2026-10-31T13:20:53.986424+00:00",
-  "post_sha256": "48dd9d8c18c2c3e5f7372c9b99d4e39e41e4b3bf77ad7353a02f96a0f642b725",
+  "captured_at": "2026-10-31T14:53:49.637909+00:00",
+  "post_sha256": "d6d1202147420d59535972703a9185684f53a086d51a98cc7b39dc4c0386d6a6",
   "source_run_id": "evaluation-20261030T222218Z",
   "numerical_receipt": "c93e57801be4686292e2dd8187010756945c83ddc38ab70d47840eade0b93cef",
   "words_excluding_image_alt_text_and_comments": 2201,
@@ -77,5 +77,6 @@
     "path": "post-promo.md",
     "sha256": "f88e265b2ffb3ccff4d114a7acd3fb53e2b741fd9c85208abf57433735cca8cb",
     "scope": "Draft copy; publication URL is an explicit placeholder. No message was published or sent."
-  }
+  },
+  "figure_refresh": "All 12 image hashes verified against the regenerated CFG/seaborn-v0_8 export manifest; article metrics unchanged."
 }

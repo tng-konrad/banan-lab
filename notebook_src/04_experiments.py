@@ -561,7 +561,7 @@ else:
     if CFG.mode == 'evaluate' and LIVE_RESULT['kind'] == 'evaluation' and (CFG.result_folder / 'pilot.json').exists():
         RUNS['pilot'] = json.loads((CFG.result_folder / 'pilot.json').read_text())
 
-display(Markdown(f"**Execution mode:** `{MODE}`. **Configured protocol/profile:** `{CONFIG['protocol']}` / `{STUDY_PROFILE}`. "
+display(Markdown(f"**Execution mode:** `{CFG.mode}`. **Configured protocol/profile:** `{CFG.experiment['protocol']}` / `{CFG.study_profile}`. "
     'Corpus and tokenizer are verified external cached downloads. '
     'Result files retain their measured profile and protocol; read the run status below.'))
 

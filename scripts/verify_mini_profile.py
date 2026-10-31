@@ -11,10 +11,10 @@ matplotlib.use('Agg')
 from run_live import load_runtime
 
 s = load_runtime()
-assert s['STUDY_PROFILE'] == 'mini_3h'
+assert s['CFG'].study_profile == 'mini_3h'
 assert len(s['ACTIVE_RETRIEVER'].pages) == 32
 assert len(s['ACTIVE_RETRIEVER'].passages) == 329
-assert s['MODE'] == 'replay' and s['CONFIG']['workflow_budget_seconds'] == 10800
+assert s['CFG'].mode == 'replay' and s['CFG'].experiment['workflow_budget_seconds'] == 10800
 assert len(s['PILOT_INPUTS']) == 8 and len(s['ACTIVE_EVALUATION_INPUTS']) == 12
 assert len(s['freeze_schedule'](s['ACTIVE_EVALUATION_INPUTS'])) == 48
 
@@ -29,9 +29,9 @@ class FixtureBackend:
 # Run each complete controller on a real mini query from every domain, with
 # constant scores. This checks partitions/retained branches, not model quality.
 checked = []
-for domain in s['DOMAINS']:
+for domain in s['CFG'].domains:
     q = next(q for q in s['MINI_EVALUATION_INPUTS'] if s['MINI_EVALUATION_LABELS'][q['query_id']]['domain'] == domain)
-    for method in s['METHODS']:
+    for method in s['CFG'].methods:
         row = s['ACTIVE_RETRIEVER'].run(method, q, FixtureBackend())
         assert row['status'] == 'success', row.get('failure')
         assert len(row['ranking']) == 10
@@ -47,7 +47,7 @@ run = s['new_run']('pilot')
 run.update(status='complete', input_fit=True, warm_residency=True, elapsed_seconds=32,
     started_at='2026-10-30T10:00:00+00:00', finished_at='2026-10-30T10:00:32+00:00',
     rows=[{'query_id': q['query_id'], 'option': m, 'seconds': 1., 'status': 'success'}
-          for q in s['PILOT_INPUTS'] for m in s['METHODS']])
+          for q in s['PILOT_INPUTS'] for m in s['CFG'].methods])
 assert s['pilot_runtime_lower_bound'](run['rows'], run)['seconds'] == 60
 p = s['pilot_projection'](run, 61)
 assert p['seconds'] == 60 and p['passed']
@@ -56,11 +56,11 @@ assert s['labels_for']({'kind': 'evaluation', 'configuration': run['configuratio
 old = json.loads(Path('results/archive/v5.2-full-corpus/pilot.json').read_text())
 assert s['labels_for'](old) == s['DESIGN_LABELS']
 assert s['verify_request_evidence'](old)['reconstructed_requests'] == 32
-assert s['CONFIG']['questions_per_request'] == 4
+assert s['CFG'].experiment['questions_per_request'] == 4
 
 assert s['study_scope']({'configuration': {'study_profile': 'mini_2h'}})['evaluation_queries'] == 24
 assert s['study_scope']({'configuration': {'study_profile': 'mini_3h'}})['evaluation_queries'] == 12
-assert Counter(l['domain'] for l in s['MINI_EVALUATION_LABELS'].values()) == dict.fromkeys(s['DOMAINS'], 3)
+assert Counter(l['domain'] for l in s['MINI_EVALUATION_LABELS'].values()) == dict.fromkeys(s['CFG'].domains, 3)
 
 # Expired workflow blocks a request before HTTP dispatch.
 backend = s['OllamaBackend'](deadline=time.monotonic() - 1)

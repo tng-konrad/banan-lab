@@ -91,8 +91,10 @@ def payload_for(adapter, batch):
                 'questions': batch['questions'], 'keep_alive': CFG.experiment['keep_alive']}
     return {'model': CFG.experiment['models']['qwen'], 'prompt': qwen_rendered_prompt(batch),
         'raw': True, 'stream': False, 'think': False, 'format': score_schema(batch),
-        'keep_alive': CFG.experiment['keep_alive'], 'options': {**CFG.qwen_options, 'seed': CFG.experiment['seed'],
-            'num_predict': CFG.experiment['output_reserve'], 'num_ctx': CFG.experiment['context_tokens']}}
+        'keep_alive': CFG.experiment['keep_alive'], 'options': {'temperature': CFG.qwen_options['temperature'],
+            'seed': CFG.experiment['seed'], 'num_predict': CFG.experiment['output_reserve'],
+            'num_ctx': CFG.experiment['context_tokens'], 'presence_penalty': CFG.qwen_options['presence_penalty'],
+            'repeat_penalty': CFG.qwen_options['repeat_penalty']}}
 
 def token_count(text):
     return len(TOKENIZER.encode(text, add_special_tokens=False).ids)

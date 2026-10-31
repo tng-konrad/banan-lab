@@ -14,7 +14,7 @@ meta = ast.literal_eval(ast.parse(''.join(meta_cell['source'])).body[0].value)
 source = next(''.join(c['source']) for c in nb['cells'] if c['cell_type'] == 'code' and
               'def fetch_cached(' in ''.join(c['source']))
 function = next(n for n in ast.parse(source).body if isinstance(n, ast.FunctionDef) and n.name == 'fetch_cached')
-scope = {'Path': Path, 'hashlib': hashlib, 'httpx': httpx}
+scope = {'Path': Path, 'hashlib': hashlib, 'httpx': httpx, 'CFG': type('CFG', (), {'download_timeout': 120})}
 exec(compile(ast.Module(body=[function], type_ignores=[]), '<notebook download>', 'exec'), scope)
 fetch = scope['fetch_cached']
 work = Path(tempfile.mkdtemp(prefix='decisionrag-download-'))

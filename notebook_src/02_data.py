@@ -237,19 +237,22 @@ def select_pilot_queries():
     return [q for domain in CFG.domains for q in [q for q in ordered
         if DESIGN_LABELS[q['query_id']]['domain'] == domain][:quotas[domain]]]
 
+def training_demo_corpus(query):
+    demo_gold = DESIGN_LABELS[query['query_id']]['gold_passage_ids'][0]
+    demo_page = BY_ID[demo_gold]['page_id']
+    all_page_ids = sorted({p['page_id'] for p in CORPUS})
+    page_ids = [demo_page] + sorted([p for p in all_page_ids if p != demo_page],
+        key=lambda p: sha256(('demo42:' + p).encode()))[:9]
+    return page_ids, [p for p in CORPUS if p['page_id'] in page_ids]
+
 FULL_PILOT_INPUTS = select_pilot_queries()
 PILOT_INPUTS = MINI_DESIGN_INPUTS if is_mini_profile(CFG.study_profile) else FULL_PILOT_INPUTS
 DEMO_INPUT = FULL_PILOT_INPUTS[0]
-demo_gold = DESIGN_LABELS[DEMO_INPUT['query_id']]['gold_passage_ids'][0]
-demo_page = BY_ID[demo_gold]['page_id']
-all_page_ids = sorted({p['page_id'] for p in CORPUS})
-DEMO_PAGE_IDS = [demo_page] + sorted([p for p in all_page_ids if p != demo_page],
-    key=lambda p: sha256(('demo42:' + p).encode()))[:9]
-DEMO_CORPUS = [p for p in CORPUS if p['page_id'] in DEMO_PAGE_IDS]
+DEMO_PAGE_IDS, DEMO_CORPUS = training_demo_corpus(DEMO_INPUT)
 assert len(DEMO_PAGE_IDS) == 10
 
 display(Markdown(f"**Archive rebuilt and verified:** {DATA_AUDIT['pages']} pages / "
-    f"{DATA_AUDIT['passages']:,} passages. **Selected profile:** `{STUDY_PROFILE}`; "
+    f"{DATA_AUDIT['passages']:,} passages. **Selected profile:** `{CFG.study_profile}`; "
     f"{study_scope()['pages']} pages / {study_scope()['passages']} passages / "
     f"{study_scope()['evaluation_queries']} validation queries."))
 if CAPTURED and not CAPTURED.get('evaluation'):

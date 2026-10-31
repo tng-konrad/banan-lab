@@ -15,12 +15,15 @@
   "validation_mode": "replay",
   "live_model_calls": 0,
   "fresh_kernel": "/Users/kbanachewicz/Documents/banan-lab/.venv/bin/python",
-  "execution_seconds": 33.46741,
+  "execution_seconds": 31.972813125001267,
   "structural_checks": {
     "status": "passed",
-    "cells": 57,
+    "cells": 123,
     "project_imports": 0,
-    "encoded_executable_source": false
+    "encoded_executable_source": false,
+    "function_definitions_in_utils": 136,
+    "code_followed_by_explanation": true,
+    "central_CFG_and_plot_dimensions": true
   },
   "independent_numerical_check": {
     "status": "passed",
@@ -41,7 +44,7 @@
   "run_id": "evaluation-20261030T222218Z",
   "experiment_status": "complete",
   "publication_status": "completed-comparison",
-  "isolated_directory": "/var/folders/p7/1x2749b14hj0xrrrwm84gh8m0000gn/T/decisionrag-standalone-ddvjpi8g",
+  "isolated_directory": "/var/folders/p7/1x2749b14hj0xrrrwm84gh8m0000gn/T/decisionrag-standalone-jc2whq7b",
   "executed_notebook_errors": 0,
   "numerical_receipt": "c93e57801be4686292e2dd8187010756945c83ddc38ab70d47840eade0b93cef",
   "publication_contract": {
@@ -60,7 +63,7 @@
       "score-resolution diagnostic excludes singletons and matches raw requests",
       "alt text matches mini reference and actual method completion"
     ],
-    "post_plan_sha256": "af5b3d62f18a97f8ed95fb5dd0382709781313ef1584eb91df00444a8050c9eb"
+    "post_plan_sha256": "4c359212b38bd121cdc3e1f246efdb36c285a4e319a8e1c4291f9173a008dea2"
   },
   "sealed_visual_hash_check": "passed"
 }

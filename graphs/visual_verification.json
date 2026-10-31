@@ -1,55 +1,61 @@
 {
   "status": "passed",
   "source_run_id": "evaluation-20261030T222218Z",
-  "method": "Eleven plots hash-match the prior visually reviewed delivery; the changed strict-ID diagnostic was visually reviewed again.",
+  "captured_at": "2026-10-31T14:53:49.637679+00:00",
+  "method": "All twelve regenerated seaborn-v0_8 graphs/tables individually inspected. PNG bytes match notebook inline output and the export manifest.",
+  "figure_size_inches": [
+    9.5,
+    6.5
+  ],
+  "export_dpi": 200,
   "images": [
     {
       "filename": "graph_1_0111.png",
-      "sha256": "749326f6db58db7f8dbbb72b0b73a96d593f316378d76311d40144295bce09e1"
+      "sha256": "ad1d9981f855e065bdc5ea56fec72959acc577e6a1b1a9301b49bc5d5c0cf4bc"
     },
     {
       "filename": "graph_2_0111.png",
-      "sha256": "fc4284ee39f989aacfbc384fff6c6a470c4c87c13581dfc0bfe3ceb4a6de3292"
+      "sha256": "4da9cbcd6882d01742f03f704b4c0b4623b7462c7218111e36b9421cef419135"
     },
     {
       "filename": "post_3_0111.png",
-      "sha256": "e0fc7b85b1a9001e6267db4bd0d53b8969a98e61475c50cf75e6a955af33c097"
+      "sha256": "390a5dc90b607bfbcbc22217c581f6f78d10c5c5e86ff95fe50dd79f977ce22a"
     },
     {
       "filename": "graph_4_0111.png",
-      "sha256": "41dd78e34fc36fdab688dbc7cbe8e6df84e8a662a7eae3c0ee662488eed9695b"
+      "sha256": "6e3994b3b7bdc52480f85d17f1519de29a0cdb4579d734265617bb607aed9996"
     },
     {
       "filename": "graph_5_0111.png",
-      "sha256": "9a9f2785478604bd44b06fe09c3a085ce1abb130e6e8e5d02fa8327ccad3f017"
+      "sha256": "43fa0c2ada36c1873ac373eaccb4c2d1d637ada33a7decd354b60f7710fefbb7"
     },
     {
       "filename": "post_6_0111.png",
-      "sha256": "0be8e435be095fac5dca9b45d74381a2308f19b7d930d663b0c70921db2517e4"
+      "sha256": "67c6e8f0cd440e842f5d9eef7037bbc5c076793accc4a44ee6776949ba398647"
     },
     {
       "filename": "graph_7_0111.png",
-      "sha256": "019861985909e1e46405cbb8badfba3a130e4719057fca25acb7b75e5aa331ae"
+      "sha256": "05a292dd287c2fec4f18dc64dc5aff53202d83b3cd13df20a1b18a9744e13395"
     },
     {
       "filename": "graph_8_0111.png",
-      "sha256": "d903b42bf9510dfac857f6045b2c0164296f5e3035d27b386a48dc5c3f4c49d3"
+      "sha256": "f25299c75c4356463b574521273f9fd56a3f8f7a28a08b81b592330815d65a9a"
     },
     {
       "filename": "post_9_0111.png",
-      "sha256": "da61bab45a192aa4c6c539688736125bf0be28c3d748e6d3766c09379d1ea796"
+      "sha256": "4504265efbb43ad238c3b54e817776c9a8320895f7f8c7016ca2af1dd8bb290e"
     },
     {
       "filename": "graph_10_0111.png",
-      "sha256": "8358f8ab52abf1b64ac5a9b76f763710c6c8159df7540edc2f8699e4d2938389"
+      "sha256": "f3b5e7dee4218d7272940feebbf0b90cd70f64da8899cc5df6287a56c421685e"
     },
     {
       "filename": "post_11_0111.png",
-      "sha256": "a2b19e161864356153a7a20f2a8c62f1c906694b72477c8e1a6a59b4a09f1477"
+      "sha256": "bdb7522b6cfa6a6d8f2aff47b7f256c92f439078c671395f0b679038a7f2e9d3"
     },
     {
       "filename": "graph_12_0111.png",
-      "sha256": "98f4a3784530ecb134f3de085de650dfe88928ced37578b492bf9cdc417263df"
+      "sha256": "179bab36d54f88ccdca1734855ff6b9ecf8747637273081edc59f0138626b409"
     }
   ]
 }

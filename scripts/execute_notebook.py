@@ -30,9 +30,9 @@ def main():
     args = p.parse_args()
     target = ROOT / 'decisionrag_ollama_demo.ipynb'
     nb = nbformat.read(target, as_version=4)
-    setup = next(c for c in nb.cells if c.cell_type == 'code' and re.search(r"^MODE = '(?:evaluate|replay)'", c.source, re.M))
+    setup = next(c for c in nb.cells if c.cell_type == 'code' and 'configuration' in c.metadata.get('tags', []))
     original_setup = setup.source
-    setup.source = re.sub(r"^MODE = '(?:evaluate|replay)'", 'MODE = ' + repr(args.mode), setup.source, count=1, flags=re.M)
+    setup.source = re.sub(r"^    mode = '(?:evaluate|replay)'", '    mode = ' + repr(args.mode), setup.source, count=1, flags=re.M)
     work = Path(tempfile.mkdtemp(prefix='decisionrag-live-kernel-'))
     spec = work / 'kernels/decisionrag-live'; spec.mkdir(parents=True)
     (spec / 'kernel.json').write_text(json.dumps({'argv': [str(ROOT / '.venv/bin/python'), '-m',
@@ -41,9 +41,10 @@ def main():
                 'TOKENIZERS_PARALLELISM': 'false'}}))
     km = KernelManager(kernel_name='decisionrag-live',
         kernel_spec_manager=KernelSpecManager(kernel_dirs=[str(work / 'kernels')]))
-    budget_node = next(node for node in ast.parse(setup.source).body
+    config_class = next(node for node in ast.parse(setup.source).body if isinstance(node, ast.ClassDef) and node.name == 'CFG')
+    budget_node = next(node for node in config_class.body
         if isinstance(node, ast.Assign) and any(isinstance(t, ast.Name) and
-            t.id == 'RUN_BUDGET_HOURS' for t in node.targets))
+            t.id == 'run_budget_hours' for t in node.targets))
     budget_seconds = float(ast.literal_eval(budget_node.value)) * 3600
     client = StreamingClient(nb, km=km, timeout=int(budget_seconds + 600),
         resources={'metadata': {'path': str(ROOT)}})

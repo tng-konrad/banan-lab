@@ -293,7 +293,7 @@ def publication_tables(analysis, runs):
         ['Validation cohort', f"{scope['evaluation_queries']} queries / {scope['evaluation_dialogues']} dialogues" +
             ('; exploratory restricted corpus' if mini else '; full-study holdout')],
         ['Design cohort', f"{scope['design_queries']} training queries; {scope['pilot_queries']}-query pilot"],
-        ['Controller', f"3 pages; candidates ≤16; questions/request ≤{CONFIG.get('questions_per_request', 16)}; rescore ≤12"],
+        ['Controller', f"3 pages; candidates ≤16; questions/request ≤{CFG.experiment.get('questions_per_request', 16)}; rescore ≤12"],
         ['Common input', '8,192-token ceiling minus 512 reserved; 48 KiB guard'],
         ['Models', 'Nimble 9B Q8_0 and Qwen3.5 9B Q8_0; local Ollama'],
         ['Quality comparison' if mini else 'Quality requirement',
