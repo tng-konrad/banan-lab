@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "archive_rebuild_hashes": {
+    "corpus": "c7a138155cdf3c4d86de0d36eaf674e9cab9eb6649d89face886d77f16eb7bd1",
+    "design_inputs": "cf043d8c7bba058e59834b5b49b3735fe38a46ba9ba4bc1bfade8a16ee9e68a9",
+    "design_labels": "a0675c2dfd914f4dc327188ecc123461896036f4a34b514a5a2be09aa92a4640",
+    "evaluation_inputs": "97cd039b7cde0ac557ee61ac3e098c696a53789bd44521d09e2d3a33325a27a7",
+    "evaluation_labels": "b85b3d03588d86a469425ce29c6108729b2b9eeb8c302a0f9bdbce23e0022013",
+    "mini_profile": "a84778cd8ce7467c6c86ae9a2721695d73ba57c552bb5510575a233df1f1a15a",
+    "mini_3h_profile": "e4db0b07c458abba75978458627001d1d03320700b9d4e37bfe4f5fe96727e9c"
+  },
+  "bootstrap_check": "10,000 whole-dialogue draws on the actual one-dialogue training example produce the expected degenerate intervals; no inferential claim",
+  "demo_primary_verdict": "inconclusive"
+}

@@ -1,0 +1,81 @@
+{
+  "status": "passed",
+  "captured_at": "2026-10-31T13:20:53.986424+00:00",
+  "post_sha256": "48dd9d8c18c2c3e5f7372c9b99d4e39e41e4b3bf77ad7353a02f96a0f642b725",
+  "source_run_id": "evaluation-20261030T222218Z",
+  "numerical_receipt": "c93e57801be4686292e2dd8187010756945c83ddc38ab70d47840eade0b93cef",
+  "words_excluding_image_alt_text_and_comments": 2201,
+  "matching_main_section_headings": 11,
+  "visuals_in_notebook_order": 12,
+  "new_model_calls": 0,
+  "checks": [
+    "headings match notebook and revised plan",
+    "all images and local notebook link resolve",
+    "image hashes match measured export manifest",
+    "every visual has caption and prose reading",
+    "recall counts, latency summaries and intervals match captured analysis",
+    "pilot timings and full notebook timing match original receipts",
+    "tie diagnostics recomputed excluding singletons",
+    "scope and single-run uncertainty qualifications retained",
+    "no editorial placeholders in visible prose",
+    "exact subscribe footer"
+  ],
+  "verified_metrics": [
+    {
+      "method": "A",
+      "strict_r1_hits": 4,
+      "strict_r10_hits": 8,
+      "text_r1_hits": 4,
+      "median_seconds": 0.0029180415003793314
+    },
+    {
+      "method": "B",
+      "strict_r1_hits": 7,
+      "strict_r10_hits": 10,
+      "text_r1_hits": 7,
+      "median_seconds": 107.80917018750006
+    },
+    {
+      "method": "C",
+      "strict_r1_hits": 5,
+      "strict_r10_hits": 11,
+      "text_r1_hits": 6,
+      "median_seconds": 122.64635841699987
+    },
+    {
+      "method": "D",
+      "strict_r1_hits": 5,
+      "strict_r10_hits": 10,
+      "text_r1_hits": 6,
+      "median_seconds": 65.5509139374999
+    }
+  ],
+  "score_resolution": {
+    "C": {
+      "requests": 275,
+      "attempts": 275,
+      "multi_groups": 273,
+      "all_equal": 0,
+      "any_tie": 0
+    },
+    "D": {
+      "requests": 235,
+      "attempts": 235,
+      "multi_groups": 234,
+      "all_equal": 177,
+      "any_tie": 231
+    }
+  },
+  "publication_note": "Local companion notebook link remains valid for local use; replace with verified public URL before publishing.",
+  "seo_description": {
+    "text": "Can decision models improve RAG retrieval? A local Ollama test compares BM25, Nimble and Qwen, with results and a Python notebook.",
+    "characters": 130,
+    "constraint": "50-160 characters",
+    "status": "passed"
+  },
+  "promotion": {
+    "path": "post-promo.md",
+    "sha256": "f88e265b2ffb3ccff4d114a7acd3fb53e2b741fd9c85208abf57433735cca8cb",
+    "scope": "Draft copy; publication URL is an explicit placeholder. No message was published or sent."
+  }
+}

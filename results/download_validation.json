@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "corpus_embedded": false,
+  "files": [
+    {
+      "kind": "corpus",
+      "url": "https://doc2dial.github.io/multidoc2dial/file/multidoc2dial.zip",
+      "sha256": "f0c034c249663d7b3cb08b19cf2cc2c3d101372485be982621d4711931a1ce00",
+      "bytes": 6868509,
+      "cold_download": "passed",
+      "cache_reuse": "passed"
+    },
+    {
+      "kind": "tokenizer",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B/resolve/main/tokenizer.json",
+      "sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+      "bytes": 12807982,
+      "cold_download": "passed",
+      "cache_reuse": "passed"
+    }
+  ],
+  "checksum_rejection": "passed",
+  "isolated_directory": "/var/folders/p7/1x2749b14hj0xrrrwm84gh8m0000gn/T/decisionrag-download-ggfp290f"
+}

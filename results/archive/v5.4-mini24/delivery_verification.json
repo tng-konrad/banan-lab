@@ -1,0 +1,160 @@
+{
+  "captured_at": "2026-10-30T16:49:02.486107+00:00",
+  "authoring_source_sha256": "1127f836cf2f109500ec6dcf23f78d948f27ee27b71f890442a0f0bba65e1512",
+  "source_run_id": "pilot-20261030T144327Z",
+  "numerical_receipt": "482617c9c1c282bde7259d23e2d7586d06ca5992eade4666d543cca5bef37f0a",
+  "standalone": {
+    "status": "passed",
+    "network": "blocked in kernel",
+    "repository_file_reads": "blocked except installed .venv packages",
+    "copied_input_files": [
+      "decisionrag_ollama_demo.ipynb",
+      "data/raw/multidoc2dial.zip",
+      "data/runtime/tokenizer.json",
+      "results/gate.json",
+      "results/pilot.json"
+    ],
+    "corpus_embedded": false,
+    "fresh_kernel": "/Users/kbanachewicz/Documents/banan-lab/.venv/bin/python",
+    "execution_seconds": 18.621485958,
+    "structural_checks": {
+      "status": "passed",
+      "cells": 37,
+      "project_imports": 0,
+      "encoded_executable_source": false
+    },
+    "independent_numerical_check": {
+      "status": "passed",
+      "methods": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tolerance": 1e-12,
+      "checks": [
+        "strict ID recall from raw rankings",
+        "denominators and failures",
+        "no unsupported primary win"
+      ]
+    },
+    "generated_images": 9,
+    "run_id": "pilot-20261030T144327Z",
+    "experiment_status": "incomplete",
+    "publication_status": "demo-or-feasibility-only",
+    "isolated_directory": "/var/folders/p7/1x2749b14hj0xrrrwm84gh8m0000gn/T/decisionrag-standalone-havvena_",
+    "executed_notebook_errors": 0,
+    "numerical_receipt": "482617c9c1c282bde7259d23e2d7586d06ca5992eade4666d543cca5bef37f0a",
+    "sealed_visual_hash_check": "passed"
+  },
+  "rebuild_and_bootstrap": {
+    "status": "passed",
+    "archive_rebuild_hashes": {
+      "corpus": "c7a138155cdf3c4d86de0d36eaf674e9cab9eb6649d89face886d77f16eb7bd1",
+      "design_inputs": "cf043d8c7bba058e59834b5b49b3735fe38a46ba9ba4bc1bfade8a16ee9e68a9",
+      "design_labels": "a0675c2dfd914f4dc327188ecc123461896036f4a34b514a5a2be09aa92a4640",
+      "evaluation_inputs": "97cd039b7cde0ac557ee61ac3e098c696a53789bd44521d09e2d3a33325a27a7",
+      "evaluation_labels": "b85b3d03588d86a469425ce29c6108729b2b9eeb8c302a0f9bdbce23e0022013",
+      "mini_profile": "a84778cd8ce7467c6c86ae9a2721695d73ba57c552bb5510575a233df1f1a15a"
+    },
+    "bootstrap_check": "10,000 whole-dialogue draws on the actual one-dialogue training example produce the expected degenerate intervals; no inferential claim",
+    "demo_primary_verdict": "inconclusive"
+  },
+  "mini_profile_offline": {
+    "status": "passed",
+    "authoring_source_sha256": "1127f836cf2f109500ec6dcf23f78d948f27ee27b71f890442a0f0bba65e1512",
+    "profile": "mini_2h",
+    "pages": 32,
+    "passages": 329,
+    "pilot_queries": 8,
+    "evaluation_queries": 24,
+    "evaluation_method_queries": 96,
+    "controller_fixture_checks": 16,
+    "live_model_calls": 0,
+    "checks": [
+      "all four controllers across all domains retain corpus membership",
+      "domain-weighted remaining-budget projection matches closed form",
+      "old sixteen-question evidence reconstructs under old configuration",
+      "expired active or wall deadline blocks HTTP dispatch",
+      "clock discrepancy blocks efficiency claims",
+      "failed backend gate returns recorded status"
+    ],
+    "live_performance_validation": "not run"
+  },
+  "external_downloads": {
+    "status": "passed",
+    "corpus_embedded": false,
+    "files": [
+      {
+        "kind": "corpus",
+        "url": "https://doc2dial.github.io/multidoc2dial/file/multidoc2dial.zip",
+        "sha256": "f0c034c249663d7b3cb08b19cf2cc2c3d101372485be982621d4711931a1ce00",
+        "bytes": 6868509,
+        "cold_download": "passed",
+        "cache_reuse": "passed"
+      },
+      {
+        "kind": "tokenizer",
+        "url": "https://huggingface.co/Qwen/Qwen3.5-9B/resolve/main/tokenizer.json",
+        "sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+        "bytes": 12807982,
+        "cold_download": "passed",
+        "cache_reuse": "passed"
+      }
+    ],
+    "checksum_rejection": "passed",
+    "isolated_directory": "/var/folders/p7/1x2749b14hj0xrrrwm84gh8m0000gn/T/decisionrag-download-ggfp290f"
+  },
+  "visual_QA": {
+    "status": "passed",
+    "reviewer": "Codex visual inspection",
+    "images": [
+      {
+        "filename": "graph_01_four_retrieval_paths.png",
+        "sha256": "fc4284ee39f989aacfbc384fff6c6a470c4c87c13581dfc0bfe3ceb4a6de3292"
+      },
+      {
+        "filename": "graph_02_corpus_and_evaluation_scope.png",
+        "sha256": "1d3639cf8ed04a128fcee6e112f193ef608d9057a0844f017b7f8b1903d0a574"
+      },
+      {
+        "filename": "graph_06_where_retrieval_fails.png",
+        "sha256": "d4203552be0f19da34e2b9518814e1540b656349d2f1951a869eaa0b0060e7ad"
+      },
+      {
+        "filename": "graph_07_query_latency_distribution.png",
+        "sha256": "876124356573939d77c5aebf8e214954bfca236f81ef4d5b0fc77c9e2cf9fa5f"
+      },
+      {
+        "filename": "table_01_experiment_contract.png",
+        "sha256": "be29d9af3dcc755ba35976bc47d6abc635534070f97e486251d086951dcaccf7"
+      },
+      {
+        "filename": "table_02_four_method_results.png",
+        "sha256": "cd797beff9672aac87227af235460a0092c644bd8d8905ddfbc626e83f14485f"
+      },
+      {
+        "filename": "table_03_primary_verdict.png",
+        "sha256": "72bad9f8b8a27b4f33301e7545bdc5d2e37e04eb35d3005cc731ca55e004aac7"
+      },
+      {
+        "filename": "table_04_domain_results.png",
+        "sha256": "0453f102b56f8ac0ad101d82da167a26d8819593edf7e4d593fc6348bb5f11ee"
+      },
+      {
+        "filename": "graph_09_laptop_feasibility.png",
+        "sha256": "fa9d22362bff34ae8b6f476726b6e992c9710fcd33578c0332c2ec077e48a8ef"
+      }
+    ],
+    "checks": [
+      "all exported images viewed",
+      "titles/subtitles separated",
+      "no clipping or overlap",
+      "black table body text",
+      "explicit observed/scheduled denominators",
+      "failure markers and actual completion status",
+      "correct corpus profile and source run",
+      "resource lower bound distinct from a point forecast"
+    ]
+  }
+}

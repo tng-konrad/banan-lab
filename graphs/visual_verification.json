@@ -1,0 +1,55 @@
+{
+  "status": "passed",
+  "source_run_id": "evaluation-20261030T222218Z",
+  "method": "Eleven plots hash-match the prior visually reviewed delivery; the changed strict-ID diagnostic was visually reviewed again.",
+  "images": [
+    {
+      "filename": "graph_1_0111.png",
+      "sha256": "749326f6db58db7f8dbbb72b0b73a96d593f316378d76311d40144295bce09e1"
+    },
+    {
+      "filename": "graph_2_0111.png",
+      "sha256": "fc4284ee39f989aacfbc384fff6c6a470c4c87c13581dfc0bfe3ceb4a6de3292"
+    },
+    {
+      "filename": "post_3_0111.png",
+      "sha256": "e0fc7b85b1a9001e6267db4bd0d53b8969a98e61475c50cf75e6a955af33c097"
+    },
+    {
+      "filename": "graph_4_0111.png",
+      "sha256": "41dd78e34fc36fdab688dbc7cbe8e6df84e8a662a7eae3c0ee662488eed9695b"
+    },
+    {
+      "filename": "graph_5_0111.png",
+      "sha256": "9a9f2785478604bd44b06fe09c3a085ce1abb130e6e8e5d02fa8327ccad3f017"
+    },
+    {
+      "filename": "post_6_0111.png",
+      "sha256": "0be8e435be095fac5dca9b45d74381a2308f19b7d930d663b0c70921db2517e4"
+    },
+    {
+      "filename": "graph_7_0111.png",
+      "sha256": "019861985909e1e46405cbb8badfba3a130e4719057fca25acb7b75e5aa331ae"
+    },
+    {
+      "filename": "graph_8_0111.png",
+      "sha256": "d903b42bf9510dfac857f6045b2c0164296f5e3035d27b386a48dc5c3f4c49d3"
+    },
+    {
+      "filename": "post_9_0111.png",
+      "sha256": "da61bab45a192aa4c6c539688736125bf0be28c3d748e6d3766c09379d1ea796"
+    },
+    {
+      "filename": "graph_10_0111.png",
+      "sha256": "8358f8ab52abf1b64ac5a9b76f763710c6c8159df7540edc2f8699e4d2938389"
+    },
+    {
+      "filename": "post_11_0111.png",
+      "sha256": "a2b19e161864356153a7a20f2a8c62f1c906694b72477c8e1a6a59b4a09f1477"
+    },
+    {
+      "filename": "graph_12_0111.png",
+      "sha256": "98f4a3784530ecb134f3de085de650dfe88928ced37578b492bf9cdc417263df"
+    }
+  ]
+}

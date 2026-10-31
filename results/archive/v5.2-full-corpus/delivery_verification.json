@@ -1,0 +1,133 @@
+{
+  "captured_at": "2026-10-30T13:41:20.997092+00:00",
+  "authoring_source_sha256": "34b5bc2684fea3433e20a17b90363cab0f0e6dbeaca517d71d21eff93683af12",
+  "source_run_id": "pilot-20261030T122158Z",
+  "numerical_receipt": "48cd81e0179ae514d6edb3981536ef88adbce0c8df8376f8d4a3c5cab3420155",
+  "standalone": {
+    "status": "passed",
+    "network": "blocked in kernel",
+    "repository_file_reads": "blocked except installed .venv packages",
+    "copied_input_files": [
+      "decisionrag_ollama_demo.ipynb"
+    ],
+    "fresh_kernel": "/Users/kbanachewicz/Documents/banan-lab/.venv/bin/python",
+    "execution_seconds": 19.098677917,
+    "structural_checks": {
+      "status": "passed",
+      "cells": 37,
+      "project_imports": 0,
+      "encoded_executable_source": false
+    },
+    "independent_numerical_check": {
+      "status": "passed",
+      "methods": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tolerance": 1e-12,
+      "checks": [
+        "strict ID recall from raw rankings",
+        "denominators and failures",
+        "no unsupported primary win"
+      ]
+    },
+    "generated_images": 10,
+    "experiment_status": "incomplete",
+    "publication_status": "demo-or-feasibility-only",
+    "isolated_directory": "/var/folders/p7/1x2749b14hj0xrrrwm84gh8m0000gn/T/decisionrag-standalone-nca_iu8m",
+    "executed_notebook_errors": 0,
+    "numerical_receipt": "48cd81e0179ae514d6edb3981536ef88adbce0c8df8376f8d4a3c5cab3420155",
+    "sealed_visual_hash_check": "not yet sealed"
+  },
+  "rebuild_and_bootstrap": {
+    "status": "passed",
+    "archive_rebuild_hashes": {
+      "corpus": "c7a138155cdf3c4d86de0d36eaf674e9cab9eb6649d89face886d77f16eb7bd1",
+      "design_inputs": "cf043d8c7bba058e59834b5b49b3735fe38a46ba9ba4bc1bfade8a16ee9e68a9",
+      "design_labels": "a0675c2dfd914f4dc327188ecc123461896036f4a34b514a5a2be09aa92a4640",
+      "evaluation_inputs": "97cd039b7cde0ac557ee61ac3e098c696a53789bd44521d09e2d3a33325a27a7",
+      "evaluation_labels": "b85b3d03588d86a469425ce29c6108729b2b9eeb8c302a0f9bdbce23e0022013",
+      "mini_profile": "a84778cd8ce7467c6c86ae9a2721695d73ba57c552bb5510575a233df1f1a15a"
+    },
+    "bootstrap_check": "10,000 whole-dialogue draws on the actual one-dialogue training example produce the expected degenerate intervals; no inferential claim",
+    "demo_primary_verdict": "inconclusive"
+  },
+  "mini_profile_offline": {
+    "status": "passed",
+    "authoring_source_sha256": "34b5bc2684fea3433e20a17b90363cab0f0e6dbeaca517d71d21eff93683af12",
+    "profile": "mini_2h",
+    "pages": 32,
+    "passages": 329,
+    "pilot_queries": 8,
+    "evaluation_queries": 24,
+    "evaluation_method_queries": 96,
+    "controller_fixture_checks": 16,
+    "live_model_calls": 0,
+    "checks": [
+      "all four controllers across all domains retain corpus membership",
+      "domain-weighted remaining-budget projection matches closed form",
+      "old sixteen-question evidence reconstructs under old configuration",
+      "expired workflow blocks HTTP dispatch",
+      "failed backend gate returns recorded status"
+    ],
+    "live_performance_validation": "not run"
+  },
+  "visual_QA": {
+    "status": "passed",
+    "reviewer": "Codex visual inspection",
+    "images": [
+      {
+        "filename": "graph_01_four_retrieval_paths.png",
+        "sha256": "fc4284ee39f989aacfbc384fff6c6a470c4c87c13581dfc0bfe3ceb4a6de3292"
+      },
+      {
+        "filename": "graph_02_corpus_and_evaluation_scope.png",
+        "sha256": "3efa0bd175c5696b9313e417d526f404b003051b527b66296c27e29b103fb356"
+      },
+      {
+        "filename": "graph_06_where_retrieval_fails.png",
+        "sha256": "865b9c5021fc4df7ccfdcd3249adf44bd98ae118ab45e5c1e23d9c42d1608cc3"
+      },
+      {
+        "filename": "graph_07_query_latency_distribution.png",
+        "sha256": "78e695cb651f5f88dfcd01249d916a1718d8d3c713428546d000aec9028bcd9c"
+      },
+      {
+        "filename": "graph_08_worked_navigation_example.png",
+        "sha256": "efbb432f72cf08387d1e39bb4ece3ae8621e166fc99a6caa9a577abbb17009f3"
+      },
+      {
+        "filename": "table_01_experiment_contract.png",
+        "sha256": "03fe96e141e7b626dbe8a0da3381c012273f6b5345ad1842cdf0dce51050f606"
+      },
+      {
+        "filename": "table_02_four_method_results.png",
+        "sha256": "5c695aae500df8f4988fbf8be47d89b26d1cdf0d0f1438df38a1a71baa92b46d"
+      },
+      {
+        "filename": "table_03_primary_verdict.png",
+        "sha256": "4af37e4a7ff8584ce41c7e6b57dff1a4ff6999a1ee7b6797c6bb6562abdfeefc"
+      },
+      {
+        "filename": "table_04_domain_results.png",
+        "sha256": "3ecfe0afe4942b3bd2d26a32943edea8e9f0ceca1ff9f5d9b1535d8debc4b74e"
+      },
+      {
+        "filename": "graph_09_laptop_feasibility.png",
+        "sha256": "8c54ada4b32b597ff1a9417cebf010596f0ecb97ff5188e3cdbc091550384c79"
+      }
+    ],
+    "checks": [
+      "all ten exported images viewed",
+      "titles/subtitles separated",
+      "no clipping or overlap",
+      "black table body text",
+      "explicit observed/scheduled denominators",
+      "failure markers and incomplete status",
+      "worked-example IDs and source run",
+      "resource lower bound distinct from a point forecast"
+    ]
+  }
+}

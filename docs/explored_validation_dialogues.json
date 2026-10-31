@@ -1,0 +1,27 @@
+{
+  "reason": "Validation labels exported for the explanatory fixture; conservatively treat all these dialogues as explored.",
+  "source_split": "validation",
+  "source_fixture": "data/prepared/example_document.json",
+  "source_fixture_sha256": "cd3fa5b7c8dc3fb96de982290cf6c147e61b1df16946174ceed7b27fbc6ca223",
+  "query_count": 56,
+  "dialogue_count": 15,
+  "dialogue_ids": [
+    "2a827238a5259b1616e0772987e6370b",
+    "32d44e41e9ca9f3645e39075243c9854",
+    "4aa8817ae4c5900551e008ffb53520d0",
+    "5810a2361d40fdbc9eb2c7fbb7621fb9",
+    "714e7c64a127521421138c748f156545",
+    "71ba04ce6132d799d572a5268857724c",
+    "75bd0f406da093a991960a25def04c13",
+    "90b0bed8f3e17d007d040da657773bbe",
+    "956351f8a7623e6c13c5cb8060aa5c83",
+    "a246b0da0ad3c137f4169c0b711496b2",
+    "b023e676deaf2ba9bbcb694f7f0f1930",
+    "c73cc18d3c5e3fec252e06348f28a820",
+    "cd3eae78fc955d27f20691caf7447eed",
+    "eabfbbed80c4e1c9d1a1f4814e334249",
+    "f32e481476b9382ed0199592943e543a"
+  ],
+  "overlap_with_frozen_evaluation": 0,
+  "future_policy": "Exclude these dialogues from new confirmatory sets. A full validation result including these dialogues is descriptive."
+}

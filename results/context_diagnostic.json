@@ -1,0 +1,361 @@
+{
+  "captured_at": "2026-10-30T12:57:54.154824+00:00",
+  "purpose": "diagnostic only, identical full candidate state, varying question count; no benchmark result replaced",
+  "original_request_sha256": "5567432e225375f91824ab76d7fba763985265c8b5503d2a295bb54571ec7f56",
+  "rows": [
+    {
+      "questions": 1,
+      "candidate_count": 16,
+      "per_question_prompt_tokens": [
+        3606
+      ],
+      "http_status": 200,
+      "response": {
+        "model": "nimble:9b-q8_0",
+        "answers": {
+          "c001": {
+            "type": "noul",
+            "noul": 0.11302427494146977
+          }
+        },
+        "usage": {
+          "input_tokens": 3606,
+          "output_tokens": 0
+        }
+      },
+      "seconds": 4.498185209
+    },
+    {
+      "questions": 4,
+      "candidate_count": 16,
+      "per_question_prompt_tokens": [
+        3795,
+        3795,
+        3795,
+        3795
+      ],
+      "http_status": 200,
+      "response": {
+        "model": "nimble:9b-q8_0",
+        "answers": {
+          "c001": {
+            "type": "noul",
+            "noul": 0.08788591725448855
+          },
+          "c002": {
+            "type": "noul",
+            "noul": 0.02718794111232329
+          },
+          "c003": {
+            "type": "noul",
+            "noul": 0.021436200782607672
+          },
+          "c004": {
+            "type": "noul",
+            "noul": 0.022332114178354987
+          }
+        },
+        "usage": {
+          "input_tokens": 15180,
+          "output_tokens": 0
+        }
+      },
+      "seconds": 4.493226125
+    },
+    {
+      "questions": 8,
+      "candidate_count": 16,
+      "per_question_prompt_tokens": [
+        4047,
+        4047,
+        4047,
+        4047,
+        4047,
+        4047,
+        4047,
+        4047
+      ],
+      "http_status": 200,
+      "response": {
+        "model": "nimble:9b-q8_0",
+        "answers": {
+          "c001": {
+            "type": "noul",
+            "noul": 0.08545165267281044
+          },
+          "c002": {
+            "type": "noul",
+            "noul": 0.021569718615638972
+          },
+          "c003": {
+            "type": "noul",
+            "noul": 0.013087058457043681
+          },
+          "c004": {
+            "type": "noul",
+            "noul": 0.023119398729447654
+          },
+          "c005": {
+            "type": "noul",
+            "noul": 0.027866219433239633
+          },
+          "c006": {
+            "type": "noul",
+            "noul": 0.05363288595838251
+          },
+          "c007": {
+            "type": "noul",
+            "noul": 0.015748510548858362
+          },
+          "c008": {
+            "type": "noul",
+            "noul": 0.01866385941036505
+          }
+        },
+        "usage": {
+          "input_tokens": 32376,
+          "output_tokens": 0
+        }
+      },
+      "seconds": 4.773402166999999
+    },
+    {
+      "questions": 16,
+      "candidate_count": 16,
+      "per_question_prompt_tokens": [
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551
+      ],
+      "http_status": 200,
+      "response": {
+        "model": "nimble:9b-q8_0",
+        "answers": {
+          "c001": {
+            "type": "noul",
+            "noul": 0.06097223227627115
+          },
+          "c002": {
+            "type": "noul",
+            "noul": 0.015182088869996484
+          },
+          "c003": {
+            "type": "noul",
+            "noul": 0.010776970054312798
+          },
+          "c004": {
+            "type": "noul",
+            "noul": 0.01701479306302257
+          },
+          "c005": {
+            "type": "noul",
+            "noul": 0.02226844623877397
+          },
+          "c006": {
+            "type": "noul",
+            "noul": 0.0362829618214421
+          },
+          "c007": {
+            "type": "noul",
+            "noul": 0.012135846027847551
+          },
+          "c008": {
+            "type": "noul",
+            "noul": 0.013035671307484389
+          },
+          "c009": {
+            "type": "noul",
+            "noul": 0.011773270392589082
+          },
+          "c010": {
+            "type": "noul",
+            "noul": 0.027609851263042842
+          },
+          "c011": {
+            "type": "noul",
+            "noul": 0.11458895006121526
+          },
+          "c012": {
+            "type": "noul",
+            "noul": 0.02096087436863653
+          },
+          "c013": {
+            "type": "noul",
+            "noul": 0.025788289581747243
+          },
+          "c014": {
+            "type": "noul",
+            "noul": 0.012052303219314628
+          },
+          "c015": {
+            "type": "noul",
+            "noul": 0.027553680872816
+          },
+          "c016": {
+            "type": "noul",
+            "noul": 0.01086779171437026
+          }
+        },
+        "usage": {
+          "input_tokens": 72816,
+          "output_tokens": 0
+        }
+      },
+      "seconds": 5.657083000000002
+    },
+    {
+      "questions": 16,
+      "candidate_count": 16,
+      "per_question_prompt_tokens": [
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551
+      ],
+      "http_status": 200,
+      "response": {
+        "model": "nimble:9b-q8_0",
+        "answers": {
+          "c001": {
+            "type": "noul",
+            "noul": 0.06097223227627115
+          },
+          "c002": {
+            "type": "noul",
+            "noul": 0.015172509831990439
+          },
+          "c003": {
+            "type": "noul",
+            "noul": 0.010776970054312798
+          },
+          "c004": {
+            "type": "noul",
+            "noul": 0.01701479306302257
+          },
+          "c005": {
+            "type": "noul",
+            "noul": 0.02226844623877397
+          },
+          "c006": {
+            "type": "noul",
+            "noul": 0.03631351973968478
+          },
+          "c007": {
+            "type": "noul",
+            "noul": 0.012137149480492675
+          },
+          "c008": {
+            "type": "noul",
+            "noul": 0.01304011369590176
+          },
+          "c009": {
+            "type": "noul",
+            "noul": 0.011776555165637045
+          },
+          "c010": {
+            "type": "noul",
+            "noul": 0.027609287984664988
+          },
+          "c011": {
+            "type": "noul",
+            "noul": 0.11458469276942375
+          },
+          "c012": {
+            "type": "noul",
+            "noul": 0.020958917373757605
+          },
+          "c013": {
+            "type": "noul",
+            "noul": 0.025780719492669146
+          },
+          "c014": {
+            "type": "noul",
+            "noul": 0.012059891013774249
+          },
+          "c015": {
+            "type": "noul",
+            "noul": 0.027549030571188498
+          },
+          "c016": {
+            "type": "noul",
+            "noul": 0.010879320664841095
+          }
+        },
+        "usage": {
+          "input_tokens": 72816,
+          "output_tokens": 0
+        }
+      },
+      "seconds": 5.752586375
+    }
+  ],
+  "residency": {
+    "models": [
+      {
+        "name": "nimble:9b-q8_0",
+        "model": "nimble:9b-q8_0",
+        "size": 8627872071,
+        "digest": "6aa3fde96874d5d9f03306e795016e232610aaa5f19efcb107bf9311c712ccd9",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen35",
+          "families": [
+            "qwen35"
+          ],
+          "parameter_size": "9.0B",
+          "quantization_level": "Q8_0"
+        },
+        "expires_at": "2319-02-09T13:45:11.005737807+01:00",
+        "size_vram": 8627872071,
+        "context_length": 8194,
+        "runner": "llamacpp"
+      },
+      {
+        "name": "qwen3.5:9b-q8_0",
+        "model": "qwen3.5:9b-q8_0",
+        "size": 8188120268,
+        "digest": "a8ee95bc3592ebaa624014ca8b429d25e0ef5f45030dc35786da7ff7e9e1b60a",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen35",
+          "families": [
+            "qwen35"
+          ],
+          "parameter_size": "9.0B",
+          "quantization_level": "Q8_0"
+        },
+        "expires_at": "2319-02-09T13:14:00.298889807+01:00",
+        "size_vram": 8188120268,
+        "context_length": 8192,
+        "runner": "llamacpp"
+      }
+    ]
+  }
+}

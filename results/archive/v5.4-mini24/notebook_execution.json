@@ -1,0 +1,21 @@
+{
+  "mode": "evaluate",
+  "study_profile": "mini_2h",
+  "status": "passed",
+  "elapsed_seconds": 1707.7637235,
+  "finished_at": "2026-10-30T16:24:15.962319+00:00",
+  "note": "Source reset to replay for safe subsequent Run All; outputs reflect the recorded execution mode.",
+  "experiment_run_id": "pilot-20261030T144327Z",
+  "experiment_kind": "pilot",
+  "experiment_status": "incomplete",
+  "completed_method_queries": 11,
+  "evaluation_started": false,
+  "stop_reason": {
+    "category": "resource_gate",
+    "message": "Even zero time on every remaining pilot observation cannot meet the evaluation budget"
+  },
+  "executed_protocol": "local-decisionrag-v5.4",
+  "active_timer_seconds": 1707.7637235,
+  "gate_to_finish_utc_span_seconds": 6216.207593,
+  "timing_caveat": "Active timer and UTC timestamps disagree by approximately 75 minutes. Suspension or clock changes cannot be distinguished. No wall-clock efficiency claim is supported; v5.5 clock guard was checked offline only."
+}

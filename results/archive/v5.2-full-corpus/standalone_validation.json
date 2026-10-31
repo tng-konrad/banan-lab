@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "network": "blocked in kernel",
+  "repository_file_reads": "blocked except installed .venv packages",
+  "copied_input_files": [
+    "decisionrag_ollama_demo.ipynb"
+  ],
+  "fresh_kernel": "/Users/kbanachewicz/Documents/banan-lab/.venv/bin/python",
+  "execution_seconds": 19.000413708,
+  "structural_checks": {
+    "status": "passed",
+    "cells": 37,
+    "project_imports": 0,
+    "encoded_executable_source": false
+  },
+  "independent_numerical_check": {
+    "status": "passed",
+    "methods": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "tolerance": 1e-12,
+    "checks": [
+      "strict ID recall from raw rankings",
+      "denominators and failures",
+      "no unsupported primary win"
+    ]
+  },
+  "generated_images": 10,
+  "experiment_status": "incomplete",
+  "publication_status": "demo-or-feasibility-only",
+  "isolated_directory": "/var/folders/p7/1x2749b14hj0xrrrwm84gh8m0000gn/T/decisionrag-standalone-uin09ssf",
+  "executed_notebook_errors": 0,
+  "numerical_receipt": "48cd81e0179ae514d6edb3981536ef88adbce0c8df8376f8d4a3c5cab3420155",
+  "sealed_visual_hash_check": "passed"
+}

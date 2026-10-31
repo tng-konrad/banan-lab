@@ -1,0 +1,455 @@
+{
+  "captured_at": "2026-10-30T13:11:38.299851+00:00",
+  "purpose": "diagnostic only, identical full candidate state, varying question count; no benchmark result replaced",
+  "original_request_sha256": "5567432e225375f91824ab76d7fba763985265c8b5503d2a295bb54571ec7f56",
+  "rows": [
+    {
+      "case": "16-0",
+      "questions": 16,
+      "candidate_count": 16,
+      "per_question_prompt_tokens": [
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551
+      ],
+      "http_status": 200,
+      "response": {
+        "model": "nimble:9b-q8_0",
+        "answers": {
+          "c001": {
+            "type": "noul",
+            "noul": 0.06097223227627115
+          },
+          "c002": {
+            "type": "noul",
+            "noul": 0.015172509831990439
+          },
+          "c003": {
+            "type": "noul",
+            "noul": 0.010776970054312798
+          },
+          "c004": {
+            "type": "noul",
+            "noul": 0.01701479306302257
+          },
+          "c005": {
+            "type": "noul",
+            "noul": 0.02226844623877397
+          },
+          "c006": {
+            "type": "noul",
+            "noul": 0.03631351973968478
+          },
+          "c007": {
+            "type": "noul",
+            "noul": 0.012137149480492675
+          },
+          "c008": {
+            "type": "noul",
+            "noul": 0.01304011369590176
+          },
+          "c009": {
+            "type": "noul",
+            "noul": 0.011776555165637045
+          },
+          "c010": {
+            "type": "noul",
+            "noul": 0.027609287984664988
+          },
+          "c011": {
+            "type": "noul",
+            "noul": 0.11458469276942375
+          },
+          "c012": {
+            "type": "noul",
+            "noul": 0.020958917373757605
+          },
+          "c013": {
+            "type": "noul",
+            "noul": 0.025780719492669146
+          },
+          "c014": {
+            "type": "noul",
+            "noul": 0.012059891013774249
+          },
+          "c015": {
+            "type": "noul",
+            "noul": 0.027549030571188498
+          },
+          "c016": {
+            "type": "noul",
+            "noul": 0.010879320664841095
+          }
+        },
+        "usage": {
+          "input_tokens": 72816,
+          "output_tokens": 0
+        }
+      },
+      "seconds": 5.6303674169999995
+    },
+    {
+      "case": "16-1",
+      "questions": 16,
+      "candidate_count": 16,
+      "per_question_prompt_tokens": [
+        5253,
+        5253,
+        5253,
+        5253,
+        5253,
+        5253,
+        5253,
+        5253,
+        5253,
+        5253,
+        5253,
+        5253,
+        5253,
+        5253,
+        5253,
+        5253
+      ],
+      "http_status": 500,
+      "response": {
+        "error": "Context size has been exceeded."
+      },
+      "seconds": 4.611203124999999
+    },
+    {
+      "case": "16-2",
+      "questions": 16,
+      "candidate_count": 16,
+      "per_question_prompt_tokens": [
+        6292,
+        6292,
+        6292,
+        6292,
+        6292,
+        6292,
+        6292,
+        6292,
+        6292,
+        6292,
+        6292,
+        6292,
+        6292,
+        6292,
+        6292,
+        6292
+      ],
+      "http_status": 200,
+      "response": {
+        "model": "nimble:9b-q8_0",
+        "answers": {
+          "c001": {
+            "type": "noul",
+            "noul": 0.005831724822633099
+          },
+          "c002": {
+            "type": "noul",
+            "noul": 0.004920838561037514
+          },
+          "c003": {
+            "type": "noul",
+            "noul": 0.008865319801611099
+          },
+          "c004": {
+            "type": "noul",
+            "noul": 0.010769347504262021
+          },
+          "c005": {
+            "type": "noul",
+            "noul": 0.009697883033459987
+          },
+          "c006": {
+            "type": "noul",
+            "noul": 0.010484618193643373
+          },
+          "c007": {
+            "type": "noul",
+            "noul": 0.01203718714051483
+          },
+          "c008": {
+            "type": "noul",
+            "noul": 0.009854996472062446
+          },
+          "c009": {
+            "type": "noul",
+            "noul": 0.05449957948699634
+          },
+          "c010": {
+            "type": "noul",
+            "noul": 0.018239533954732573
+          },
+          "c011": {
+            "type": "noul",
+            "noul": 0.01999318529767571
+          },
+          "c012": {
+            "type": "noul",
+            "noul": 0.03654839736850373
+          },
+          "c013": {
+            "type": "noul",
+            "noul": 0.045600551123255076
+          },
+          "c014": {
+            "type": "noul",
+            "noul": 0.008294555241159572
+          },
+          "c015": {
+            "type": "noul",
+            "noul": 0.009111040815273039
+          },
+          "c016": {
+            "type": "noul",
+            "noul": 0.03037438903004304
+          }
+        },
+        "usage": {
+          "input_tokens": 100672,
+          "output_tokens": 0
+        }
+      },
+      "seconds": 7.799814750000001
+    },
+    {
+      "case": "16-3",
+      "questions": 16,
+      "candidate_count": 16,
+      "per_question_prompt_tokens": [
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551,
+        4551
+      ],
+      "http_status": 500,
+      "response": {
+        "error": "Context size has been exceeded."
+      },
+      "seconds": 2.6820380839999984
+    },
+    {
+      "case": "4-0",
+      "questions": 4,
+      "candidate_count": 16,
+      "per_question_prompt_tokens": [
+        3795,
+        3795,
+        3795,
+        3795
+      ],
+      "http_status": 200,
+      "response": {
+        "model": "nimble:9b-q8_0",
+        "answers": {
+          "c001": {
+            "type": "noul",
+            "noul": 0.08788591725448855
+          },
+          "c002": {
+            "type": "noul",
+            "noul": 0.02718794111232329
+          },
+          "c003": {
+            "type": "noul",
+            "noul": 0.021436200782607672
+          },
+          "c004": {
+            "type": "noul",
+            "noul": 0.022332114178354987
+          }
+        },
+        "usage": {
+          "input_tokens": 15180,
+          "output_tokens": 0
+        }
+      },
+      "seconds": 4.818430415999998
+    },
+    {
+      "case": "4-1",
+      "questions": 4,
+      "candidate_count": 16,
+      "per_question_prompt_tokens": [
+        4497,
+        4497,
+        4497,
+        4497
+      ],
+      "http_status": 200,
+      "response": {
+        "model": "nimble:9b-q8_0",
+        "answers": {
+          "c001": {
+            "type": "noul",
+            "noul": 0.009736187114993876
+          },
+          "c002": {
+            "type": "noul",
+            "noul": 0.006998660251472765
+          },
+          "c003": {
+            "type": "noul",
+            "noul": 0.01150266090379231
+          },
+          "c004": {
+            "type": "noul",
+            "noul": 0.03264499318763358
+          }
+        },
+        "usage": {
+          "input_tokens": 17988,
+          "output_tokens": 0
+        }
+      },
+      "seconds": 5.5730347500000015
+    },
+    {
+      "case": "4-2",
+      "questions": 4,
+      "candidate_count": 16,
+      "per_question_prompt_tokens": [
+        5536,
+        5536,
+        5536,
+        5536
+      ],
+      "http_status": 200,
+      "response": {
+        "model": "nimble:9b-q8_0",
+        "answers": {
+          "c001": {
+            "type": "noul",
+            "noul": 0.00823952611956117
+          },
+          "c002": {
+            "type": "noul",
+            "noul": 0.00810311066082669
+          },
+          "c003": {
+            "type": "noul",
+            "noul": 0.014891498805368586
+          },
+          "c004": {
+            "type": "noul",
+            "noul": 0.014839182401772755
+          }
+        },
+        "usage": {
+          "input_tokens": 22144,
+          "output_tokens": 0
+        }
+      },
+      "seconds": 7.073754874999999
+    },
+    {
+      "case": "4-3",
+      "questions": 4,
+      "candidate_count": 16,
+      "per_question_prompt_tokens": [
+        3795,
+        3795,
+        3795,
+        3795
+      ],
+      "http_status": 200,
+      "response": {
+        "model": "nimble:9b-q8_0",
+        "answers": {
+          "c001": {
+            "type": "noul",
+            "noul": 0.08770200358557036
+          },
+          "c002": {
+            "type": "noul",
+            "noul": 0.027195357804550273
+          },
+          "c003": {
+            "type": "noul",
+            "noul": 0.021419762897289148
+          },
+          "c004": {
+            "type": "noul",
+            "noul": 0.022300528314642687
+          }
+        },
+        "usage": {
+          "input_tokens": 15180,
+          "output_tokens": 0
+        }
+      },
+      "seconds": 5.070809374999996
+    }
+  ],
+  "residency": {
+    "models": [
+      {
+        "name": "nimble:9b-q8_0",
+        "model": "nimble:9b-q8_0",
+        "size": 8627872071,
+        "digest": "6aa3fde96874d5d9f03306e795016e232610aaa5f19efcb107bf9311c712ccd9",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen35",
+          "families": [
+            "qwen35"
+          ],
+          "parameter_size": "9.0B",
+          "quantization_level": "Q8_0"
+        },
+        "expires_at": "2319-02-09T13:58:55.151820807+01:00",
+        "size_vram": 8627872071,
+        "context_length": 8194,
+        "runner": "llamacpp"
+      },
+      {
+        "name": "qwen3.5:9b-q8_0",
+        "model": "qwen3.5:9b-q8_0",
+        "size": 8188120268,
+        "digest": "a8ee95bc3592ebaa624014ca8b429d25e0ef5f45030dc35786da7ff7e9e1b60a",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen35",
+          "families": [
+            "qwen35"
+          ],
+          "parameter_size": "9.0B",
+          "quantization_level": "Q8_0"
+        },
+        "expires_at": "2319-02-09T13:14:00.298889807+01:00",
+        "size_vram": 8188120268,
+        "context_length": 8192,
+        "runner": "llamacpp"
+      }
+    ]
+  }
+}

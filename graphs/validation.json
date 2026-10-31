@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "network": "blocked in kernel",
+  "repository_file_reads": "blocked except installed .venv packages",
+  "copied_input_files": [
+    "decisionrag_ollama_demo.ipynb",
+    "data/raw/multidoc2dial.zip",
+    "data/runtime/tokenizer.json",
+    "results/gate.json",
+    "results/pilot.json",
+    "results/evaluation.json"
+  ],
+  "corpus_embedded": false,
+  "shipped_mode": "replay",
+  "validation_mode": "replay",
+  "live_model_calls": 0,
+  "fresh_kernel": "/Users/kbanachewicz/Documents/banan-lab/.venv/bin/python",
+  "execution_seconds": 33.46741,
+  "structural_checks": {
+    "status": "passed",
+    "cells": 57,
+    "project_imports": 0,
+    "encoded_executable_source": false
+  },
+  "independent_numerical_check": {
+    "status": "passed",
+    "methods": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "tolerance": 1e-12,
+    "checks": [
+      "strict ID recall from raw rankings",
+      "denominators and failures",
+      "no unsupported primary win"
+    ]
+  },
+  "generated_images": 12,
+  "run_id": "evaluation-20261030T222218Z",
+  "experiment_status": "complete",
+  "publication_status": "completed-comparison",
+  "isolated_directory": "/var/folders/p7/1x2749b14hj0xrrrwm84gh8m0000gn/T/decisionrag-standalone-ddvjpi8g",
+  "executed_notebook_errors": 0,
+  "numerical_receipt": "c93e57801be4686292e2dd8187010756945c83ddc38ab70d47840eade0b93cef",
+  "publication_contract": {
+    "status": "passed",
+    "visuals": 12,
+    "tables": 4,
+    "matching_section_headings": 11,
+    "numbering": "One sequence in notebook display order, including graphs and tables; literal suffix 0111.",
+    "checks": [
+      "notebook and post headings match in order",
+      "each post placeholder resolves",
+      "one numbering sequence in display order",
+      "inline PNG bytes match exported files",
+      "all displayed tables are numbered exports",
+      "each visual has a caption and reading",
+      "score-resolution diagnostic excludes singletons and matches raw requests",
+      "alt text matches mini reference and actual method completion"
+    ],
+    "post_plan_sha256": "af5b3d62f18a97f8ed95fb5dd0382709781313ef1584eb91df00444a8050c9eb"
+  },
+  "sealed_visual_hash_check": "passed"
+}
