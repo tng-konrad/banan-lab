@@ -1,0 +1,2 @@
+Do FX tail shapes change or just volatility? We test HAC tail stability and backtest 2009-2025 extreme VaR across EUR, GBP, and JPY in Python.
+

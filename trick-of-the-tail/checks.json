@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "verify_estimators": true,
+  "source_run": "runs/20261107T155047630280+0100",
+  "inference_evidence_sha256": "074b549efbed34d23bd108943b4cfb1646b1feb8304a844806ce29e10daa65b5",
+  "forecast_evidence_sha256": "04d617a422ef18e0f85fc3f017398ba196e216ee4d42e09d1ff9cbd19cb02a6e",
+  "calibration_keys_verified": 7,
+  "common_scored_dates_verified": 4253,
+  "baseline_slots": 9,
+  "failed_filters": 0,
+  "failed_forecasts": 0,
+  "tolerances": {
+    "interior_rtol": 1e-09,
+    "interior_atol": 1e-11,
+    "filter_recursion_rtol": 1e-10,
+    "filter_recursion_atol": 1e-10
+  },
+  "replay_seconds": 9.91672199999448
+}

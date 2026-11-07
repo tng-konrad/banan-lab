@@ -1,0 +1,14 @@
+# Isolated macOS/arm64 environment for trick-of-the-tail-proper (CPU float64).
+numpy>=2.0,<3
+pandas>=2.2,<3
+scipy>=1.14,<2
+arch>=7.0,<9
+matplotlib>=3.9,<4
+psutil>=7.0,<8
+ipython>=8.0,<10
+ipykernel>=6.29,<7
+nbformat==5.10.4
+nbclient>=0.10,<1
+jupyter-client>=8.0,<9
+Pillow>=10.0
+

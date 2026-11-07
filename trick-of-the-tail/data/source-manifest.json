@@ -1,0 +1,115 @@
+{
+  "manifest_version": 1,
+  "study_package": "trick-of-the-tail",
+  "frozen_date_interval": [
+    "1999-01-04",
+    "2025-12-31"
+  ],
+  "development_prefix_cutoff": "2008-12-31",
+  "scored_forecast_start": "2009-01-01",
+  "scored_forecast_end": "2025-12-31",
+  "exposure_convention": "USD-valued holding of foreign currency: loss_t = -100 * diff(log(USD_per_foreign_currency)); signed_return_t = -loss_t",
+  "preprocessing_rules": [
+    "Restrict observations explicitly to [1999-01-04, 2025-12-31].",
+    "Require strictly increasing unique dates and positive published quotes.",
+    "Remove unavailable quotes ('.' or empty) without interpolation; successive observed quotes may span weekends/holidays.",
+    "Invert DEXJPUS (yen per USD) to USD_per_yen = 1.0 / quote before taking log differences.",
+    "Retain all signed and exact-zero percentage log losses."
+  ],
+  "source_documents": {
+    "paper_pdf": {
+      "path": "sources/2611.06005v1.pdf",
+      "citation": "Shuo Li and Liuhua Peng, Time-Varying Tails: Estimation, Inference, and Risk Measurement, arXiv:2611.06005v1",
+      "sha256": "5e53cd001e8ce38269e3cf870362d7993d28e0efaed79d2387c2474f014e853d"
+    },
+    "planning_spec_v2": {
+      "path": "sources/trick-of-the-tail-proper-plan-v2.md",
+      "sha256": "21cf20348eb0dde82e6c0d255bbee0c4c5f3d6d279f6db2549237d768ef9d533"
+    }
+  },
+  "series": {
+    "EUR": {
+      "fred_id": "DEXUSEU",
+      "filename": "data/DEXUSEU.csv",
+      "title": "U.S. Dollars to Euro Spot Exchange Rate",
+      "provider": "Board of Governors of the Federal Reserve System (US), H.10 Foreign Exchange Rates release",
+      "distributor": "FRED, Federal Reserve Bank of St. Louis",
+      "metadata_url": "https://fred.stlouisfed.org/series/DEXUSEU",
+      "download_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXUSEU&cosd=1999-01-04&coed=2025-12-31",
+      "published_units": "U.S. dollars to one euro",
+      "quote_transform": "published_quote",
+      "invert_quote": false,
+      "frequency": "Daily, not seasonally adjusted (noon buying rates in New York City)",
+      "rights": "Public Domain: Citation Requested (Board of Governors of the Federal Reserve System / FRED)",
+      "provenance_note": "Copied unchanged from archive/v1-time-varying-tails/data/DEXUSEU.csv per Section 3; previously inspected exploratory series.",
+      "original_retrieved_at": "2026-11-06T23:25:24.116390+01:00",
+      "pinned_in_package_at": "2026-11-07T12:36:08.253031+01:00",
+      "previous_package_sha256": "882c3431d37aee37fd7fd8e17e1715be46b3529a51446f559978fed60cdc4f40",
+      "sha256": "882c3431d37aee37fd7fd8e17e1715be46b3529a51446f559978fed60cdc4f40",
+      "expected_counts": {
+        "raw_rows": 7043,
+        "missing_quotes": 273,
+        "valid_quotes": 6770,
+        "signed_losses": 6769,
+        "prefix_losses": 2516,
+        "scored_losses": 4253
+      }
+    },
+    "GBP": {
+      "fred_id": "DEXUSUK",
+      "filename": "data/DEXUSUK.csv",
+      "title": "U.S. Dollars to U.K. Pound Sterling Spot Exchange Rate",
+      "provider": "Board of Governors of the Federal Reserve System (US), H.10 Foreign Exchange Rates release",
+      "distributor": "FRED, Federal Reserve Bank of St. Louis",
+      "metadata_url": "https://fred.stlouisfed.org/series/DEXUSUK",
+      "download_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXUSUK&cosd=1999-01-04&coed=2025-12-31",
+      "published_units": "U.S. dollars to one U.K. pound",
+      "quote_transform": "published_quote",
+      "invert_quote": false,
+      "frequency": "Daily, not seasonally adjusted (noon buying rates in New York City)",
+      "rights": "Public Domain: Citation Requested (Board of Governors of the Federal Reserve System / FRED)",
+      "provenance_note": "Downloaded directly from FRED CSV endpoint after initial sandbox DNS block; prespecified USD FX extension.",
+      "retrieved_at": "2026-11-07T12:41:30.238292+01:00",
+      "sha256": "e1cc3c8ab506146e1596094cf7ff1a66ca4b778ff78a20cd4b17add16bfd55bd",
+      "expected_counts": {
+        "raw_rows": 7043,
+        "missing_quotes": 273,
+        "valid_quotes": 6770,
+        "signed_losses": 6769,
+        "prefix_losses": 2516,
+        "scored_losses": 4253
+      }
+    },
+    "JPY": {
+      "fred_id": "DEXJPUS",
+      "filename": "data/DEXJPUS.csv",
+      "title": "Japanese Yen to U.S. Dollar Spot Exchange Rate",
+      "provider": "Board of Governors of the Federal Reserve System (US), H.10 Foreign Exchange Rates release",
+      "distributor": "FRED, Federal Reserve Bank of St. Louis",
+      "metadata_url": "https://fred.stlouisfed.org/series/DEXJPUS",
+      "download_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXJPUS&cosd=1999-01-04&coed=2025-12-31",
+      "published_units": "Japanese yen to one U.S. dollar",
+      "quote_transform": "reciprocal_quote_usd_per_yen",
+      "invert_quote": true,
+      "frequency": "Daily, not seasonally adjusted (noon buying rates in New York City)",
+      "rights": "Public Domain: Citation Requested (Board of Governors of the Federal Reserve System / FRED)",
+      "provenance_note": "Downloaded directly from FRED CSV endpoint after initial sandbox DNS block; inverted to USD per yen before log differencing.",
+      "retrieved_at": "2026-11-07T12:41:39.506398+01:00",
+      "sha256": "81852a3263d9297d5452fd87f3e67fb8453f8195a2eb3d1ddfad618d20003764",
+      "expected_counts": {
+        "raw_rows": 7043,
+        "missing_quotes": 273,
+        "valid_quotes": 6770,
+        "signed_losses": 6769,
+        "prefix_losses": 2516,
+        "scored_losses": 4253
+      }
+    }
+  },
+  "common_scored_dates_count": 4253,
+  "common_scored_interval": [
+    "2009-01-02",
+    "2025-12-31"
+  ]
+}
+

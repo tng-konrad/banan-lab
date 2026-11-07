@@ -1,0 +1,878 @@
+{
+  "status": "complete",
+  "run_id": "20261107T155047630280+0100",
+  "configuration": {
+    "package": "trick-of-the-tail",
+    "scope": "real_data_only_synthetic_null_and_power_omitted",
+    "seed": 20261107,
+    "rng_schema": {
+      "engine": "PCG64(SeedSequence([SEED, phase, group, sub, rep]))",
+      "pilot": "[20261107, 10, group, 0, rep]",
+      "pivotal_calibration": "[20261107, 20, uint32(spec_sha256[:8]), 0, rep]",
+      "cutoff_bootstrap": "[20261107, 50, uint32(spec_sha256[:8]), 1, 0]",
+      "forecast_block_bootstrap": "[20261107, 50, 100+10*win+series, 10*prob+pair, block_idx]",
+      "joint_block_bootstrap": "[20261107, 50, 300+10*win, prob, block_idx]"
+    },
+    "series_order": [
+      "EUR",
+      "GBP",
+      "JPY"
+    ],
+    "date_bounds": [
+      "1999-01-04",
+      "2025-12-31"
+    ],
+    "prefix_cutoff": "2008-12-31",
+    "scored_start": "2009-01-01",
+    "min_prefix_obs": 2000,
+    "source_hashes": {
+      "EUR": "882c3431d37aee37fd7fd8e17e1715be46b3529a51446f559978fed60cdc4f40",
+      "GBP": "e1cc3c8ab506146e1596094cf7ff1a66ca4b778ff78a20cd4b17add16bfd55bd",
+      "JPY": "81852a3263d9297d5452fd87f3e67fb8453f8195a2eb3d1ddfad618d20003764"
+    },
+    "paper_pdf_sha256": "5e53cd001e8ce38269e3cf870362d7993d28e0efaed79d2387c2474f014e853d",
+    "plan_v2_sha256": "21cf20348eb0dde82e6c0d255bbee0c4c5f3d6d279f6db2549237d768ef9d533",
+    "exposure_rule": "loss_t = -100 * diff(log(USD_per_foreign_currency)); signed_return_t = -loss_t; invert DEXJPUS before log-diff",
+    "estimator": {
+      "m": 200,
+      "h": 0.1,
+      "J": 20,
+      "hac_floor": 0.05,
+      "grid_bounds": [
+        0.15,
+        0.85
+      ],
+      "grid_points": 41,
+      "grid": [
+        0.15,
+        0.1675,
+        0.185,
+        0.2025,
+        0.22,
+        0.2375,
+        0.255,
+        0.2725,
+        0.29,
+        0.3075,
+        0.325,
+        0.3425,
+        0.36,
+        0.3775,
+        0.395,
+        0.4125,
+        0.43,
+        0.4475,
+        0.465,
+        0.4825,
+        0.5,
+        0.5175,
+        0.535,
+        0.5525,
+        0.57,
+        0.5875,
+        0.605,
+        0.6225,
+        0.64,
+        0.6575,
+        0.675,
+        0.6925,
+        0.71,
+        0.7275,
+        0.745,
+        0.7625,
+        0.78,
+        0.7975,
+        0.815,
+        0.8325,
+        0.85
+      ],
+      "kernel": "epanechnikov_0.75_over_h",
+      "standardized_distance": "(n * u - t) / (n * h)",
+      "support": "abs((n * u - t) / (n * h)) < 1.0",
+      "quantile": "weighted_empirical_cdf_left_inverse_((n-m)*total_weight)/n",
+      "exceedance": "strict_greater_than_positive_threshold",
+      "quadrature": "numpy.trapezoid",
+      "projection": "precision_weighted_integral_gamma_over_S"
+    },
+    "calibration": {
+      "generator": "iid_unit_scale_pareto_(1-U)^(-gamma_0)",
+      "gamma_0": 0.3,
+      "reps": 5000,
+      "band_centering": "generating_gamma_0_0.3",
+      "band_scope": "simultaneous_across_41_grid_points_of_single_target_path",
+      "band_quantile": "numpy.quantile_0.95_method_higher",
+      "test_centering": "precision_weighted_projection_gamma_tilde",
+      "pvalue_rule": "(1 + sum(cal_lambda >= obs_lambda)) / (B + 1)",
+      "cutoff_bootstrap_reps": 1000,
+      "holm_family_slots": 9,
+      "holm_unavailable_slot_rule": "internal_p_1.0_reported_decision_NA",
+      "familywise_alpha": 0.05
+    },
+    "eur_robustness": [
+      {
+        "label": "Baseline",
+        "m": 200,
+        "h": 0.1,
+        "J": 20
+      },
+      {
+        "label": "m=150",
+        "m": 150,
+        "h": 0.1,
+        "J": 20
+      },
+      {
+        "label": "m=250",
+        "m": 250,
+        "h": 0.1,
+        "J": 20
+      },
+      {
+        "label": "h=0.075",
+        "m": 200,
+        "h": 0.075,
+        "J": 20
+      },
+      {
+        "label": "h=0.125",
+        "m": 200,
+        "h": 0.125,
+        "J": 20
+      },
+      {
+        "label": "J=10",
+        "m": 200,
+        "h": 0.1,
+        "J": 10
+      },
+      {
+        "label": "J=30",
+        "m": 200,
+        "h": 0.1,
+        "J": 30
+      }
+    ],
+    "volatility_filters": {
+      "package": "arch",
+      "mean": "ConstantMean(rescale=False)",
+      "models": [
+        "GARCH(p=1,o=0,q=1,power=2.0)",
+        "GARCH(p=1,o=1,q=1,power=2.0)"
+      ],
+      "distribution": "StudentsT",
+      "backcast": "ewma_0.94_tau_min_75_n_on_sample_demeaned_returns",
+      "schedule": "two_attempt_slsqp_tol_None_ftol_1e-9_maxiter_1000",
+      "tie_breaker": "select_attempt_2_iff_valid_and_ll2_gt_ll1_plus_1e-10_else_attempt_1",
+      "stationarity_margin": 1e-06,
+      "nu_min": 2.05001,
+      "variance_positivity": "alpha + gamma_lev >= -1e-9",
+      "init_diag_obs": 250,
+      "role": "retrospective_interior_inference_only"
+    },
+    "forecasting": {
+      "target": "raw_signed_losses_only",
+      "endpoint_u": 1.0,
+      "m": 200,
+      "h": 0.1,
+      "windows": [
+        "expanding",
+        "rolling_2500"
+      ],
+      "static_anchor": "common_2008_prefix_kernel_endpoint",
+      "arms": [
+        "A_static",
+        "B_dyn_thresh",
+        "C_dyn_both",
+        "D_rect_hill"
+      ],
+      "tail_probs": [
+        0.01,
+        0.025
+      ],
+      "loss": "pinball_tau_minus_indicator_y_lt_Q_times_y_minus_Q",
+      "violation": "strict_y_gt_Q",
+      "failure_policy": "retain_all_4253_origins_mark_contrast_incomplete_if_any_origin_invalid",
+      "coverage_tests": "kupiec_uc_and_christoffersen_ind_0log0_eq_0_NA_if_any_marginal_state_zero",
+      "primary_contrast": "mean(loss_C - loss_B)_EUR_p0.01_expanding",
+      "bootstrap_kind": "paired_circular_moving_block",
+      "bootstrap_reps": 5000,
+      "block_lengths": [
+        20,
+        10,
+        60
+      ],
+      "bootstrap_quantile": "numpy.quantile_0.025_0.975_method_linear",
+      "violation_roll_window": 250
+    },
+    "asset_sequence": [
+      "01_tabler_scope_and_claim_boundaries",
+      "02_tabler_filter_and_hac_diagnostics",
+      "03_graph_eur_raw_path_and_band",
+      "04_graph_eur_garch_path_and_band",
+      "05_graph_eur_gjr_path_and_band",
+      "06_tabler_baseline_nine_test_holm_family",
+      "07_graph_eur_rolling_250_violations",
+      "08_graph_eur_primary_cumulative_loss_diff",
+      "09_tabler_eur_abcd_forecast_scores",
+      "10_graph_multiseries_window_c_minus_b_intervals",
+      "11_tabler_supporting_fx_window_block_summary",
+      "12_tabler_eur_m_h_J_robustness",
+      "13_tabler_calibration_cutoffs_and_workload"
+    ],
+    "compute_budget_seconds": 1800,
+    "rss_limit_bytes": 4294967296
+  },
+  "started_at": "2026-11-07T15:50:47.630544+01:00",
+  "python": "3.12.8 (main, Jan  5 2025, 06:55:30) [Clang 19.1.6 ]",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "2.3.3",
+    "scipy": "1.18.1",
+    "arch": "8.0.0",
+    "matplotlib": "3.11.2",
+    "psutil": "7.2.2",
+    "ipython": "9.18.1",
+    "nbformat": "5.10.4",
+    "nbclient": "0.11.0",
+    "ipykernel": "6.31.0",
+    "jupyter-client": "8.10.0",
+    "Pillow": "13.0.0"
+  },
+  "completed_at": "2026-11-07T15:50:49.432196+01:00",
+  "total_seconds": 1.8184491660213098,
+  "stage_seconds": {
+    "pivotal_calibration": 0.009355082991532981,
+    "retrospective_inference": 0.5292796670692042,
+    "past_only_forecasting": 1.1466647080378607
+  },
+  "max_rss_bytes": 249905152,
+  "source_summaries": [
+    {
+      "series": "EUR",
+      "fred_id": "DEXUSEU",
+      "quote_transform": "published_quote",
+      "invert_quote": false,
+      "sha256": "882c3431d37aee37fd7fd8e17e1715be46b3529a51446f559978fed60cdc4f40",
+      "raw_rows": 7043,
+      "missing_quotes": 273,
+      "valid_quotes": 6770,
+      "losses": 6769,
+      "prefix_losses": 2516,
+      "scored_losses": 4253,
+      "zero_losses": 61,
+      "positive_losses": 3387,
+      "first_loss_date": "1999-01-05",
+      "last_prefix_date": "2008-12-31",
+      "first_scored_date": "2009-01-02",
+      "last_scored_date": "2025-12-31"
+    },
+    {
+      "series": "GBP",
+      "fred_id": "DEXUSUK",
+      "quote_transform": "published_quote",
+      "invert_quote": false,
+      "sha256": "e1cc3c8ab506146e1596094cf7ff1a66ca4b778ff78a20cd4b17add16bfd55bd",
+      "raw_rows": 7043,
+      "missing_quotes": 273,
+      "valid_quotes": 6770,
+      "losses": 6769,
+      "prefix_losses": 2516,
+      "scored_losses": 4253,
+      "zero_losses": 48,
+      "positive_losses": 3337,
+      "first_loss_date": "1999-01-05",
+      "last_prefix_date": "2008-12-31",
+      "first_scored_date": "2009-01-02",
+      "last_scored_date": "2025-12-31"
+    },
+    {
+      "series": "JPY",
+      "fred_id": "DEXJPUS",
+      "quote_transform": "reciprocal_quote_usd_per_yen",
+      "invert_quote": true,
+      "sha256": "81852a3263d9297d5452fd87f3e67fb8453f8195a2eb3d1ddfad618d20003764",
+      "raw_rows": 7043,
+      "missing_quotes": 273,
+      "valid_quotes": 6770,
+      "losses": 6769,
+      "prefix_losses": 2516,
+      "scored_losses": 4253,
+      "zero_losses": 55,
+      "positive_losses": 3418,
+      "first_loss_date": "1999-01-05",
+      "last_prefix_date": "2008-12-31",
+      "first_scored_date": "2009-01-02",
+      "last_scored_date": "2025-12-31"
+    }
+  ],
+  "common_scored_dates_count": 4253,
+  "filter_records": {
+    "EUR": {
+      "garch": {
+        "status": "ok",
+        "model": "GARCH(1,1)-t",
+        "selected_attempt": "arch_default_grid",
+        "params": {
+          "mu": 0.0012185285117763988,
+          "omega": 0.000657191528720571,
+          "alpha[1]": 0.03493081596810829,
+          "beta[1]": 0.9639203908091183,
+          "nu": 8.117235221584062
+        },
+        "loglikelihood": -5304.143331159021,
+        "persistence": 0.9988512067772266,
+        "nu": 8.117235221584062,
+        "max_abs_vol_diff": 6.661338147750939e-16,
+        "max_abs_z_diff": 1.3322676295501878e-15,
+        "abs_return_acf1": 0.07666567068972385,
+        "abs_return_lb_q10": 970.1186605885816,
+        "abs_z_acf1": -0.033306082582846994,
+        "abs_z_acf5": [
+          -0.033306082582846994,
+          -0.018209477627986585,
+          -0.015247716648654925,
+          0.004920170468648259,
+          0.014168983364538682
+        ],
+        "abs_z_lb_q10": 15.719460345409614,
+        "abs_z_lb_p10": 0.10794973848579319,
+        "init_250_exceed_rate": 0.04,
+        "attempts": [
+          {
+            "attempt": "arch_default_grid",
+            "starting_values": null,
+            "params": {
+              "mu": 0.0012185285117763988,
+              "omega": 0.000657191528720571,
+              "alpha[1]": 0.03493081596810829,
+              "beta[1]": 0.9639203908091183,
+              "nu": 8.117235221584062
+            },
+            "loglikelihood": -5304.143331159021,
+            "convergence_flag": 0,
+            "message": "Optimization terminated successfully",
+            "nit": 18,
+            "persistence": 0.9988512067772266,
+            "nu": 8.117235221584062,
+            "stationary_admitted": true,
+            "recursion_reconciled": true,
+            "max_abs_vol_diff": 6.661338147750939e-16,
+            "max_abs_z_diff": 1.3322676295501878e-15,
+            "valid": true
+          },
+          {
+            "attempt": "interior_stationary_anchor",
+            "starting_values": [
+              -9.536006856250155e-05,
+              0.010058490002045284,
+              0.07,
+              0.89,
+              7.0
+            ],
+            "params": {
+              "mu": 0.0012185536380834373,
+              "omega": 0.000657160919933864,
+              "alpha[1]": 0.03493076109328117,
+              "beta[1]": 0.9639205055270788,
+              "nu": 8.117256036463331
+            },
+            "loglikelihood": -5304.143331162713,
+            "convergence_flag": 0,
+            "message": "Optimization terminated successfully",
+            "nit": 16,
+            "persistence": 0.99885126662036,
+            "nu": 8.117256036463331,
+            "stationary_admitted": true,
+            "recursion_reconciled": true,
+            "max_abs_vol_diff": 4.440892098500626e-16,
+            "max_abs_z_diff": 1.7763568394002505e-15,
+            "valid": true
+          }
+        ]
+      },
+      "gjr": {
+        "status": "ok",
+        "model": "GJR-GARCH(1,1)-t",
+        "selected_attempt": "interior_stationary_anchor",
+        "params": {
+          "mu": -3.078151006616995e-05,
+          "omega": 0.0005847951842723381,
+          "alpha[1]": 0.028052933829685753,
+          "gamma[1]": 0.011245593422444435,
+          "beta[1]": 0.9653795059727519,
+          "nu": 8.148313915013754
+        },
+        "loglikelihood": -5302.133475216828,
+        "persistence": 0.9990552365136599,
+        "nu": 8.148313915013754,
+        "max_abs_vol_diff": 6.661338147750939e-16,
+        "max_abs_z_diff": 2.6645352591003757e-15,
+        "abs_return_acf1": 0.07666567068972385,
+        "abs_return_lb_q10": 970.1186605885816,
+        "abs_z_acf1": -0.032623053941967024,
+        "abs_z_acf5": [
+          -0.032623053941967024,
+          -0.01686923146591577,
+          -0.01454808111817516,
+          0.004872775961623617,
+          0.01493607260450201
+        ],
+        "abs_z_lb_q10": 15.267523033176268,
+        "abs_z_lb_p10": 0.1226085819835031,
+        "init_250_exceed_rate": 0.044,
+        "attempts": [
+          {
+            "attempt": "arch_default_grid",
+            "starting_values": null,
+            "params": {
+              "mu": -3.080027075954614e-05,
+              "omega": 0.0005847890955237097,
+              "alpha[1]": 0.02805287068512303,
+              "gamma[1]": 0.011245642237948066,
+              "beta[1]": 0.9653795556777003,
+              "nu": 8.148286904711874
+            },
+            "loglikelihood": -5302.13347521859,
+            "convergence_flag": 0,
+            "message": "Optimization terminated successfully",
+            "nit": 18,
+            "persistence": 0.9990552474817973,
+            "nu": 8.148286904711874,
+            "stationary_admitted": true,
+            "recursion_reconciled": true,
+            "max_abs_vol_diff": 4.440892098500626e-16,
+            "max_abs_z_diff": 1.7763568394002505e-15,
+            "valid": true
+          },
+          {
+            "attempt": "interior_stationary_anchor",
+            "starting_values": [
+              -9.536006856250155e-05,
+              0.010058490002045284,
+              0.05,
+              0.04,
+              0.89,
+              7.0
+            ],
+            "params": {
+              "mu": -3.078151006616995e-05,
+              "omega": 0.0005847951842723381,
+              "alpha[1]": 0.028052933829685753,
+              "gamma[1]": 0.011245593422444435,
+              "beta[1]": 0.9653795059727519,
+              "nu": 8.148313915013754
+            },
+            "loglikelihood": -5302.133475216828,
+            "convergence_flag": 0,
+            "message": "Optimization terminated successfully",
+            "nit": 22,
+            "persistence": 0.9990552365136599,
+            "nu": 8.148313915013754,
+            "stationary_admitted": true,
+            "recursion_reconciled": true,
+            "max_abs_vol_diff": 6.661338147750939e-16,
+            "max_abs_z_diff": 2.6645352591003757e-15,
+            "valid": true
+          }
+        ]
+      }
+    },
+    "GBP": {
+      "garch": {
+        "status": "ok",
+        "model": "GARCH(1,1)-t",
+        "selected_attempt": "arch_default_grid",
+        "params": {
+          "mu": 0.004356726737780583,
+          "omega": 0.0028273640832358437,
+          "alpha[1]": 0.041247428246531014,
+          "beta[1]": 0.9498432937913707,
+          "nu": 8.723473119450926
+        },
+        "loglikelihood": -5231.405426041305,
+        "persistence": 0.9910907220379017,
+        "nu": 8.723473119450926,
+        "max_abs_vol_diff": 4.440892098500626e-16,
+        "max_abs_z_diff": 1.3322676295501878e-15,
+        "abs_return_acf1": 0.14551445825831208,
+        "abs_return_lb_q10": 1510.2203682575712,
+        "abs_z_acf1": -0.005273782624341649,
+        "abs_z_acf5": [
+          -0.005273782624341649,
+          0.002690943967115831,
+          -0.019467038472853946,
+          0.020703526759120384,
+          0.015025111730626543
+        ],
+        "abs_z_lb_q10": 10.9049899775774,
+        "abs_z_lb_p10": 0.3649679618181633,
+        "init_250_exceed_rate": 0.036,
+        "attempts": [
+          {
+            "attempt": "arch_default_grid",
+            "starting_values": null,
+            "params": {
+              "mu": 0.004356726737780583,
+              "omega": 0.0028273640832358437,
+              "alpha[1]": 0.041247428246531014,
+              "beta[1]": 0.9498432937913707,
+              "nu": 8.723473119450926
+            },
+            "loglikelihood": -5231.405426041305,
+            "convergence_flag": 0,
+            "message": "Optimization terminated successfully",
+            "nit": 18,
+            "persistence": 0.9910907220379017,
+            "nu": 8.723473119450926,
+            "stationary_admitted": true,
+            "recursion_reconciled": true,
+            "max_abs_vol_diff": 4.440892098500626e-16,
+            "max_abs_z_diff": 1.3322676295501878e-15,
+            "valid": true
+          },
+          {
+            "attempt": "interior_stationary_anchor",
+            "starting_values": [
+              -0.0030950129809056374,
+              0.010193791974063143,
+              0.07,
+              0.89,
+              7.0
+            ],
+            "params": {
+              "mu": 0.004356846284103952,
+              "omega": 0.0028273679433502502,
+              "alpha[1]": 0.04124777602121336,
+              "beta[1]": 0.9498429953044708,
+              "nu": 8.723322485998922
+            },
+            "loglikelihood": -5231.405426053598,
+            "convergence_flag": 0,
+            "message": "Optimization terminated successfully",
+            "nit": 18,
+            "persistence": 0.9910907713256841,
+            "nu": 8.723322485998922,
+            "stationary_admitted": true,
+            "recursion_reconciled": true,
+            "max_abs_vol_diff": 4.440892098500626e-16,
+            "max_abs_z_diff": 1.7763568394002505e-15,
+            "valid": true
+          }
+        ]
+      },
+      "gjr": {
+        "status": "ok",
+        "model": "GJR-GARCH(1,1)-t",
+        "selected_attempt": "arch_default_grid",
+        "params": {
+          "mu": 0.002098246544487591,
+          "omega": 0.0027277177920282626,
+          "alpha[1]": 0.027461552951492343,
+          "gamma[1]": 0.022255902741160502,
+          "beta[1]": 0.9523826490383073,
+          "nu": 8.832574753803677
+        },
+        "loglikelihood": -5226.469787884811,
+        "persistence": 0.9909721533603799,
+        "nu": 8.832574753803677,
+        "max_abs_vol_diff": 4.440892098500626e-16,
+        "max_abs_z_diff": 1.7763568394002505e-15,
+        "abs_return_acf1": 0.14551445825831208,
+        "abs_return_lb_q10": 1510.2203682575712,
+        "abs_z_acf1": -0.0047712414877324845,
+        "abs_z_acf5": [
+          -0.0047712414877324845,
+          0.00292369103482997,
+          -0.020290126997838415,
+          0.021161620059888073,
+          0.016570296302643922
+        ],
+        "abs_z_lb_q10": 12.116247923102215,
+        "abs_z_lb_p10": 0.27735181675031206,
+        "init_250_exceed_rate": 0.036,
+        "attempts": [
+          {
+            "attempt": "arch_default_grid",
+            "starting_values": null,
+            "params": {
+              "mu": 0.002098246544487591,
+              "omega": 0.0027277177920282626,
+              "alpha[1]": 0.027461552951492343,
+              "gamma[1]": 0.022255902741160502,
+              "beta[1]": 0.9523826490383073,
+              "nu": 8.832574753803677
+            },
+            "loglikelihood": -5226.469787884811,
+            "convergence_flag": 0,
+            "message": "Optimization terminated successfully",
+            "nit": 22,
+            "persistence": 0.9909721533603799,
+            "nu": 8.832574753803677,
+            "stationary_admitted": true,
+            "recursion_reconciled": true,
+            "max_abs_vol_diff": 4.440892098500626e-16,
+            "max_abs_z_diff": 1.7763568394002505e-15,
+            "valid": true
+          },
+          {
+            "attempt": "interior_stationary_anchor",
+            "starting_values": [
+              -0.0030950129809056374,
+              0.010193791974063143,
+              0.05,
+              0.04,
+              0.89,
+              7.0
+            ],
+            "params": {
+              "mu": 0.0020982043761971995,
+              "omega": 0.0027276997615900828,
+              "alpha[1]": 0.02746145610786369,
+              "gamma[1]": 0.022256130432056927,
+              "beta[1]": 0.9523826780056709,
+              "nu": 8.83262459396377
+            },
+            "loglikelihood": -5226.469787888198,
+            "convergence_flag": 0,
+            "message": "Optimization terminated successfully",
+            "nit": 19,
+            "persistence": 0.990972199329563,
+            "nu": 8.83262459396377,
+            "stationary_admitted": true,
+            "recursion_reconciled": true,
+            "max_abs_vol_diff": 6.661338147750939e-16,
+            "max_abs_z_diff": 1.7763568394002505e-15,
+            "valid": true
+          }
+        ]
+      }
+    },
+    "JPY": {
+      "garch": {
+        "status": "ok",
+        "model": "GARCH(1,1)-t",
+        "selected_attempt": "arch_default_grid",
+        "params": {
+          "mu": -0.014527579578527837,
+          "omega": 0.002667550133939575,
+          "alpha[1]": 0.04133330899121149,
+          "beta[1]": 0.9529000630269635,
+          "nu": 5.353631320991503
+        },
+        "loglikelihood": -5812.917800761743,
+        "persistence": 0.994233372018175,
+        "nu": 5.353631320991503,
+        "max_abs_vol_diff": 6.661338147750939e-16,
+        "max_abs_z_diff": 1.7763568394002505e-15,
+        "abs_return_acf1": 0.12010764672741017,
+        "abs_return_lb_q10": 736.2770305521462,
+        "abs_z_acf1": 0.007342221488110304,
+        "abs_z_acf5": [
+          0.007342221488110304,
+          0.02342634632246288,
+          -0.004877675357450585,
+          0.00249963986702905,
+          -0.0034498616626635835
+        ],
+        "abs_z_lb_q10": 7.0390482515001365,
+        "abs_z_lb_p10": 0.7217534891694949,
+        "init_250_exceed_rate": 0.04,
+        "attempts": [
+          {
+            "attempt": "arch_default_grid",
+            "starting_values": null,
+            "params": {
+              "mu": -0.014527579578527837,
+              "omega": 0.002667550133939575,
+              "alpha[1]": 0.04133330899121149,
+              "beta[1]": 0.9529000630269635,
+              "nu": 5.353631320991503
+            },
+            "loglikelihood": -5812.917800761743,
+            "convergence_flag": 0,
+            "message": "Optimization terminated successfully",
+            "nit": 16,
+            "persistence": 0.994233372018175,
+            "nu": 5.353631320991503,
+            "stationary_admitted": true,
+            "recursion_reconciled": true,
+            "max_abs_vol_diff": 6.661338147750939e-16,
+            "max_abs_z_diff": 1.7763568394002505e-15,
+            "valid": true
+          },
+          {
+            "attempt": "interior_stationary_anchor",
+            "starting_values": [
+              -0.004951009705275378,
+              0.011995511832406946,
+              0.07,
+              0.89,
+              7.0
+            ],
+            "params": {
+              "mu": -0.014527573430696675,
+              "omega": 0.002667548282035355,
+              "alpha[1]": 0.0413333011949916,
+              "beta[1]": 0.9529000688749769,
+              "nu": 5.3536336065947365
+            },
+            "loglikelihood": -5812.917800761893,
+            "convergence_flag": 0,
+            "message": "Optimization terminated successfully",
+            "nit": 18,
+            "persistence": 0.9942333700699685,
+            "nu": 5.3536336065947365,
+            "stationary_admitted": true,
+            "recursion_reconciled": true,
+            "max_abs_vol_diff": 6.661338147750939e-16,
+            "max_abs_z_diff": 1.7763568394002505e-15,
+            "valid": true
+          }
+        ]
+      },
+      "gjr": {
+        "status": "ok",
+        "model": "GJR-GARCH(1,1)-t",
+        "selected_attempt": "interior_stationary_anchor",
+        "params": {
+          "mu": -0.01357415638802707,
+          "omega": 0.002881794982928078,
+          "alpha[1]": 0.04683043295120151,
+          "gamma[1]": -0.010567341917579008,
+          "beta[1]": 0.9518494388127565,
+          "nu": 5.368613627583308
+        },
+        "loglikelihood": -5811.832068845977,
+        "persistence": 0.9933962008051685,
+        "nu": 5.368613627583308,
+        "max_abs_vol_diff": 4.440892098500626e-16,
+        "max_abs_z_diff": 1.7763568394002505e-15,
+        "abs_return_acf1": 0.12010764672741017,
+        "abs_return_lb_q10": 736.2770305521462,
+        "abs_z_acf1": 0.0062024620949339805,
+        "abs_z_acf5": [
+          0.0062024620949339805,
+          0.022527155673475595,
+          -0.0056504073013176346,
+          0.002589099731842027,
+          -0.004195773368610827
+        ],
+        "abs_z_lb_q10": 6.578913674885207,
+        "abs_z_lb_p10": 0.7645097298761248,
+        "init_250_exceed_rate": 0.036,
+        "attempts": [
+          {
+            "attempt": "arch_default_grid",
+            "starting_values": null,
+            "params": {
+              "mu": -0.01357415387589645,
+              "omega": 0.002881790303816707,
+              "alpha[1]": 0.046830423927964555,
+              "gamma[1]": -0.01056734749596701,
+              "beta[1]": 0.9518494660278259,
+              "nu": 5.3686116146072385
+            },
+            "loglikelihood": -5811.832068846259,
+            "convergence_flag": 0,
+            "message": "Optimization terminated successfully",
+            "nit": 18,
+            "persistence": 0.9933962162078069,
+            "nu": 5.3686116146072385,
+            "stationary_admitted": true,
+            "recursion_reconciled": true,
+            "max_abs_vol_diff": 4.440892098500626e-16,
+            "max_abs_z_diff": 2.6645352591003757e-15,
+            "valid": true
+          },
+          {
+            "attempt": "interior_stationary_anchor",
+            "starting_values": [
+              -0.004951009705275378,
+              0.011995511832406946,
+              0.05,
+              0.04,
+              0.89,
+              7.0
+            ],
+            "params": {
+              "mu": -0.01357415638802707,
+              "omega": 0.002881794982928078,
+              "alpha[1]": 0.04683043295120151,
+              "gamma[1]": -0.010567341917579008,
+              "beta[1]": 0.9518494388127565,
+              "nu": 5.368613627583308
+            },
+            "loglikelihood": -5811.832068845977,
+            "convergence_flag": 0,
+            "message": "Optimization terminated successfully",
+            "nit": 21,
+            "persistence": 0.9933962008051685,
+            "nu": 5.368613627583308,
+            "stationary_admitted": true,
+            "recursion_reconciled": true,
+            "max_abs_vol_diff": 4.440892098500626e-16,
+            "max_abs_z_diff": 1.7763568394002505e-15,
+            "valid": true
+          }
+        ]
+      }
+    }
+  },
+  "calibration_registry": {
+    "baseline_EUR": {
+      "short_key": "67a23ee63c02875f",
+      "spec_sha256": "67a23ee63c02875f0b769c2153a89fce4bdff291b938cdf8502d62757e98b490",
+      "npz_sha256": "93c3a92c25a5c3550943c0c0916de0acc342c5abe662ed943b5a700249297558"
+    },
+    "baseline_GBP": {
+      "short_key": "67a23ee63c02875f",
+      "spec_sha256": "67a23ee63c02875f0b769c2153a89fce4bdff291b938cdf8502d62757e98b490",
+      "npz_sha256": "93c3a92c25a5c3550943c0c0916de0acc342c5abe662ed943b5a700249297558"
+    },
+    "baseline_JPY": {
+      "short_key": "67a23ee63c02875f",
+      "spec_sha256": "67a23ee63c02875f0b769c2153a89fce4bdff291b938cdf8502d62757e98b490",
+      "npz_sha256": "93c3a92c25a5c3550943c0c0916de0acc342c5abe662ed943b5a700249297558"
+    },
+    "eur_Baseline": {
+      "short_key": "67a23ee63c02875f",
+      "spec_sha256": "67a23ee63c02875f0b769c2153a89fce4bdff291b938cdf8502d62757e98b490",
+      "npz_sha256": "93c3a92c25a5c3550943c0c0916de0acc342c5abe662ed943b5a700249297558"
+    },
+    "eur_m=150": {
+      "short_key": "a16ce6f13da810f7",
+      "spec_sha256": "a16ce6f13da810f7f4431ce48c40c96cab43e9d3fea9a153506cdd7d27fc81ab",
+      "npz_sha256": "4d785a722ae819b868b39ebac7202c1c510f902b80d060b2f178d9e943c20528"
+    },
+    "eur_m=250": {
+      "short_key": "d4c7a6ab64c825f9",
+      "spec_sha256": "d4c7a6ab64c825f954ac5e046e505d38badc54732b8e8e9b40a539e596297714",
+      "npz_sha256": "ee996f831153669b7d58ecd7d3db616579824291be318f2dc96186ee4bc5a208"
+    },
+    "eur_h=0.075": {
+      "short_key": "d09d73a4d104a052",
+      "spec_sha256": "d09d73a4d104a05216da28d8bc9cd3c49a96e658299bd6eeef0bec1934161ee5",
+      "npz_sha256": "3857274b12c07037122734885532af5700ac5e33aa1e0e8aec721e146ee16f43"
+    },
+    "eur_h=0.125": {
+      "short_key": "53e213cb691faf67",
+      "spec_sha256": "53e213cb691faf67f0c9de45c5b1e589c1cec4911af8bc3b341a51bbf9a586c9",
+      "npz_sha256": "7947561537645c64eb6f618ddf8265aa7cfa60aa229240f7a1628e42201f65a0"
+    },
+    "eur_J=10": {
+      "short_key": "e4e8ca0ced64b1de",
+      "spec_sha256": "e4e8ca0ced64b1de83e667a4f7faeb9c1e064d6751deb210ea5afc5834409cef",
+      "npz_sha256": "4b3aafa35d47d693fbc5b9c7c9150eebf54fb4040614514f44c77c788b5c5fc0"
+    },
+    "eur_J=30": {
+      "short_key": "651c0b2d733da0ed",
+      "spec_sha256": "651c0b2d733da0edd5f3e7b7ba8f3ef074f6fa81fe45d8ba66783e4237804800",
+      "npz_sha256": "715f2f45d945d7c5b8324186f67362d63b3b90d3c206f19e8c2033c3fa8f1d73"
+    }
+  },
+  "inference_evidence_sha256": "074b549efbed34d23bd108943b4cfb1646b1feb8304a844806ce29e10daa65b5",
+  "forecast_evidence_sha256": "04d617a422ef18e0f85fc3f017398ba196e216ee4d42e09d1ff9cbd19cb02a6e",
+  "failed_filters": 0,
+  "failed_forecasts": 0
+}

@@ -1,0 +1,227 @@
+{
+  "configuration": {
+    "package": "trick-of-the-tail",
+    "scope": "real_data_only_synthetic_null_and_power_omitted",
+    "seed": 20261107,
+    "rng_schema": {
+      "engine": "PCG64(SeedSequence([SEED, phase, group, sub, rep]))",
+      "pilot": "[20261107, 10, group, 0, rep]",
+      "pivotal_calibration": "[20261107, 20, uint32(spec_sha256[:8]), 0, rep]",
+      "cutoff_bootstrap": "[20261107, 50, uint32(spec_sha256[:8]), 1, 0]",
+      "forecast_block_bootstrap": "[20261107, 50, 100+10*win+series, 10*prob+pair, block_idx]",
+      "joint_block_bootstrap": "[20261107, 50, 300+10*win, prob, block_idx]"
+    },
+    "series_order": [
+      "EUR",
+      "GBP",
+      "JPY"
+    ],
+    "date_bounds": [
+      "1999-01-04",
+      "2025-12-31"
+    ],
+    "prefix_cutoff": "2008-12-31",
+    "scored_start": "2009-01-01",
+    "min_prefix_obs": 2000,
+    "source_hashes": {
+      "EUR": "882c3431d37aee37fd7fd8e17e1715be46b3529a51446f559978fed60cdc4f40",
+      "GBP": "e1cc3c8ab506146e1596094cf7ff1a66ca4b778ff78a20cd4b17add16bfd55bd",
+      "JPY": "81852a3263d9297d5452fd87f3e67fb8453f8195a2eb3d1ddfad618d20003764"
+    },
+    "paper_pdf_sha256": "5e53cd001e8ce38269e3cf870362d7993d28e0efaed79d2387c2474f014e853d",
+    "plan_v2_sha256": "21cf20348eb0dde82e6c0d255bbee0c4c5f3d6d279f6db2549237d768ef9d533",
+    "exposure_rule": "loss_t = -100 * diff(log(USD_per_foreign_currency)); signed_return_t = -loss_t; invert DEXJPUS before log-diff",
+    "estimator": {
+      "m": 200,
+      "h": 0.1,
+      "J": 20,
+      "hac_floor": 0.05,
+      "grid_bounds": [
+        0.15,
+        0.85
+      ],
+      "grid_points": 41,
+      "grid": [
+        0.15,
+        0.1675,
+        0.185,
+        0.2025,
+        0.22,
+        0.2375,
+        0.255,
+        0.2725,
+        0.29,
+        0.3075,
+        0.325,
+        0.3425,
+        0.36,
+        0.3775,
+        0.395,
+        0.4125,
+        0.43,
+        0.4475,
+        0.465,
+        0.4825,
+        0.5,
+        0.5175,
+        0.535,
+        0.5525,
+        0.57,
+        0.5875,
+        0.605,
+        0.6225,
+        0.64,
+        0.6575,
+        0.675,
+        0.6925,
+        0.71,
+        0.7275,
+        0.745,
+        0.7625,
+        0.78,
+        0.7975,
+        0.815,
+        0.8325,
+        0.85
+      ],
+      "kernel": "epanechnikov_0.75_over_h",
+      "standardized_distance": "(n * u - t) / (n * h)",
+      "support": "abs((n * u - t) / (n * h)) < 1.0",
+      "quantile": "weighted_empirical_cdf_left_inverse_((n-m)*total_weight)/n",
+      "exceedance": "strict_greater_than_positive_threshold",
+      "quadrature": "numpy.trapezoid",
+      "projection": "precision_weighted_integral_gamma_over_S"
+    },
+    "calibration": {
+      "generator": "iid_unit_scale_pareto_(1-U)^(-gamma_0)",
+      "gamma_0": 0.3,
+      "reps": 5000,
+      "band_centering": "generating_gamma_0_0.3",
+      "band_scope": "simultaneous_across_41_grid_points_of_single_target_path",
+      "band_quantile": "numpy.quantile_0.95_method_higher",
+      "test_centering": "precision_weighted_projection_gamma_tilde",
+      "pvalue_rule": "(1 + sum(cal_lambda >= obs_lambda)) / (B + 1)",
+      "cutoff_bootstrap_reps": 1000,
+      "holm_family_slots": 9,
+      "holm_unavailable_slot_rule": "internal_p_1.0_reported_decision_NA",
+      "familywise_alpha": 0.05
+    },
+    "eur_robustness": [
+      {
+        "label": "Baseline",
+        "m": 200,
+        "h": 0.1,
+        "J": 20
+      },
+      {
+        "label": "m=150",
+        "m": 150,
+        "h": 0.1,
+        "J": 20
+      },
+      {
+        "label": "m=250",
+        "m": 250,
+        "h": 0.1,
+        "J": 20
+      },
+      {
+        "label": "h=0.075",
+        "m": 200,
+        "h": 0.075,
+        "J": 20
+      },
+      {
+        "label": "h=0.125",
+        "m": 200,
+        "h": 0.125,
+        "J": 20
+      },
+      {
+        "label": "J=10",
+        "m": 200,
+        "h": 0.1,
+        "J": 10
+      },
+      {
+        "label": "J=30",
+        "m": 200,
+        "h": 0.1,
+        "J": 30
+      }
+    ],
+    "volatility_filters": {
+      "package": "arch",
+      "mean": "ConstantMean(rescale=False)",
+      "models": [
+        "GARCH(p=1,o=0,q=1,power=2.0)",
+        "GARCH(p=1,o=1,q=1,power=2.0)"
+      ],
+      "distribution": "StudentsT",
+      "backcast": "ewma_0.94_tau_min_75_n_on_sample_demeaned_returns",
+      "schedule": "two_attempt_slsqp_tol_None_ftol_1e-9_maxiter_1000",
+      "tie_breaker": "select_attempt_2_iff_valid_and_ll2_gt_ll1_plus_1e-10_else_attempt_1",
+      "stationarity_margin": 1e-06,
+      "nu_min": 2.05001,
+      "variance_positivity": "alpha + gamma_lev >= -1e-9",
+      "init_diag_obs": 250,
+      "role": "retrospective_interior_inference_only"
+    },
+    "forecasting": {
+      "target": "raw_signed_losses_only",
+      "endpoint_u": 1.0,
+      "m": 200,
+      "h": 0.1,
+      "windows": [
+        "expanding",
+        "rolling_2500"
+      ],
+      "static_anchor": "common_2008_prefix_kernel_endpoint",
+      "arms": [
+        "A_static",
+        "B_dyn_thresh",
+        "C_dyn_both",
+        "D_rect_hill"
+      ],
+      "tail_probs": [
+        0.01,
+        0.025
+      ],
+      "loss": "pinball_tau_minus_indicator_y_lt_Q_times_y_minus_Q",
+      "violation": "strict_y_gt_Q",
+      "failure_policy": "retain_all_4253_origins_mark_contrast_incomplete_if_any_origin_invalid",
+      "coverage_tests": "kupiec_uc_and_christoffersen_ind_0log0_eq_0_NA_if_any_marginal_state_zero",
+      "primary_contrast": "mean(loss_C - loss_B)_EUR_p0.01_expanding",
+      "bootstrap_kind": "paired_circular_moving_block",
+      "bootstrap_reps": 5000,
+      "block_lengths": [
+        20,
+        10,
+        60
+      ],
+      "bootstrap_quantile": "numpy.quantile_0.025_0.975_method_linear",
+      "violation_roll_window": 250
+    },
+    "asset_sequence": [
+      "01_tabler_scope_and_claim_boundaries",
+      "02_tabler_filter_and_hac_diagnostics",
+      "03_graph_eur_raw_path_and_band",
+      "04_graph_eur_garch_path_and_band",
+      "05_graph_eur_gjr_path_and_band",
+      "06_tabler_baseline_nine_test_holm_family",
+      "07_graph_eur_rolling_250_violations",
+      "08_graph_eur_primary_cumulative_loss_diff",
+      "09_tabler_eur_abcd_forecast_scores",
+      "10_graph_multiseries_window_c_minus_b_intervals",
+      "11_tabler_supporting_fx_window_block_summary",
+      "12_tabler_eur_m_h_J_robustness",
+      "13_tabler_calibration_cutoffs_and_workload"
+    ],
+    "compute_budget_seconds": 1800,
+    "rss_limit_bytes": 4294967296
+  },
+  "frozen_at": "2026-11-07T15:50:47.612431+01:00",
+  "plan": "plan.md",
+  "plan_critique": "plan-critique.md",
+  "reference_plan_v2": "sources/trick-of-the-tail-proper-plan-v2.md"
+}

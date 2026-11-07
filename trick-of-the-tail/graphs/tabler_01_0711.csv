@@ -1,0 +1,8 @@
+Component,Implemented here,Claim boundary
+Local Hill ratio,"Eqs 4.2, 4.10-4.11; Epanechnikov; strict >",Exact mechanism; fast vs scalar verified
+Bartlett HAC,Eqs 5.2-5.3; J=20; 0.05 floor logged,Variance factor; not finite-threshold bias fix
+Uniform bands,"Eq 5.7; 41-pt [0.15, 0.85]; B=5,000 at gamma0=0.3",Simultaneous on grid; no empirical truth
+Stability test,Eqs 6.2-6.4; projection center; 9-slot Holm,Nominal pivotal p; synthetic DGP screen skipped
+Volatility filters,"GARCH(1,1)-t & GJR(1,1)-t; 2-attempt SLSQP",Retrospective interior only; distinct estimand
+Risk forecasts,"Eq 7.1 past-only u=1; Arms A/B/C/D; p=0.01, 0.025",Chronological raw losses; no ES or band reuse
+Currency panel,"FRED EUR, GBP, inverted JPY (1999-2025)",Correlated USD FX; temporal pseudo-holdout

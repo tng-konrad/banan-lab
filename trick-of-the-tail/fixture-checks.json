@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "checks": [
+    "analytic_hill_and_weighted_quantile_with_negatives_zeros_ties",
+    "exact_rational_lattice_support_and_quantile_at_n2500_and_n3000",
+    "degenerate_nonpositive_threshold_rejection",
+    "hand_computed_bartlett_hac_and_floor_activation",
+    "fast_vs_scalar_reference_agreement_rtol_1e-9_atol_1e-11",
+    "global_positive_scale_invariance",
+    "gjr_leverage_orientation_and_sample_mean_backcast_arch_reconciliation",
+    "future_perturbation_strict_past_only_forecast_invariance",
+    "kupiec_christoffersen_zero_cell_and_unidentified_transition_handling"
+  ]
+}

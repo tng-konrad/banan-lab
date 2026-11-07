@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "executed_code_cells": 25,
+  "shared_sections": 9,
+  "exact_inline_export_matches": 13,
+  "calibration_caches_verified": 7,
+  "total_pivotal_draws_verified": 35000,
+  "baseline_holm_slots": 9,
+  "scored_forecast_dates_per_series": 4253,
+  "primary_contrast_recomputed_independently": true,
+  "holm_pvalues_recomputed_independently": true,
+  "raw_source_and_evidence_hashes_verified": true,
+  "historical_package_archived": true,
+  "all_imports_in_single_cell": true,
+  "seo_characters": 142,
+  "fresh_kernel": {
+    "status": "passed",
+    "fresh_kernel": true,
+    "mode": "replay",
+    "isolated_directory": "/var/folders/p7/1x2749b14hj0xrrrwm84gh8m0000gn/T/trick-of-the-tail-portable-kxkjdu6o",
+    "python": "/Users/kbanachewicz/Documents/banan-lab/trick-of-the-tail/.venv/bin/python",
+    "network_blocked": true,
+    "arch_fitting_blocked": true,
+    "calibration_and_study_generation_blocked": true,
+    "estimators_and_numpy_filter_recursions_verified": true,
+    "tolerances": {
+      "interior_rtol": 1e-09,
+      "interior_atol": 1e-11,
+      "filter_recursion_rtol": 1e-10,
+      "filter_recursion_atol": 1e-10
+    },
+    "source_run": "runs/20261107T155047630280+0100",
+    "inline_png_assets": 13,
+    "executed_code_cells": 25,
+    "execution_seconds": 23.811113665928133,
+    "statement": "Fresh-kernel acceptance recomputes interior estimators, NumPy filter recursions, Holm p-values, quantile losses, coverage tests and block bootstraps from saved evidence without network, optimizer fitting or synthetic study generation."
+  },
+  "visual_qa": "all 13 single-panel PNGs visually inspected and hash-bound in visual-qa.json"
+}

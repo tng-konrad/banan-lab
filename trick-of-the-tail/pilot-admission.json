@@ -1,0 +1,40 @@
+{
+  "status": "admitted",
+  "pilot_cal_7x20_seconds": 0.48540237499400973,
+  "pilot_prefix_filter_seconds": 0.20338004094082862,
+  "pilot_forecast_100_seconds": 0.00406083301641047,
+  "projected_calibration_seconds": 121.35059374850243,
+  "projected_filter_seconds": 0.8207548671274656,
+  "projected_forecast_seconds": 1.0362433691276238,
+  "projected_total_with_3x_safety_and_60s_reserve": 429.6227759542725,
+  "compute_budget_seconds": 1800,
+  "rss_observed_bytes": 246415360,
+  "rss_limit_bytes": 4294967296,
+  "prefix_filter_diagnostics": {
+    "EUR": {
+      "garch_persistence": 0.999671018377572,
+      "garch_nu": 10.628469458557234,
+      "garch_max_vol_diff": 4.440892098500626e-16,
+      "gjr_persistence": 0.999541859969648,
+      "gjr_nu": 10.666535636251414,
+      "gjr_max_vol_diff": 4.440892098500626e-16
+    },
+    "GBP": {
+      "garch_persistence": 0.9919842136264257,
+      "garch_nu": 11.025757800735434,
+      "garch_max_vol_diff": 4.440892098500626e-16,
+      "gjr_persistence": 0.9892263568362208,
+      "gjr_nu": 11.336689815172475,
+      "gjr_max_vol_diff": 4.440892098500626e-16
+    },
+    "JPY": {
+      "garch_persistence": 0.9833257833114769,
+      "garch_nu": 6.60109290567766,
+      "garch_max_vol_diff": 4.440892098500626e-16,
+      "gjr_persistence": 0.9804616655156336,
+      "gjr_nu": 6.753649197282479,
+      "gjr_max_vol_diff": 4.440892098500626e-16
+    }
+  },
+  "note": "Pilot touches <=2008-12-31 prefix and phase-10 synthetic Pareto draws only; zero 2009-2025 observations inspected before freeze."
+}
