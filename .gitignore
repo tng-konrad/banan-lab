@@ -222,7 +222,7 @@ data/stair/hf-qwen-cache/
 requirements-stair-qwen.in
 
 # Keep trick-of-the-tail self-contained in the repo (~9.5 MB), excluding local venv & archives
-!trick-of-the-tail/runs/
+trick-of-the-tail/runs/
 !trick-of-the-tail/runs/**
 !trick-of-the-tail/scripts/
 !trick-of-the-tail/scripts/**
