@@ -221,12 +221,10 @@ data/stair/qwen35_4b_model/
 data/stair/hf-qwen-cache/
 requirements-stair-qwen.in
 
-# Keep trick-of-the-tail self-contained in the repo (~9.5 MB), excluding local venv & archives
+# Keep trick-of-the-tail self-contained in the repo, excluding local venv, runs & archives
 trick-of-the-tail/runs/
-!trick-of-the-tail/runs/**
 !trick-of-the-tail/scripts/
 !trick-of-the-tail/scripts/**
 !trick-of-the-tail/**/*.md
 trick-of-the-tail/archive/
 trick-of-the-tail/render-archive/
-trick-of-the-tail/runs/20261107T155047630280+0100/
