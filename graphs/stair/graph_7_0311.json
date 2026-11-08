@@ -1,0 +1,74 @@
+[
+  {
+    "bin": "0",
+    "method": "D",
+    "candidate_documents": 17,
+    "evaluated_documents": 8,
+    "queries": 10,
+    "query_weighted_r1": 0.0,
+    "macro_document_r1": 0.0
+  },
+  {
+    "bin": "0",
+    "method": "F",
+    "candidate_documents": 17,
+    "evaluated_documents": 8,
+    "queries": 10,
+    "query_weighted_r1": 0.2,
+    "macro_document_r1": 0.25
+  },
+  {
+    "bin": "1–2",
+    "method": "D",
+    "candidate_documents": 33,
+    "evaluated_documents": 20,
+    "queries": 33,
+    "query_weighted_r1": 0.0,
+    "macro_document_r1": 0.0
+  },
+  {
+    "bin": "1–2",
+    "method": "F",
+    "candidate_documents": 33,
+    "evaluated_documents": 20,
+    "queries": 33,
+    "query_weighted_r1": 0.15151515151515152,
+    "macro_document_r1": 0.11666666666666665
+  },
+  {
+    "bin": "3–5",
+    "method": "D",
+    "candidate_documents": 26,
+    "evaluated_documents": 15,
+    "queries": 31,
+    "query_weighted_r1": 0.0,
+    "macro_document_r1": 0.0
+  },
+  {
+    "bin": "3–5",
+    "method": "F",
+    "candidate_documents": 26,
+    "evaluated_documents": 15,
+    "queries": 31,
+    "query_weighted_r1": 0.06451612903225806,
+    "macro_document_r1": 0.13333333333333333
+  },
+  {
+    "bin": "6+",
+    "method": "D",
+    "candidate_documents": 10,
+    "evaluated_documents": 9,
+    "queries": 46,
+    "query_weighted_r1": 0.15217391304347827,
+    "macro_document_r1": 0.17037037037037037
+  },
+  {
+    "bin": "6+",
+    "method": "F",
+    "candidate_documents": 10,
+    "evaluated_documents": 9,
+    "queries": 46,
+    "query_weighted_r1": 0.32608695652173914,
+    "macro_document_r1": 0.32314814814814813
+  }
+]

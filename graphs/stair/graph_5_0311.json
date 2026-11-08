@@ -1,0 +1,15 @@
+{
+  "difference_pp": 14.166666666666666,
+  "ci95_pp": [
+    3.669724770642202,
+    23.810439560439544
+  ],
+  "gains": 20,
+  "losses": 3,
+  "both_right": 4,
+  "both_wrong": 93,
+  "queries": 120,
+  "document_clusters": 52,
+  "unstable_small_support": false,
+  "interval": "95% percentile paired released-document-cluster bootstrap; query weighted; conditional on one book and seed"
+}

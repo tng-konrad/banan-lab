@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "fresh_kernel": true,
+  "independent_directory": "/var/folders/p7/1x2749b14hj0xrrrwm84gh8m0000gn/T/seriescv-portable-oo3k3kmw",
+  "python": "/Users/kbanachewicz/Documents/banan-lab/.venv-stair/bin/python",
+  "mode": "replay",
+  "network_blocked": true,
+  "fitting_blocked": true,
+  "images": 8,
+  "code_cells": 19,
+  "execution_seconds": 14.465691208955832,
+  "source_run": "runs/20261106T225315732443+0100",
+  "same_named_exports_archived": true,
+  "statement": "Fresh-kernel replay acceptance; not a second live training run"
+}

@@ -1,0 +1,95 @@
+{
+  "source_run": "anchor-20261106T160836172708Z",
+  "assets": [
+    {
+      "number": 1,
+      "filename": "graph_1_0311.png",
+      "source_run": "anchor-20261106T160836172708Z",
+      "sha256": "22e17fbf4e7adb22f1f962254e4c15d57ec048f13b3820016d5cd90c8ed44299",
+      "caption": "The original source-leaf assumption failed; v4 retains 86 released documents as verified title anchors.",
+      "reading": "The tree represents source-derived anchor paths, not a partition of the bodies. The nine positive boundary cases remain evidence.",
+      "alt_text": "The original source-leaf assumption failed; v4 retains 86 released documents as verified title anchors."
+    },
+    {
+      "number": 2,
+      "filename": "post_2_0311.png",
+      "source_run": "anchor-20261106T160836172708Z",
+      "sha256": "b4ab23b8918d6e12c71ae3e0a4c57e27e27ebab83b62bd39c6ead82eaccf2f86",
+      "caption": "All methods retrieve the same unchanged 86 documents; C/D/E/F share a tokenizer and valid-label trie.",
+      "reading": "F–D is the primary contrast. F–E adds ancestor semantics and organization; it does not isolate topology.",
+      "alt_text": "All methods retrieve the same unchanged 86 documents; C/D/E/F share a tokenizer and valid-label trie."
+    },
+    {
+      "number": 3,
+      "filename": "graph_3_0311.png",
+      "source_run": "anchor-20261106T160836172708Z",
+      "sha256": "d3277446720ad97f71d5dd16b913bed93f0bd8a041515c04a18340d1aa9866b6",
+      "caption": "Training/dev curves for D/E/F. Rings indicate the earliest best development checkpoint within each arm.",
+      "reading": "Lower loss is an optimization diagnostic. It does not establish full convergence, seed stability or held-out benefit.",
+      "alt_text": "Training/dev curves for D/E/F. Rings indicate the earliest best development checkpoint within each arm."
+    },
+    {
+      "number": 4,
+      "filename": "graph_4_0311.png",
+      "source_run": "anchor-20261106T160836172708Z",
+      "sha256": "d3a0af68160dd577daa61a9a415367ce194b6fd6d4d7de616339d05f097400cd",
+      "caption": "Held-out label metrics for all methods and both neural decode modes, with identical query membership.",
+      "reading": "Invalid outputs keep their rank and receive zero relevance; constrained legality alone is not accuracy.",
+      "alt_text": "Held-out label metrics for all methods and both neural decode modes, with identical query membership."
+    },
+    {
+      "number": 5,
+      "filename": "graph_5_0311.png",
+      "source_run": "anchor-20261106T160836172708Z",
+      "sha256": "eafe36c518ca1ab9f81a334783d288e1e34975dcbc55f0a8481677b1a0d6d2d5",
+      "caption": "Primary paired constrained F–D Recall@1 difference with a 95% percentile document-cluster bootstrap interval.",
+      "reading": "The interval is conditional on this book, sample and seed. It is not a cross-book or training-seed uncertainty estimate.",
+      "alt_text": "Primary paired constrained F–D Recall@1 difference with a 95% percentile document-cluster bootstrap interval."
+    },
+    {
+      "number": 6,
+      "filename": "graph_6_0311.png",
+      "source_run": "anchor-20261106T160836172708Z",
+      "sha256": "b08502cc2b84d184c2b6962f6b7efd70c2614954e48ca008b41d3f559453d74e",
+      "caption": "Unconstrained invalid-label rates and constrained correct/wrong-valid outcomes on the same queries.",
+      "reading": "The trie enforces constrained validity; any reduction in unconstrained invalidity is a separate learned-adherence observation.",
+      "alt_text": "Unconstrained invalid-label rates and constrained correct/wrong-valid outcomes on the same queries."
+    },
+    {
+      "number": 7,
+      "filename": "graph_7_0311.png",
+      "source_run": "anchor-20261106T160836172708Z",
+      "sha256": "59e3fa6a0293e0232b66a73902488d8495081807b30293b27c7cdbad41e573e5",
+      "caption": "Training-support bins for constrained D/F, including query and document denominators; empty bins are not zero accuracy.",
+      "reading": "Support is observational. Zero-training labels still occur in the complete catalogue and are not unseen-book targets.",
+      "alt_text": "Training-support bins for constrained D/F, including query and document denominators; empty bins are not zero accuracy."
+    },
+    {
+      "number": 8,
+      "filename": "post_8_0311.png",
+      "source_run": "anchor-20261106T160836172708Z",
+      "sha256": "6c958e0998f4c1848bc2c550cd45092fc96bbe4e83c2307864c76eb2a966ca9d",
+      "caption": "Lowest-qualified-ID gain, loss and both-wrong cases; lowest-ID unconstrained invalid output, with method-ID tie breaking.",
+      "reading": "Display excerpts are shortened for layout only. Complete questions, target strings, outputs and IDs are in the JSON/CSV sidecars.",
+      "alt_text": "Lowest-qualified-ID gain, loss and both-wrong cases; lowest-ID unconstrained invalid output, with method-ID tie breaking."
+    },
+    {
+      "number": 9,
+      "filename": "graph_9_0311.png",
+      "source_run": "anchor-20261106T160836172708Z",
+      "sha256": "5b157590652ba4f3373d6d3a54282cc2eaa7abb56e93bb84677b4e336d15587b",
+      "caption": "Recorded automated-stage times and sampled host-memory counters; model fitting and held-out inference are distinct costs.",
+      "reading": "Preparation/probes/authoring are additional and not fully metered here. Replay is not fresh inference speed. Shared counters are not additive VRAM pools.",
+      "alt_text": "Recorded automated-stage times and sampled host-memory counters; model fitting and held-out inference are distinct costs."
+    },
+    {
+      "number": 10,
+      "filename": "post_10_0311.png",
+      "source_run": "anchor-20261106T160836172708Z",
+      "sha256": "7f74d7deb37eb0fa24b49c76288c63cc4f39aec04c10befc4815872407e7d813",
+      "caption": "Paper/local differences, the original source-boundary failure and unresolved generalization/runtime limits.",
+      "reading": "Any positive result remains a local released-label finding. The decision changed the interpretation; it did not clean or repartition the bodies.",
+      "alt_text": "Paper/local differences, the original source-boundary failure and unresolved generalization/runtime limits."
+    }
+  ]
+}

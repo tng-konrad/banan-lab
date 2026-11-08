@@ -1,0 +1,8 @@
+Item,Local scope / limit
+Retrieval unit,86 unchanged released document labels; source-heading anchors may have multi-section bodies.
+Original failure,Nine merged-boundary cases retained; original v3 stop and source excerpts preserved.
+Backbone,Full FLAN-T5-small tuning; not Mistral/LoRA replication.
+Scope,"One book, one seed; generated questions; paragraph independence unverified."
+Uncertainty,Conditional document-cluster interval; no cross-book or seed claim.
+Input length,"Complete ToC prompts reach 1,020 tokens; tokenizer metadata says 512. Runtime admission is not a long-context quality guarantee."
+Hardware,cpu float32; strict MPS training admission failed on deterministic embedding backward.

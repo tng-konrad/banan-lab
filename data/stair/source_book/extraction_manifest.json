@@ -1,0 +1,6 @@
+{
+  "pdf_sha256": "ddc74629d85972a05bc362c0e3f3a23e678b4869c8b97a512aba00bf1a220174",
+  "text_sha256": "fbf42087970c36648d2568ddb7c9165ea78ce6b4f3e6d5f627aad31676857ddc",
+  "extractor": "pdftotext version 25.11.0",
+  "command": "pdftotext -layout principles-of-financial-accounting.pdf book.txt"
+}

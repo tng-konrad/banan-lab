@@ -1,0 +1,5 @@
+{
+  "status": "passed",
+  "test": "Full deterministic selection rerun unchanged after perturbing all final out-set targets on excluded pilot IDs",
+  "path": "runs/leakage-check-20261106T225248207759+0100"
+}

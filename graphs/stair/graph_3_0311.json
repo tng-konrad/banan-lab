@@ -1,0 +1,134 @@
+[
+  {
+    "method": "D",
+    "epoch": 1,
+    "optimizer_updates": 32,
+    "train_loss": 4.006597805768251,
+    "dev_r1": 0.020833333333333332,
+    "training_seconds": 8.887019374989904,
+    "development_and_save_seconds": 1.3061560000060126,
+    "checkpoint": "checkpoints/D/epoch-1",
+    "checkpoint_sha256": "9277ef1b2ddcf4b3db4757ddfa0a3381b8f9b08056b378e62cf8d4d1a151ae87"
+  },
+  {
+    "method": "D",
+    "epoch": 2,
+    "optimizer_updates": 64,
+    "train_loss": 2.862320182379335,
+    "dev_r1": 0.0625,
+    "training_seconds": 8.780128791928291,
+    "development_and_save_seconds": 1.7020762920146808,
+    "checkpoint": "checkpoints/D/epoch-2",
+    "checkpoint_sha256": "911ce69ba2ee2601aecbf58100d588e636af2e38647e1402a1cd77f06b0bf17f"
+  },
+  {
+    "method": "D",
+    "epoch": 3,
+    "optimizer_updates": 96,
+    "train_loss": 2.3260326182935387,
+    "dev_r1": 0.10416666666666667,
+    "training_seconds": 8.763827624963596,
+    "development_and_save_seconds": 2.0650874170241877,
+    "checkpoint": "checkpoints/D/epoch-3",
+    "checkpoint_sha256": "058a9b6038d00cdb767f541db96bc8a4a09cb1c71c7bad36f9494a1a9f272427"
+  },
+  {
+    "method": "D",
+    "epoch": 4,
+    "optimizer_updates": 128,
+    "train_loss": 1.9347013542428613,
+    "dev_r1": 0.14583333333333334,
+    "training_seconds": 8.783994666999206,
+    "development_and_save_seconds": 1.6372598339803517,
+    "checkpoint": "checkpoints/D/epoch-4",
+    "checkpoint_sha256": "cb945917c8470b85372e079db62c9f03a6bb8103847bbcd57a215d4b1b052903"
+  },
+  {
+    "method": "E",
+    "epoch": 1,
+    "optimizer_updates": 32,
+    "train_loss": 1.2283830572851002,
+    "dev_r1": 0.20833333333333334,
+    "training_seconds": 53.18698604195379,
+    "development_and_save_seconds": 7.871153375017457,
+    "checkpoint": "checkpoints/E/epoch-1",
+    "checkpoint_sha256": "dd6a3b98c337435e5abafc22cb56aa2000ff1267f5f74d454a90a61822d686ba"
+  },
+  {
+    "method": "E",
+    "epoch": 2,
+    "optimizer_updates": 64,
+    "train_loss": 0.7122362495210837,
+    "dev_r1": 0.25,
+    "training_seconds": 52.7459435419878,
+    "development_and_save_seconds": 6.732527209096588,
+    "checkpoint": "checkpoints/E/epoch-2",
+    "checkpoint_sha256": "f8b5dbebabccf9161dca88bfb5a0098b79e4b2df7130e0fb862d764409f5a8a8"
+  },
+  {
+    "method": "E",
+    "epoch": 3,
+    "optimizer_updates": 96,
+    "train_loss": 0.5921371578806429,
+    "dev_r1": 0.20833333333333334,
+    "training_seconds": 52.54517974995542,
+    "development_and_save_seconds": 6.698111290927045,
+    "checkpoint": "checkpoints/E/epoch-3",
+    "checkpoint_sha256": "c232318a9719fa5eaffb6bad2c277b8f0f617a126ee0d6962b27a9990f79abf4"
+  },
+  {
+    "method": "E",
+    "epoch": 4,
+    "optimizer_updates": 128,
+    "train_loss": 0.4904170419831644,
+    "dev_r1": 0.25,
+    "training_seconds": 52.32778116699774,
+    "development_and_save_seconds": 6.432952041970566,
+    "checkpoint": "checkpoints/E/epoch-4",
+    "checkpoint_sha256": "4165809c8cfed0dca8a82be9b740e3207e34356935ebfb9a1f3ac4de4732eeea"
+  },
+  {
+    "method": "F",
+    "epoch": 1,
+    "optimizer_updates": 32,
+    "train_loss": 1.31234342668904,
+    "dev_r1": 0.22916666666666666,
+    "training_seconds": 77.72004312509671,
+    "development_and_save_seconds": 9.13236875005532,
+    "checkpoint": "checkpoints/F/epoch-1",
+    "checkpoint_sha256": "738fa5da098fd7949a9978d83efbcd9e4ca3550bc4259eb7bef4df8518d47e2b"
+  },
+  {
+    "method": "F",
+    "epoch": 2,
+    "optimizer_updates": 64,
+    "train_loss": 0.7084606512653409,
+    "dev_r1": 0.20833333333333334,
+    "training_seconds": 77.2479653749615,
+    "development_and_save_seconds": 8.722455915994942,
+    "checkpoint": "checkpoints/F/epoch-2",
+    "checkpoint_sha256": "64d3d514e3442725e079092a7ff675bc22ee116a34ad7bb6aa126f5ec2eefed2"
+  },
+  {
+    "method": "F",
+    "epoch": 3,
+    "optimizer_updates": 96,
+    "train_loss": 0.5654948401206639,
+    "dev_r1": 0.22916666666666666,
+    "training_seconds": 77.40861929103266,
+    "development_and_save_seconds": 8.205678374972194,
+    "checkpoint": "checkpoints/F/epoch-3",
+    "checkpoint_sha256": "06e3b14f2a555dac6f6f43aaac330326c6f2981210278fc28a9ce20d35f0ec9b"
+  },
+  {
+    "method": "F",
+    "epoch": 4,
+    "optimizer_updates": 128,
+    "train_loss": 0.5210829452989856,
+    "dev_r1": 0.20833333333333334,
+    "training_seconds": 76.97670258302242,
+    "development_and_save_seconds": 7.18859266594518,
+    "checkpoint": "checkpoints/F/epoch-4",
+    "checkpoint_sha256": "17f1cf17b1a041f2150753398c0264d919af2cd40ffb19bbe89ed5e136da971a"
+  }
+]

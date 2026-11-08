@@ -1,0 +1,38 @@
+[
+  {
+    "ID": "A",
+    "Method": "BM25 content",
+    "Inference input": "Title + complete body",
+    "Local supervision": "None"
+  },
+  {
+    "ID": "B",
+    "Method": "BM25 titles",
+    "Inference input": "All titles",
+    "Local supervision": "None"
+  },
+  {
+    "ID": "C",
+    "Method": "Untrained ToC",
+    "Inference input": "Hierarchy + query",
+    "Local supervision": "None"
+  },
+  {
+    "ID": "D",
+    "Method": "Trained no-ToC",
+    "Inference input": "Book + query",
+    "Local supervision": "Query → title"
+  },
+  {
+    "ID": "E",
+    "Method": "Trained flat",
+    "Inference input": "All titles + query",
+    "Local supervision": "Query → title"
+  },
+  {
+    "ID": "F",
+    "Method": "Trained ToC",
+    "Inference input": "Hierarchy + query",
+    "Local supervision": "Query → title"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "Item": "Retrieval unit",
+    "Local scope / limit": "86 unchanged released document labels; source-heading anchors may have multi-section bodies."
+  },
+  {
+    "Item": "Original failure",
+    "Local scope / limit": "Nine merged-boundary cases retained; original v3 stop and source excerpts preserved."
+  },
+  {
+    "Item": "Backbone",
+    "Local scope / limit": "Full FLAN-T5-small tuning; not Mistral/LoRA replication."
+  },
+  {
+    "Item": "Scope",
+    "Local scope / limit": "One book, one seed; generated questions; paragraph independence unverified."
+  },
+  {
+    "Item": "Uncertainty",
+    "Local scope / limit": "Conditional document-cluster interval; no cross-book or seed claim."
+  },
+  {
+    "Item": "Input length",
+    "Local scope / limit": "Complete ToC prompts reach 1,020 tokens; tokenizer metadata says 512. Runtime admission is not a long-context quality guarantee."
+  },
+  {
+    "Item": "Hardware",
+    "Local scope / limit": "cpu float32; strict MPS training admission failed on deterministic embedding backward."
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "timing": {
+    "automated_seconds_before_exports": 1254.3103808329906,
+    "pilot_seconds": 251.47102233301848,
+    "training_and_development_seconds": 675.6288624589797,
+    "preparation_and_authoring_excluded_and_reported_separately": true
+  },
+  "peak_sampled_rss_gib": 8.058883666992188,
+  "min_sampled_available_gib": 73.0799560546875
+}
