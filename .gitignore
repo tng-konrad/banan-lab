@@ -229,3 +229,4 @@ requirements-stair-qwen.in
 !trick-of-the-tail/**/*.md
 trick-of-the-tail/archive/
 trick-of-the-tail/render-archive/
+trick-of-the-tail/runs/
