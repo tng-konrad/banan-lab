@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "reviewed_at": "2026-11-09T09:52:12.339228+00:00",
+  "assets": [
+    {
+      "file": "stair_table_01.png",
+      "sha256": "cede2008b17738ed152b6f35758251fb186b4895ccbc61d0b3a5db52460f8f42"
+    },
+    {
+      "file": "stair_table_02.png",
+      "sha256": "171722fa08fbb57fcc32bb53a07915f1db55eb20447e5b781fd042e60015c5d8"
+    },
+    {
+      "file": "stair_table_03.png",
+      "sha256": "f50d3d336269419acff7ce9b3dc1c35f3451cf90ff7d3ddf1efe0c8aa82f5387"
+    },
+    {
+      "file": "stair_table_04.png",
+      "sha256": "74efff4b149b482023136d2f339c196df651ccc52a4945906cd31817b5bcda47"
+    },
+    {
+      "file": "stair_table_05.png",
+      "sha256": "3a9bb8769360605b16adf5255f1df2649987a6e113c8470cc5abaf56494114e9"
+    },
+    {
+      "file": "stair_graph_06.png",
+      "sha256": "63d0c1f3456a9f7fc8918508d3712a05a9b5c7003a3fdd820e05e9f9139d755e"
+    },
+    {
+      "file": "stair_table_07.png",
+      "sha256": "128b7b08becdbd77725e0e50dd53965ae84f2180561a94e6edfef701ac1d6a43"
+    },
+    {
+      "file": "stair_table_08.png",
+      "sha256": "5c74107140e8287c2541a42ea04f10911e977ae9edecf08e575d3c05bdb11bca"
+    },
+    {
+      "file": "stair_graph_09.png",
+      "sha256": "676201cc926751acd3a71807aa2bc3ed5fafc879fab76acaa7d8563827199cb3"
+    },
+    {
+      "file": "stair_table_10.png",
+      "sha256": "30cf3f62df1a981f5cdb319f01518621b55ff5096f335206e12649880fd4047c"
+    },
+    {
+      "file": "stair_table_11.png",
+      "sha256": "fe53387e9b8bb4eb19667958d04fcb95d6251fe200e51cf69399bbf17bc49e1c"
+    },
+    {
+      "file": "stair_table_12.png",
+      "sha256": "27a70163da116ba49bd4bf3e85f6909c6b70989761744f03e4ff2792b2e4f12a"
+    },
+    {
+      "file": "stair_table_13.png",
+      "sha256": "29c460d57aea16298339be1e0143576f8d8a8fee7da74d422102f97cccac57f3"
+    },
+    {
+      "file": "stair_table_14.png",
+      "sha256": "e440a120d55abdde49f459ec60f0724258682e9f3a8d1712c544a952804efd92"
+    },
+    {
+      "file": "stair_table_15.png",
+      "sha256": "ef7911c6eaadd59915ac8c816b6b223674473439e9928f5fd6c263d087c6bddd"
+    }
+  ],
+  "tables_reviewed": 13,
+  "graphs_reviewed": 2,
+  "notes": "All tables visually inspected for readable labels, headers, values, clipping and overlap. Captured graphs visually reviewed and byte-identical to sealed sources. Post numeric claims, limits and 15 ordered placeholders reviewed."
+}

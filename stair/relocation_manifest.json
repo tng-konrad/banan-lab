@@ -1,0 +1,584 @@
+{
+  "status": "moved",
+  "original_root": "/Users/kbanachewicz/Documents/banan-lab",
+  "project_root": "/Users/kbanachewicz/Documents/banan-lab/stair",
+  "moves": [
+    {
+      "source": ".venv-stair",
+      "destination": "stair/.venv-stair",
+      "directory": true
+    },
+    {
+      "source": ".venv-stair-qwen",
+      "destination": "stair/.venv-stair-qwen",
+      "directory": true
+    },
+    {
+      "source": "data/stair",
+      "destination": "stair/data/stair",
+      "directory": true
+    },
+    {
+      "source": "docs/stair-improvement-pilot-report.md",
+      "destination": "stair/docs/stair-improvement-pilot-report.md",
+      "directory": false
+    },
+    {
+      "source": "docs/stair-local-demo.md",
+      "destination": "stair/docs/stair-local-demo.md",
+      "directory": false
+    },
+    {
+      "source": "docs/stair-model-comparison-notebook.md",
+      "destination": "stair/docs/stair-model-comparison-notebook.md",
+      "directory": false
+    },
+    {
+      "source": "docs/stair-qwen-mps-pilot.md",
+      "destination": "stair/docs/stair-qwen-mps-pilot.md",
+      "directory": false
+    },
+    {
+      "source": "docs/stair-qwen35-2b-pilot.md",
+      "destination": "stair/docs/stair-qwen35-2b-pilot.md",
+      "directory": false
+    },
+    {
+      "source": "docs/stair-qwen35-4b-pilot.md",
+      "destination": "stair/docs/stair-qwen35-4b-pilot.md",
+      "directory": false
+    },
+    {
+      "source": "docs/stair-section-boundary-decision.md",
+      "destination": "stair/docs/stair-section-boundary-decision.md",
+      "directory": false
+    },
+    {
+      "source": "graphs/stair",
+      "destination": "stair/graphs/stair",
+      "directory": true
+    },
+    {
+      "source": "notebook_src/__pycache__/stair_improvement.cpython-312.pyc",
+      "destination": "stair/notebook_src/__pycache__/stair_improvement.cpython-312.pyc",
+      "directory": false
+    },
+    {
+      "source": "notebook_src/__pycache__/stair_qwen_2b.cpython-312.pyc",
+      "destination": "stair/notebook_src/__pycache__/stair_qwen_2b.cpython-312.pyc",
+      "directory": false
+    },
+    {
+      "source": "notebook_src/__pycache__/stair_qwen_4b.cpython-312.pyc",
+      "destination": "stair/notebook_src/__pycache__/stair_qwen_4b.cpython-312.pyc",
+      "directory": false
+    },
+    {
+      "source": "notebook_src/__pycache__/stair_results_report.cpython-312.pyc",
+      "destination": "stair/notebook_src/__pycache__/stair_results_report.cpython-312.pyc",
+      "directory": false
+    },
+    {
+      "source": "notebook_src/stair",
+      "destination": "stair/notebook_src/stair",
+      "directory": true
+    },
+    {
+      "source": "notebook_src/stair_improvement.py",
+      "destination": "stair/notebook_src/stair_improvement.py",
+      "directory": false
+    },
+    {
+      "source": "notebook_src/stair_qwen_2b.py",
+      "destination": "stair/notebook_src/stair_qwen_2b.py",
+      "directory": false
+    },
+    {
+      "source": "notebook_src/stair_qwen_4b.py",
+      "destination": "stair/notebook_src/stair_qwen_4b.py",
+      "directory": false
+    },
+    {
+      "source": "notebook_src/stair_results_report.py",
+      "destination": "stair/notebook_src/stair_results_report.py",
+      "directory": false
+    },
+    {
+      "source": "papers/2609.03874v2.pdf",
+      "destination": "stair/papers/2609.03874v2.pdf",
+      "directory": false
+    },
+    {
+      "source": "plans/stair-improvement-pilot-plan.md",
+      "destination": "stair/plans/stair-improvement-pilot-plan.md",
+      "directory": false
+    },
+    {
+      "source": "plans/stair-improvement-pilot-review.md",
+      "destination": "stair/plans/stair-improvement-pilot-review.md",
+      "directory": false
+    },
+    {
+      "source": "plans/stair-notebook-plan.md",
+      "destination": "stair/plans/stair-notebook-plan.md",
+      "directory": false
+    },
+    {
+      "source": "plans/stair-plan-critic.md",
+      "destination": "stair/plans/stair-plan-critic.md",
+      "directory": false
+    },
+    {
+      "source": "plans/stair-post-plan-review.md",
+      "destination": "stair/plans/stair-post-plan-review.md",
+      "directory": false
+    },
+    {
+      "source": "plans/stair-qwen-mps-pilot.md",
+      "destination": "stair/plans/stair-qwen-mps-pilot.md",
+      "directory": false
+    },
+    {
+      "source": "plans/stair-qwen35-2b-assessment.md",
+      "destination": "stair/plans/stair-qwen35-2b-assessment.md",
+      "directory": false
+    },
+    {
+      "source": "plans/stair-qwen35-4b-assessment.md",
+      "destination": "stair/plans/stair-qwen35-4b-assessment.md",
+      "directory": false
+    },
+    {
+      "source": "requirements-stair-qwen.in",
+      "destination": "stair/requirements-stair-qwen.in",
+      "directory": false
+    },
+    {
+      "source": "requirements-stair-qwen.lock.txt",
+      "destination": "stair/requirements-stair-qwen.lock.txt",
+      "directory": false
+    },
+    {
+      "source": "requirements-stair-report.txt",
+      "destination": "stair/requirements-stair-report.txt",
+      "directory": false
+    },
+    {
+      "source": "requirements-stair.in",
+      "destination": "stair/requirements-stair.in",
+      "directory": false
+    },
+    {
+      "source": "requirements-stair.lock.txt",
+      "destination": "stair/requirements-stair.lock.txt",
+      "directory": false
+    },
+    {
+      "source": "runs/stair",
+      "destination": "stair/runs/stair",
+      "directory": true
+    },
+    {
+      "source": "scripts/__pycache__/analyze_stair_improvement.cpython-312.pyc",
+      "destination": "stair/scripts/__pycache__/analyze_stair_improvement.cpython-312.pyc",
+      "directory": false
+    },
+    {
+      "source": "scripts/__pycache__/analyze_stair_qwen_2b.cpython-312.pyc",
+      "destination": "stair/scripts/__pycache__/analyze_stair_qwen_2b.cpython-312.pyc",
+      "directory": false
+    },
+    {
+      "source": "scripts/__pycache__/analyze_stair_qwen_2b_pilot.cpython-312.pyc",
+      "destination": "stair/scripts/__pycache__/analyze_stair_qwen_2b_pilot.cpython-312.pyc",
+      "directory": false
+    },
+    {
+      "source": "scripts/__pycache__/analyze_stair_qwen_4b_pilot.cpython-312.pyc",
+      "destination": "stair/scripts/__pycache__/analyze_stair_qwen_4b_pilot.cpython-312.pyc",
+      "directory": false
+    },
+    {
+      "source": "scripts/__pycache__/pilot_stair_qwen.cpython-312.pyc",
+      "destination": "stair/scripts/__pycache__/pilot_stair_qwen.cpython-312.pyc",
+      "directory": false
+    },
+    {
+      "source": "scripts/__pycache__/prepare_stair_qwen.cpython-312.pyc",
+      "destination": "stair/scripts/__pycache__/prepare_stair_qwen.cpython-312.pyc",
+      "directory": false
+    },
+    {
+      "source": "scripts/__pycache__/recover_stair_improvement.cpython-312.pyc",
+      "destination": "stair/scripts/__pycache__/recover_stair_improvement.cpython-312.pyc",
+      "directory": false
+    },
+    {
+      "source": "scripts/__pycache__/run_stair_improvement.cpython-312.pyc",
+      "destination": "stair/scripts/__pycache__/run_stair_improvement.cpython-312.pyc",
+      "directory": false
+    },
+    {
+      "source": "scripts/__pycache__/run_stair_qwen_2b.cpython-312.pyc",
+      "destination": "stair/scripts/__pycache__/run_stair_qwen_2b.cpython-312.pyc",
+      "directory": false
+    },
+    {
+      "source": "scripts/__pycache__/run_stair_qwen_2b_flan_baseline.cpython-312.pyc",
+      "destination": "stair/scripts/__pycache__/run_stair_qwen_2b_flan_baseline.cpython-312.pyc",
+      "directory": false
+    },
+    {
+      "source": "scripts/__pycache__/summarize_stair_qwen_pilot.cpython-312.pyc",
+      "destination": "stair/scripts/__pycache__/summarize_stair_qwen_pilot.cpython-312.pyc",
+      "directory": false
+    },
+    {
+      "source": "scripts/__pycache__/validate_stair_improvement.cpython-312.pyc",
+      "destination": "stair/scripts/__pycache__/validate_stair_improvement.cpython-312.pyc",
+      "directory": false
+    },
+    {
+      "source": "scripts/__pycache__/validate_stair_qwen_2b_pilot.cpython-312.pyc",
+      "destination": "stair/scripts/__pycache__/validate_stair_qwen_2b_pilot.cpython-312.pyc",
+      "directory": false
+    },
+    {
+      "source": "scripts/analyze_stair_improvement.py",
+      "destination": "stair/scripts/analyze_stair_improvement.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/analyze_stair_qwen_2b.py",
+      "destination": "stair/scripts/analyze_stair_qwen_2b.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/analyze_stair_qwen_2b_pilot.py",
+      "destination": "stair/scripts/analyze_stair_qwen_2b_pilot.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/analyze_stair_qwen_4b.py",
+      "destination": "stair/scripts/analyze_stair_qwen_4b.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/analyze_stair_qwen_4b_pilot.py",
+      "destination": "stair/scripts/analyze_stair_qwen_4b_pilot.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/build_stair_notebook.py",
+      "destination": "stair/scripts/build_stair_notebook.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/build_stair_results_notebook.py",
+      "destination": "stair/scripts/build_stair_results_notebook.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/execute_stair_live.py",
+      "destination": "stair/scripts/execute_stair_live.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/execute_stair_notebook.py",
+      "destination": "stair/scripts/execute_stair_notebook.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/execute_stair_results_notebook.py",
+      "destination": "stair/scripts/execute_stair_results_notebook.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/package_stair.py",
+      "destination": "stair/scripts/package_stair.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/pilot_stair_qwen.py",
+      "destination": "stair/scripts/pilot_stair_qwen.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/preflight_stair.py",
+      "destination": "stair/scripts/preflight_stair.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/prepare_stair_model.py",
+      "destination": "stair/scripts/prepare_stair_model.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/prepare_stair_qwen.py",
+      "destination": "stair/scripts/prepare_stair_qwen.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/prepare_stair_qwen_2b.py",
+      "destination": "stair/scripts/prepare_stair_qwen_2b.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/prepare_stair_qwen_4b.py",
+      "destination": "stair/scripts/prepare_stair_qwen_4b.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/probe_stair_decoder.py",
+      "destination": "stair/scripts/probe_stair_decoder.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/recover_stair_improvement.py",
+      "destination": "stair/scripts/recover_stair_improvement.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/recover_stair_qwen_4b.py",
+      "destination": "stair/scripts/recover_stair_qwen_4b.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/run_stair.py",
+      "destination": "stair/scripts/run_stair.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/run_stair_improvement.py",
+      "destination": "stair/scripts/run_stair_improvement.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/run_stair_qwen_2b.py",
+      "destination": "stair/scripts/run_stair_qwen_2b.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/run_stair_qwen_2b_flan_baseline.py",
+      "destination": "stair/scripts/run_stair_qwen_2b_flan_baseline.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/run_stair_qwen_4b.py",
+      "destination": "stair/scripts/run_stair_qwen_4b.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/stair_qwen_2b_status.py",
+      "destination": "stair/scripts/stair_qwen_2b_status.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/stair_qwen_4b_status.py",
+      "destination": "stair/scripts/stair_qwen_4b_status.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/summarize_stair_qwen_pilot.py",
+      "destination": "stair/scripts/summarize_stair_qwen_pilot.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/validate_stair_improvement.py",
+      "destination": "stair/scripts/validate_stair_improvement.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/validate_stair_qwen_2b_pilot.py",
+      "destination": "stair/scripts/validate_stair_qwen_2b_pilot.py",
+      "directory": false
+    },
+    {
+      "source": "scripts/validate_stair_qwen_4b_pilot.py",
+      "destination": "stair/scripts/validate_stair_qwen_4b_pilot.py",
+      "directory": false
+    },
+    {
+      "source": "stair-build-report.md",
+      "destination": "stair/stair-build-report.md",
+      "directory": false
+    },
+    {
+      "source": "stair-local-demo-bundle.zip",
+      "destination": "stair/stair-local-demo-bundle.zip",
+      "directory": false
+    },
+    {
+      "source": "stair-post-plan.md",
+      "destination": "stair/stair-post-plan.md",
+      "directory": false
+    },
+    {
+      "source": "stair_local_demo.ipynb",
+      "destination": "stair/stair_local_demo.ipynb",
+      "directory": false
+    },
+    {
+      "source": "stair_model_comparison.ipynb",
+      "destination": "stair/stair_model_comparison.ipynb",
+      "directory": false
+    },
+    {
+      "source": "tests/__pycache__/test_stair_admission.cpython-312.pyc",
+      "destination": "stair/tests/__pycache__/test_stair_admission.cpython-312.pyc",
+      "directory": false
+    },
+    {
+      "source": "tests/__pycache__/test_stair_improvement.cpython-312.pyc",
+      "destination": "stair/tests/__pycache__/test_stair_improvement.cpython-312.pyc",
+      "directory": false
+    },
+    {
+      "source": "tests/__pycache__/test_stair_improvement_analysis.cpython-312.pyc",
+      "destination": "stair/tests/__pycache__/test_stair_improvement_analysis.cpython-312.pyc",
+      "directory": false
+    },
+    {
+      "source": "tests/__pycache__/test_stair_qwen_2b.cpython-312.pyc",
+      "destination": "stair/tests/__pycache__/test_stair_qwen_2b.cpython-312.pyc",
+      "directory": false
+    },
+    {
+      "source": "tests/__pycache__/test_stair_qwen_2b_analysis.cpython-312.pyc",
+      "destination": "stair/tests/__pycache__/test_stair_qwen_2b_analysis.cpython-312.pyc",
+      "directory": false
+    },
+    {
+      "source": "tests/__pycache__/test_stair_qwen_4b_analysis.cpython-312.pyc",
+      "destination": "stair/tests/__pycache__/test_stair_qwen_4b_analysis.cpython-312.pyc",
+      "directory": false
+    },
+    {
+      "source": "tests/__pycache__/test_stair_v4.cpython-312.pyc",
+      "destination": "stair/tests/__pycache__/test_stair_v4.cpython-312.pyc",
+      "directory": false
+    },
+    {
+      "source": "tests/stair_qwen_2b",
+      "destination": "stair/tests/stair_qwen_2b",
+      "directory": true
+    },
+    {
+      "source": "tests/stair_qwen_4b",
+      "destination": "stair/tests/stair_qwen_4b",
+      "directory": true
+    },
+    {
+      "source": "tests/test_stair_admission.py",
+      "destination": "stair/tests/test_stair_admission.py",
+      "directory": false
+    },
+    {
+      "source": "tests/test_stair_improvement.py",
+      "destination": "stair/tests/test_stair_improvement.py",
+      "directory": false
+    },
+    {
+      "source": "tests/test_stair_improvement_analysis.py",
+      "destination": "stair/tests/test_stair_improvement_analysis.py",
+      "directory": false
+    },
+    {
+      "source": "tests/test_stair_qwen_2b_analysis.py",
+      "destination": "stair/tests/test_stair_qwen_2b_analysis.py",
+      "directory": false
+    },
+    {
+      "source": "tests/test_stair_qwen_4b_analysis.py",
+      "destination": "stair/tests/test_stair_qwen_4b_analysis.py",
+      "directory": false
+    },
+    {
+      "source": "tests/test_stair_v4.py",
+      "destination": "stair/tests/test_stair_v4.py",
+      "directory": false
+    }
+  ],
+  "environment_launchers_repaired": [
+    ".venv-stair/bin/activate.bat",
+    ".venv-stair/bin/pyftsubset",
+    ".venv-stair/bin/jupyter-run",
+    ".venv-stair/bin/ttx",
+    ".venv-stair/bin/debugpy",
+    ".venv-stair/bin/ipython",
+    ".venv-stair/bin/transformers-cli",
+    ".venv-stair/bin/activate.fish",
+    ".venv-stair/bin/tiny-agents",
+    ".venv-stair/bin/isympy",
+    ".venv-stair/bin/torchrun",
+    ".venv-stair/bin/fonttools",
+    ".venv-stair/bin/idna",
+    ".venv-stair/bin/f2py",
+    ".venv-stair/bin/ipython3",
+    ".venv-stair/bin/httpx",
+    ".venv-stair/bin/transformers",
+    ".venv-stair/bin/jsonschema",
+    ".venv-stair/bin/tqdm",
+    ".venv-stair/bin/huggingface-cli",
+    ".venv-stair/bin/jupyter-troubleshoot",
+    ".venv-stair/bin/pygmentize",
+    ".venv-stair/bin/hf",
+    ".venv-stair/bin/jupyter-migrate",
+    ".venv-stair/bin/torchfrtrace",
+    ".venv-stair/bin/activate",
+    ".venv-stair/bin/activate.nu",
+    ".venv-stair/bin/normalizer",
+    ".venv-stair/bin/numpy-config",
+    ".venv-stair/bin/jupyter-trust",
+    ".venv-stair/bin/jupyter-kernelspec",
+    ".venv-stair/bin/jupyter-kernel",
+    ".venv-stair/bin/jupyter",
+    ".venv-stair/bin/debugpy-adapter",
+    ".venv-stair/bin/pyftmerge",
+    ".venv-stair/bin/jupyter-execute",
+    ".venv-stair/bin/activate.csh",
+    ".venv-stair-qwen/bin/activate.bat",
+    ".venv-stair-qwen/bin/accelerate",
+    ".venv-stair-qwen/bin/typer",
+    ".venv-stair-qwen/bin/activate.fish",
+    ".venv-stair-qwen/bin/tiny-agents",
+    ".venv-stair-qwen/bin/isympy",
+    ".venv-stair-qwen/bin/torchrun",
+    ".venv-stair-qwen/bin/idna",
+    ".venv-stair-qwen/bin/accelerate-merge-weights",
+    ".venv-stair-qwen/bin/f2py",
+    ".venv-stair-qwen/bin/httpx",
+    ".venv-stair-qwen/bin/accelerate-launch",
+    ".venv-stair-qwen/bin/transformers",
+    ".venv-stair-qwen/bin/accelerate-estimate-memory",
+    ".venv-stair-qwen/bin/tqdm",
+    ".venv-stair-qwen/bin/markdown-it",
+    ".venv-stair-qwen/bin/huggingface-cli",
+    ".venv-stair-qwen/bin/pygmentize",
+    ".venv-stair-qwen/bin/hf",
+    ".venv-stair-qwen/bin/torchfrtrace",
+    ".venv-stair-qwen/bin/activate",
+    ".venv-stair-qwen/bin/activate.nu",
+    ".venv-stair-qwen/bin/numpy-config",
+    ".venv-stair-qwen/bin/accelerate-config",
+    ".venv-stair-qwen/bin/activate.csh"
+  ],
+  "policy": "Sealed run files and historical notebooks moved without byte changes; captured absolute paths inside historical evidence remain historical.",
+  "active_plan_links_rebased": [
+    "plans/stair-notebook-plan.md"
+  ],
+  "verification": {
+    "original_4b_seal": {
+      "status": "passed",
+      "files": 345
+    },
+    "original_2b_seal": {
+      "status": "passed",
+      "files": 327
+    },
+    "relocated_report_environment": "passed",
+    "relocated_qwen_python_and_package_metadata": "passed",
+    "broken_symlinks": 0,
+    "new_training_or_model_calls": 0
+  }
+}

@@ -220,6 +220,19 @@ data/stair/qwen35_2b_model/
 data/stair/qwen35_4b_model/
 data/stair/hf-qwen-cache/
 requirements-stair-qwen.in
+stair/.venv*/
+stair/runs/
+stair/checkpoints/
+stair/data/stair/model/
+stair/data/stair/qwen35_model/
+stair/data/stair/qwen35_2b_model/
+stair/data/stair/qwen35_4b_model/
+stair/data/stair/hf-qwen-cache/
+stair/data/stair/mpl-cache/
+stair/data/stair/uv-cache/
+stair/data/stair/raw/
+stair/data/stair/source_book/*.pdf
+stair/data/stair/source_book/*.txt
 
 # Keep trick-of-the-tail self-contained in the repo, excluding local venv, runs & archives
 trick-of-the-tail/runs/

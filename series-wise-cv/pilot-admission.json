@@ -1,8 +1,0 @@
-{
-  "pilot_path": "runs/pilot-20261106T225120158521+0100",
-  "pilot_seconds": 2.236891167005524,
-  "conservative_study_seconds": 33.55336750508286,
-  "total_projected_seconds": 95.79025867208838,
-  "admitted": true,
-  "rationale": "Three times the seed conditions; up to five times training windows; 60s replay/export reserve"
-}

@@ -1,7 +1,0 @@
-ID,Method,Inference input,Local supervision
-A,BM25 content,Title + complete body,None
-B,BM25 titles,All titles,None
-C,Untrained ToC,Hierarchy + query,None
-D,Trained no-ToC,Book + query,Query → title
-E,Trained flat,All titles + query,Query → title
-F,Trained ToC,Hierarchy + query,Query → title

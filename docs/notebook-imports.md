@@ -1,10 +1,10 @@
-# Notebook import audit
+# Notebook Import Audit
 
-Checked interpreter: `/Users/kbanachewicz/Documents/banan-lab/.venv/bin/python`; Python **3.12.8**.
+Interpreter: `/Users/kbanachewicz/Documents/banan-lab/.venv/bin/python` (Python 3.12.8).
 
-All import statements, including imports inside functions, were extracted from the current notebook and tested. Availability applies to this project environment; a notebook using a different kernel may have different packages.
+This document lists all standard library and third-party dependencies imported by the notebook, along with their roles and availability in the environment.
 
-**Current status:** every notebook import is available. The project environment was synchronized with `requirements.txt` for the CFG/Utils refactor and successful notebook replay. The unused `dataclass` import was removed; `io`, `textwrap` and `NotebookImage` now appear in the single Setup imports cell. The bundled `seaborn-v0_8` Matplotlib style needs no separate seaborn installation.
+**Status:** All required imports are installed and verified. Standard library modules require no extra installation. Third-party packages match the pins in `requirements.txt`. Matplotlib uses the bundled `seaborn-v0_8` style.
 
 ## Python standard library
 
