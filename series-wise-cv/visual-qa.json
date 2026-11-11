@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "reviewer": "primary agent visual inspection",
+  "assets": {
+    "graphs/graph_01_0611.png": "b57b346f6070b1b22181076fbd266b10f365a160938ecc5eec82fc71151325f5",
+    "graphs/graph_02_0611.png": "ca4dab31c290c878981f4178994e478beeca0317248333653e2d17e0f6242edc",
+    "graphs/tabler_03_0611.png": "eb05c71d6b2fe8ae76b604b54c9a18e3546ccb29ff145a223672035f8ab0e9f3",
+    "graphs/graph_04_0611.png": "1951aa14eadc97c8df6b96c7a2b79554338842c8c61c1e3911b4a057db66ff0a",
+    "graphs/tabler_05_0611.png": "f95f09f4423da3bb7446cc81267da67960a52ae3d4ea09cb9165c8c1cd7c8e1a",
+    "graphs/graph_06_0611.png": "f2345e09a36a038b65753a683bb46843bae3d21710d3c459cb98fb494ad9c037",
+    "graphs/graph_07_0611.png": "1622d3217554f31a956627ad604bbcb28f71188d0bb510b44b307f2f0a787518",
+    "graphs/tabler_08_0611.png": "6d54faa8a6e8ed8e1e5ada0afd8c879a6625e35aaac5a0e6883343bcf00284bc"
+  },
+  "notes": [
+    "All eight exports inspected individually.",
+    "Counts and summary precision refined; graph06 uses discrete seed points; graph07 legend moved clear of bars.",
+    "Affected outputs re-inspected; final replay PNG hashes match those inspected.",
+    "Each export contains one graph or one table."
+  ]
+}

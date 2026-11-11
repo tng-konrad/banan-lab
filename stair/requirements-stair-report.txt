@@ -1,3 +1,0 @@
-# Current v4 report imports the locked study libraries but never loads weights.
-# The original v3 admission dependency list remains in its archived bundle.
--r requirements-stair.lock.txt

@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "shared_narrative_sections": 9,
+  "executed_code_cells": 19,
+  "exact_inline_export_matches": 8,
+  "model_fits": 432,
+  "study_matches_frozen_config": true,
+  "publisher_dataset_checksum_verified": true,
+  "source_target_and_loss_checks": {
+    "status": "passed",
+    "folds": 126,
+    "conditions": 6,
+    "scored_procedures": 18,
+    "source_hash_verified": true,
+    "selection_lock_hash_verified": true,
+    "series_and_temporal_boundaries": true,
+    "cv_losses_recomputed": true,
+    "cv_and_final_targets_match_source": true,
+    "global_denominators_recomputed": true
+  },
+  "seo_characters": 132,
+  "image_visual_qa": "All eight PNGs visually inspected; refined images re-inspected; final hashes unchanged",
+  "notebook_post_section_and_asset_placement": "one-to-one",
+  "mode": "no fitting or network calls"
+}

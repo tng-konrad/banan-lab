@@ -1,6 +1,7 @@
 __pycache__/
 .venv/
 tmp/
+plans/
 data/raw/
 results/cache/
 runs/
