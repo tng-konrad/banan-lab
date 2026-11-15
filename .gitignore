@@ -242,3 +242,10 @@ trick-of-the-tail/runs/
 !trick-of-the-tail/**/*.md
 trick-of-the-tail/archive/
 trick-of-the-tail/render-archive/
+
+# Memory Tax deliverables; local environment/cache stay disposable.
+!memory tax/**/*.md
+memory tax/.venv/
+memory tax/.memory_tax_demo/
+memory tax/data/downloads/
+memory tax/.ipynb_checkpoints/
