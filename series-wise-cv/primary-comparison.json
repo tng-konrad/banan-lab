@@ -1,8 +1,0 @@
-{
-  "delta": 0.0026674466431719224,
-  "low": 0.0009726182858705886,
-  "high": 0.004882509424772588,
-  "series_clusters": 120,
-  "bootstrap_reps": 2000,
-  "interpretation": "conditional series bootstrap; fixed models/selectors/Q; shared calendar shocks and refitting uncertainty excluded"
-}

@@ -1,0 +1,22 @@
+{
+  "files": {
+    "evidence/original-snapshot.json": "585bd2c239d1e6bfaf8fe910e4101a09e82d9cf851e555c49c4f1388fba44243",
+    "evidence/reviews.json": "04d9824b5ed688ddc948e2050ea58e5c6c6df9857e082682af68fa233e13fdb3",
+    "evidence/original/memory_tax_ollama_demo.ipynb": "84ba825a78651590efbfa2a9eeb212f83431f6caacad30e39e62f1009b6fe4e3",
+    "evidence/original/memory-tax-substack-post.md": "9336621e820f7f32f2adf7b330b18460c180121c99aae655513af54f2fcd444a",
+    "data/source-turns.json": "1f3320f2bd1f7e4ab36dc0580904b0ecbfce5864d80798c3e638bc0355e89016",
+    "data/LICENSE.txt": "41003d4a74749c0220e33dd415042164b5a1093ed401f36277234f772d22d3d0",
+    "papers/2610.34073v1.pdf": "80f8b607cd2ba1e9b55a00b2065869e62d906fe233b6827b697f1c61073c8fc8"
+  },
+  "snapshot_sha": "a83d13eff9cf67774efc54902b5672d93bd867283c95376f1d31a8e760d8d1f5",
+  "run_id": "9ee46c37f1ae8c4fb11e8b23cbf38b7947b2ff24beab4f72073d6aaefe79e283",
+  "missing_original_records": [
+    "per-request cache response envelopes",
+    "original attempts.jsonl outside recorded cost_events",
+    "interrupted-run full request cache"
+  ],
+  "roles": {
+    "original-snapshot.json": "Immutable complete historical record; includes original dialogue, answers, grades, models, prompts and costs",
+    "reviews.json": "Historical eligibility, answer-bound grades and pilot-only oracle diagnostics; not automatic grades for new runs"
+  }
+}

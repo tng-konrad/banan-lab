@@ -1,1 +1,0 @@
-Series-wise cross-validation for global forecasting: a reproducible notebook comparing validation, model selection and future error.

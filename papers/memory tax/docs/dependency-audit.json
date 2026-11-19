@@ -1,0 +1,231 @@
+{
+  "python": "3.11.11 (main, Jan  5 2025, 06:40:04) [Clang 19.1.6 ]",
+  "executable": "/Users/kbanachewicz/Documents/banan-lab/memory tax/.venv/bin/python",
+  "prefix": "/Users/kbanachewicz/Documents/banan-lab/memory tax/.venv",
+  "isolated": true,
+  "imports": [
+    {
+      "module": "IPython.display",
+      "purpose": "Notebook image, Markdown and HTML display",
+      "standard_library": false,
+      "distribution": "ipython",
+      "version": "9.18.1",
+      "import_passed": true
+    },
+    {
+      "module": "collections",
+      "purpose": "BM25 and paired outcome counts",
+      "standard_library": true,
+      "distribution": null,
+      "version": "3.11.11",
+      "import_passed": true
+    },
+    {
+      "module": "copy",
+      "purpose": "Separate mutable analysis from immutable evidence",
+      "standard_library": true,
+      "distribution": null,
+      "version": "3.11.11",
+      "import_passed": true
+    },
+    {
+      "module": "csv",
+      "purpose": "Full-precision sidecars",
+      "standard_library": true,
+      "distribution": null,
+      "version": "3.11.11",
+      "import_passed": true
+    },
+    {
+      "module": "datetime",
+      "purpose": "Run/export timestamps",
+      "standard_library": true,
+      "distribution": null,
+      "version": "3.11.11",
+      "import_passed": true
+    },
+    {
+      "module": "hashlib",
+      "purpose": "Evidence and request hashes",
+      "standard_library": true,
+      "distribution": null,
+      "version": "3.11.11",
+      "import_passed": true
+    },
+    {
+      "module": "html",
+      "purpose": "Escape live eligibility-review HTML",
+      "standard_library": true,
+      "distribution": null,
+      "version": "3.11.11",
+      "import_passed": true
+    },
+    {
+      "module": "importlib.metadata",
+      "purpose": "Installed package versions",
+      "standard_library": true,
+      "distribution": null,
+      "version": "3.11.11",
+      "import_passed": true
+    },
+    {
+      "module": "json",
+      "purpose": "Evidence, requests and manifests",
+      "standard_library": true,
+      "distribution": null,
+      "version": "3.11.11",
+      "import_passed": true
+    },
+    {
+      "module": "math",
+      "purpose": "BM25 IDF and arithmetic checks",
+      "standard_library": true,
+      "distribution": null,
+      "version": "3.11.11",
+      "import_passed": true
+    },
+    {
+      "module": "matplotlib",
+      "purpose": "Title-free graphs and table rendering",
+      "standard_library": false,
+      "distribution": "matplotlib",
+      "version": "3.10.9",
+      "import_passed": true
+    },
+    {
+      "module": "matplotlib.colors",
+      "purpose": "Title-free graphs and table rendering",
+      "standard_library": false,
+      "distribution": "matplotlib",
+      "version": "3.10.9",
+      "import_passed": true
+    },
+    {
+      "module": "matplotlib.patches",
+      "purpose": "Title-free graphs and table rendering",
+      "standard_library": false,
+      "distribution": "matplotlib",
+      "version": "3.10.9",
+      "import_passed": true
+    },
+    {
+      "module": "matplotlib.pyplot",
+      "purpose": "Title-free graphs and table rendering",
+      "standard_library": false,
+      "distribution": "matplotlib",
+      "version": "3.10.9",
+      "import_passed": true
+    },
+    {
+      "module": "numpy",
+      "purpose": "Arrays, paired metrics and seeded bootstrap",
+      "standard_library": false,
+      "distribution": "numpy",
+      "version": "2.4.6",
+      "import_passed": true
+    },
+    {
+      "module": "os",
+      "purpose": "Atomic writes and hardware inspection",
+      "standard_library": true,
+      "distribution": null,
+      "version": "3.11.11",
+      "import_passed": true
+    },
+    {
+      "module": "pathlib",
+      "purpose": "Project/evidence paths",
+      "standard_library": true,
+      "distribution": null,
+      "version": "3.11.11",
+      "import_passed": true
+    },
+    {
+      "module": "platform",
+      "purpose": "Hardware/software provenance",
+      "standard_library": true,
+      "distribution": null,
+      "version": "3.11.11",
+      "import_passed": true
+    },
+    {
+      "module": "random",
+      "purpose": "Frozen seeded question sampling",
+      "standard_library": true,
+      "distribution": null,
+      "version": "3.11.11",
+      "import_passed": true
+    },
+    {
+      "module": "re",
+      "purpose": "BM25 tokens and identifiers",
+      "standard_library": true,
+      "distribution": null,
+      "version": "3.11.11",
+      "import_passed": true
+    },
+    {
+      "module": "shutil",
+      "purpose": "Archive exports and inspect disk space",
+      "standard_library": true,
+      "distribution": null,
+      "version": "3.11.11",
+      "import_passed": true
+    },
+    {
+      "module": "sys",
+      "purpose": "Interpreter preflight",
+      "standard_library": true,
+      "distribution": null,
+      "version": "3.11.11",
+      "import_passed": true
+    },
+    {
+      "module": "textwrap",
+      "purpose": "Wrap table text",
+      "standard_library": true,
+      "distribution": null,
+      "version": "3.11.11",
+      "import_passed": true
+    },
+    {
+      "module": "time",
+      "purpose": "Request and invocation timing",
+      "standard_library": true,
+      "distribution": null,
+      "version": "3.11.11",
+      "import_passed": true
+    },
+    {
+      "module": "tokenizers",
+      "purpose": "Optional live-only native token counting",
+      "standard_library": false,
+      "distribution": "tokenizers",
+      "version": "0.22.2",
+      "import_passed": true
+    },
+    {
+      "module": "urllib.request",
+      "purpose": "Verified downloads and Ollama HTTP requests",
+      "standard_library": true,
+      "distribution": null,
+      "version": "3.11.11",
+      "import_passed": true
+    },
+    {
+      "module": "zoneinfo",
+      "purpose": "Local export timezone",
+      "standard_library": true,
+      "distribution": null,
+      "version": "3.11.11",
+      "import_passed": true
+    }
+  ],
+  "tools": {
+    "ipykernel": "7.4.0",
+    "jupyterlab": "4.6.6",
+    "nbclient": "0.11.0",
+    "nbformat": "5.11.1"
+  },
+  "historical_environment_separate": true
+}

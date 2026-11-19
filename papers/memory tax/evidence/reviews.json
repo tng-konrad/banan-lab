@@ -1,0 +1,3041 @@
+{
+  "GRADING_RUBRIC": {
+    "version": "source-grounded-v2",
+    "frozen_utc": "2026-10-31T19:35:14.212933+00:00",
+    "rules": [
+      "Require all requested reference facts; accept equivalent wording and additional details only when supported by source dialogue.",
+      "Use corrected source-reviewed references; preserve original annotations for audit.",
+      "Reject factual contradictions, invented dates or precision, and unsupported event/identity claims.",
+      "Accept anchored relative dates equivalent to the supported calendar period; do not require a day when the source only states a month or week.",
+      "Insufficient evidence is incorrect for every source-reviewed answerable question, including the no-context control.",
+      "Grade factual correctness separately from citation formatting and evidence coverage.",
+      "Flag borderline cases for human adjudication and report sensitivity; AI-assisted labels are not human-certified."
+    ]
+  },
+  "QUESTION_REVIEWS": {
+    "conv-26-q061": {
+      "approved": true,
+      "source_review_hash": "3a0631f2b4fffa186c8905f587ca94dd89dec87782594d66dc3798b8d15b5789",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Both live performers are explicitly named; preference-only artists are not evidence of attendance.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q013": {
+      "approved": true,
+      "source_review_hash": "dff28f218d4f25533b46f37684b9d0439e3964aed18f25bcff5d31bc5fd5b4e6",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Caroline links counseling and mental health work to supporting trans people.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q073": {
+      "approved": true,
+      "source_review_hash": "ecf57190238b3a9c596e289ec4c2993144c36b93cc5db1960f748157bc50ffe5",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Last month relative to 13 October means September 2023, without a specific day.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q012": {
+      "approved": true,
+      "source_review_hash": "b38362a6fd7b71e09d02263b886cb32a2ab1e4c9cd741a6d04874b7ec792212e",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "The 18th-birthday bowl was given ten years ago.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q044": {
+      "approved": true,
+      "source_review_hash": "7e931215b2e859f1a074851c5c06b407c5b1370204f964bf75840263e5700038",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "The 14 August session places the birthday celebration last night: 13 August.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q010": {
+      "approved": true,
+      "source_review_hash": "cdb508b2c16306019e13368ef3f1decd1c4972770910232a00e031864b6b9a16",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Caroline explicitly says she has known these friends for four years.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q121": {
+      "approved": true,
+      "source_review_hash": "a621df0b45ba40e45b534ed6fded0f6a44e67c4bba9399ae0e332deaa71acf8d",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "The birthday-concert antecedent and Matt Patterson are both present.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q108": {
+      "approved": true,
+      "source_review_hash": "b80c1e3be08ab24aaf24fa0238188089105810a0e17ef0524b739c67ea8de467",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "The expanded running turns state headspace, mood and mental health.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q093": {
+      "approved": true,
+      "source_review_hash": "d7389cb783d8880557824d348f6789d13792c0527beb251afdffed4ec1fe289b",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Caroline explicitly attributes the necklace to her grandmother.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q092": {
+      "approved": true,
+      "source_review_hash": "4ac2587746c88c1d574bd0935c68ff93f85e7ce5a291bb17111fbdb5cd9d37f1",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Caroline identifies Sweden as the home country where her grandmother gave the necklace.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q122": {
+      "approved": true,
+      "source_review_hash": "bec9ed00d2852123d852d0e259c25a6b6fcbd2f6ee9f5135c8ff92d83e8c914b",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "The preceding question names colors and patterns; Melanie says catch the eye and make people smile.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q136": {
+      "approved": true,
+      "source_review_hash": "f61690c300a0e9f36d9c5c4f43bf626bfe6b40d3622abac0a69621dfd31fef19",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "The injury/pottery break and subsequent reading and painting are both explicit.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q011": {
+      "approved": true,
+      "source_review_hash": "5fd3868ccf9530e0aa456a8c1a7aca325634276004041b8e3463bb51db673c87",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Moving from the home country four years earlier combines with the explicit identification of Sweden.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q065": {
+      "approved": true,
+      "source_review_hash": "a61fe53b8efb27a6674df408872aeff4d4f35f2aae94722f4c760d0093ac6da5",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "The sources explicitly cover her changing body and the loss of unsupportive friends.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q034": {
+      "approved": true,
+      "source_review_hash": "904cbc38a82c721a06dc1a16ee6b11e9dfb7b14d3a91820332060654607e1a99",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Expanded evidence links the talk to a school and students, alongside LGBTQ youth mentoring.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q039": {
+      "approved": true,
+      "source_review_hash": "a091610f4b0c202fdea90eeefd95982c39263d43271b60cb5d39343f55a3e443",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "The four sources support activism, pride attendance, an upcoming art show, and mentoring; the art show is planned, not already completed.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q060": {
+      "approved": true,
+      "source_review_hash": "beb50b7e7b83a9be977d2dfc514db979a9c4d86d943b430dfa81057f29c96dbe",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Clarinet and violin are explicitly named in dialogue text across two sessions; no image interpretation is needed.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q019": {
+      "approved": true,
+      "source_review_hash": "891133741e9a76a43c5cb426d4504f3035dad7c61eade8c11dcc034f9a1089db",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "The museum account explicitly names dinosaurs and the camping account names nature.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q003": {
+      "approved": true,
+      "source_review_hash": "888f3b356dae44de3dfd6a0df68586e7546113001f735d6005e44d4c9d05cba1",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Adoption agencies are explicitly named as her research.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q007": {
+      "approved": true,
+      "source_review_hash": "4479cc01369384099229160375ab6fd38f8fe477a3c40319396a627cecc6efb1",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Caroline identifies herself as a prospective single parent and mentions a breakup.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q031": {
+      "approved": true,
+      "source_review_hash": "c6b11a2f3096e68c4bb7b909b1b485cc85837a840ded14094ee22f81fb54f27d",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Added D4:6 supplies last week relative to 27 June; D4:8 alone lacked the date.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q041": {
+      "approved": true,
+      "source_review_hash": "b2ed358b785c32a12ea417905b58b03026389ad143d9d8ae84fcfa43f9cf8c17",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Last Tuesday relative to Thursday 20 July is 18 July 2023.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q045": {
+      "approved": true,
+      "source_review_hash": "cfbf0a2e90183d63daca50b6ba3b9e11c859a12f917242bb696f4df8ab5cd7e9",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Last Friday relative to Monday 14 August is 11 August 2023.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q072": {
+      "approved": true,
+      "source_review_hash": "24bca15b6ebdaca81895c9289a7fab47c680ed5e69dadafcb18f84679ca9973c",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Added D17:4 states that the friend adopted last year, relative to October 2023: 2022.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q017": {
+      "approved": true,
+      "source_review_hash": "5398965be0c5a14b58a9da5474834be221dbcaa1bbdca485939c270f2ac212ca",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "This month in the 3 July session means July 2023.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q036": {
+      "approved": true,
+      "source_review_hash": "c60d61a41621e3e62d09d680f19a544441841f3715c27b8de536177444c27c5d",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Last weekend in the Monday 17 July session means 15-16 July; equivalent relative wording is accepted.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q063": {
+      "approved": true,
+      "source_review_hash": "d3e4a77bbc5b12dda1cf0dbecc20a3ca88e9a992d9c78fe9dabd40faaffd23d4",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Added the youth-center antecedent; next month from 28 August is September 2023.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q033": {
+      "approved": true,
+      "source_review_hash": "809b3cc25e04e416aa5fb5b5a9051c052dbc00b9bd11d0b554c7a14482497e4c",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Last week relative to Monday 3 July means the preceding week, without a specific day.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q005": {
+      "approved": true,
+      "source_review_hash": "62cfe3030d82177ce6c1e81a244afec73cd4c9253055a327587733337a640638",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Corrected the reference from Sunday to Saturday: last Saturday before 25 May is 20 May 2023.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q035": {
+      "approved": true,
+      "source_review_hash": "0c7e14485d4cf48712b77b7c48a437db378a424ccbd5fbefa2a9e6d00bff23a4",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "The 17 July source explicitly says two weekends ago; equivalent relative wording is accepted.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q006": {
+      "approved": true,
+      "source_review_hash": "28afed94f6b586874234d130b05770aeaa683999866cdc9b2898b282b3ca43ac",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Next month relative to 25 May means June 2023.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q058": {
+      "approved": true,
+      "source_review_hash": "7c24328d1a06cecde7580fe9f723a80d898e07d022dcd6e48326553233fe1481",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Added the plate antecedent; yesterday from 25 August is 24 August 2023.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q025": {
+      "approved": true,
+      "source_review_hash": "e7db6517d4bdeaafde31baa782fae4e8e226e96ae01e621841be5200e485f450",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Two days before 12 July is 10 July 2023.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q028": {
+      "approved": true,
+      "source_review_hash": "287e43a9c8e4476d2d0d629f45d5fc1d569cc273fab51b9d61ebe7fd035060b9",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Last Friday before 15 July is 14 July 2023.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q000": {
+      "approved": true,
+      "source_review_hash": "d1ff130ba10cd2ee9ff855100de052ba29afe1768de33c242efa21aadf821f03",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Yesterday in the 8 May session is 7 May 2023.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q008": {
+      "approved": true,
+      "source_review_hash": "edb24bf8ce19c431919c7c1e545c7d6feb6aa85bd2438f178840fafeab0a00ab",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "The school speech was last week relative to 9 June; no exact day is asserted.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q095": {
+      "approved": true,
+      "source_review_hash": "01383fa6f908527d05fdc97bf9938006543e616cfc6f36a3f60e8cb22c4c98f2",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Exploring nature, roasting marshmallows and hiking are all stated.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q085": {
+      "approved": true,
+      "source_review_hash": "24480a8c304c6e84f424eb4211e2062f52102097fad39c4bf2d6ded1a384aa54",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "The summer-plans question and adoption-agency research response are both present.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q132": {
+      "approved": true,
+      "source_review_hash": "528ed3c3e53d503102021e5c19dd572e39e986738f3656065a7c46b9fcb14671",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "D16:8 explicitly says seven years; its image/caption is unnecessary and excluded.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q086": {
+      "approved": true,
+      "source_review_hash": "221f53c294ccf25d1389693fe0d656cd5cf96ce55510f08b357c62a18ff1dff2",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "The agency supports LGBTQ adoption explicitly.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q144": {
+      "approved": true,
+      "source_review_hash": "17c656597fc62cc4a81f01cacf419056e1f349e3e64b5540b5a51b2aeae840fa",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Corrected the question to the siblings, who were scared and reassured their brother would be OK.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q114": {
+      "approved": true,
+      "source_review_hash": "a011fe69f04c90ea8644ae1ad42fe07300c1d84439e3ba8bd2ed4472295b553d",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Warmth and happiness are explicitly associated with sunflowers.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q094": {
+      "approved": true,
+      "source_review_hash": "aa0e1179011fa1b7600b12fe35915ecaa6c0a1a0b738997c35aeb05dadeba49d",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Corrected the bowl owner to Caroline; art and self-expression are explicit.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q128": {
+      "approved": true,
+      "source_review_hash": "c7aa70fa032cf2ae0f1ab9083653e401b1fd9b3dc4eb6a971525e4c703781cab",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Rainbow sidewalk for Pride Month is explicitly named in the text.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q120": {
+      "approved": true,
+      "source_review_hash": "29c62baf73cabeda9b22282bc71537fc6b1ee2971d3693f1b99b7c258daef660",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "The daughter is explicitly identified as the birthday celebrant.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q101": {
+      "approved": true,
+      "source_review_hash": "129a4aae7c18f53ec5110bb3e50334ec9a9a717b24216161ea0c5c641c501a26",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Added the black-and-white bowl question; Melanie explicitly confirms making it.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q123": {
+      "approved": true,
+      "source_review_hash": "bf3ceb50879e81a492e137c53683ba9595b82185da2e43550ceb2b748e07ca12",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Oscar is explicitly identified as a guinea pig.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q150": {
+      "approved": true,
+      "source_review_hash": "90c49bd7b41a781ab13825727663fbcabacf5cd31da4f071849fecdb2d5fae02",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Melanie explicitly appreciates the support from her family.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q126": {
+      "approved": true,
+      "source_review_hash": "173c85bdc386fedd5a0b874470179e521e010173bf902061f6bb899e257a6e3f",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Horseback riding with her dad as a child is explicit.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q134": {
+      "approved": true,
+      "source_review_hash": "2fed2e1cb0f87e71118f010b93b8a7e32a59071c58ab033a04172aa1da9bea83",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Research, agency or lawyer, documents, and emotional preparation are all stated.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q113": {
+      "approved": true,
+      "source_review_hash": "bc7078f968a82cb9bac092e809468493c9890363b10f01a9234191811c9ede2c",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "The council-meeting account explicitly describes people wanting loving homes for children.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q105": {
+      "approved": true,
+      "source_review_hash": "7c276e478cf39ba25c1885d6bc8cdc9eac2bfc789f272dc722484f5f67422d1a",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Added the textual book title and antecedent; self-acceptance and finding support are explicit.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q107": {
+      "approved": true,
+      "source_review_hash": "366e98894d790c79e6bf9ae15167a97304bac8d8803cc1ecfd73b798161031b4",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Added D7:22, which answers the preceding running question with de-stressing/headspace.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q139": {
+      "approved": true,
+      "source_review_hash": "c8f84d8e81239e27c883e43ea1275a7037ae103d3a1d2c96f353ec4326323b09",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "D17:19 explicitly describes transgender people sharing stories through poetry; the attached image/caption is unnecessary.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q146": {
+      "approved": true,
+      "source_review_hash": "87a4501a939ab36fc8d203a0ec9a33dd8b8981dff6f9165454406268e5f1ca9b",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "The children were scared but reassured and described as tough.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q082": {
+      "approved": true,
+      "source_review_hash": "785467cb627b0f83bf0db729db5501a2d46550403ea86de9b6e6dc8e3bae0a69",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "The charity race raised mental-health awareness explicitly.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q102": {
+      "approved": true,
+      "source_review_hash": "9f74b908421688dde25ca8c3814575cccedfa0d250d262af5616043114c614d9",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Classics, culturally varied stories and educational books for children are all listed.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q099": {
+      "approved": true,
+      "source_review_hash": "901fefce62267ee29dab5ed451b815c5d8532c5e2b83d0ebb23a6942aaf46874",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Her journey, support received and the positive effects of counseling/support groups are explicit.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q142": {
+      "approved": true,
+      "source_review_hash": "c900a27f51ebdcc59b10ea3b817ccde1ba2a15781409a8730f3ffd67b5e62d19",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "The preceding turn concerns authenticity and the response describes ongoing learning and growing.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q096": {
+      "approved": true,
+      "source_review_hash": "dbea2f8e2a2819c810732d35d33961cf0bdff10871adcb591301d16b284380cf",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Working with trans people on self-acceptance and mental health is explicit.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q135": {
+      "approved": true,
+      "source_review_hash": "9540c4cbdd92b6351b7051bbd891cef5edcc31d368983a6fb5d4efe3e7d02402",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Changed the question to the setback reported in October, avoiding the false implication that the injury occurred in October.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q149": {
+      "approved": true,
+      "source_review_hash": "e7d2204cb68cf795c302434f43502811c9e38d39cf29e78710784e46f22ace7e",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "The family supplies strength to keep going; motivation is a supported paraphrase.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q084": {
+      "approved": true,
+      "source_review_hash": "330181bdc3ea3a42fad2ca646c42243484d96a3b536de118e987138461045560",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Daily me-time with running, reading or violin is explicit.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q116": {
+      "approved": true,
+      "source_review_hash": "2e322206d8f6b29ed77fd5ccb2a0189b1c475e255e0e641d4c7a3a796d353869",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "The LGBTQ center and the aim of capturing unity and strength are explicit.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q087": {
+      "approved": true,
+      "source_review_hash": "d307ef027081ef11bf8b4b8134f656ee5c7860ba90a98c5108274cc58675c2af",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Inclusivity and LGBTQ adoption support are the stated reasons.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q129": {
+      "approved": true,
+      "source_review_hash": "8d5bb4d74d77c5f50b048d0b28f3e2c015702f8e58dd808430ad99cf02a96b62",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Brave by Sara Bareilles is explicitly named and linked to courage.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q088": {
+      "approved": true,
+      "source_review_hash": "bf62cdb954f191a450a6c2b7fd9c99f35eca6ad527c1463feb518ac994ae26e8",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Creating a family for children needing one is explicit.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q091": {
+      "approved": true,
+      "source_review_hash": "ad189375e8ef61281109b1cfcb2a2391406b043290e5c8e2003e5845a3fc6c12",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Love, faith and strength are all explicitly named.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q097": {
+      "approved": true,
+      "source_review_hash": "eeb8d0adadae71b9c576ea3eae4904e309ff5b64136371eed8600db5a576ef1b",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "LGBTQ counseling workshop is explicitly named.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q098": {
+      "approved": true,
+      "source_review_hash": "3456f1de54fa5aa187ed14e63195168d532cc184d933c22a93ea81d0b50133b5",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Therapeutic methods and working with trans people are explicitly described.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q100": {
+      "approved": true,
+      "source_review_hash": "698e507d78b3834fb3a9ec7e538dc0b52d20c800dd1417c32651d45664b834d4",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "A safe and inviting place for growth is explicit.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    },
+    "conv-26-q083": {
+      "approved": true,
+      "source_review_hash": "d068bcc71269c426e7a0847cc4b8be01d7aadceb5242977573d829dc84e3aeef",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant",
+      "reason": "Self-care and its benefit to looking after family are explicit.",
+      "reviewed_utc": "2026-10-31T19:35:14.212933+00:00"
+    }
+  },
+  "HUMAN_GRADES": {},
+  "AI_REVIEW_GRADES": {
+    "730cac3f83501b4c": {
+      "answer_hash": "fdc544959af071348444320d62afbf2de887f4f8116084315350ed184e52324d",
+      "correct": false,
+      "reason": "Abstains; D3:13 and D4:3 jointly identify Sweden as the country she moved from.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508027+00:00"
+    },
+    "aa8ab638b3753b30": {
+      "answer_hash": "da48d5ca2842d9b7ac5852945bc63fdd6aed045c49fe581eb5c0d9c02a8233f8",
+      "correct": false,
+      "reason": "Abstains on an answerable source-grounded question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508122+00:00"
+    },
+    "22e04cf46017ffdc": {
+      "answer_hash": "b93ea63b248136825c2d99e8e96f33f1a135efba297697da5937b77213f2bcc4",
+      "correct": true,
+      "reason": "Correctly identifies Sweden.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508147+00:00"
+    },
+    "ff3197a59577d4eb": {
+      "answer_hash": "230ba6c20e6e5526c57e9ed71d83308c1f9e4990fff2c56cdd1c26892f3f5d42",
+      "correct": false,
+      "reason": "Abstention is expected with empty context but is incorrect on this answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508158+00:00"
+    },
+    "a58d4741d73b3ae3": {
+      "answer_hash": "6e32b379612c937a68e3ade0f9db73987cecfc663b0db47a85ceaf710f6e2bbd",
+      "correct": true,
+      "reason": "Correctly combines the two source turns to identify Sweden.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508168+00:00"
+    },
+    "9738be7f011c7b5e": {
+      "answer_hash": "74b78731d6899aaeecbb4cc0b68ac1e6d76c198b20eb995552bf4063c4597b5a",
+      "correct": false,
+      "reason": "Includes loss of friends and self-discovery but omits the physical/body changes required by the reviewed reference; generic mention of transition is not that fact.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508180+00:00"
+    },
+    "76cff6f0112d7c56": {
+      "answer_hash": "33371e74ff0a3b808c085bf1e2ccb7effd9fc9fe2e089533ef343080a146f971",
+      "correct": false,
+      "reason": "Includes relationship changes but omits the body/physical changes explicitly stated in D11:14.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508200+00:00"
+    },
+    "b837ae0c030f995c": {
+      "answer_hash": "d15dcc886da966260f4dfddb1c4e57204a8dd861de7f58dbbd0ed6a0b3f8c81e",
+      "correct": true,
+      "reason": "Includes physical transition and unsupportive friends. Additional breakup, art and Pride details are supported elsewhere in the conversation.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508219+00:00"
+    },
+    "ded0f2c543dfe7fd": {
+      "answer_hash": "ffb154fb5ea9eae8534474b95c2ebf37cd1f2ed5bd6de68a5e8cc9be74851bf2",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508234+00:00"
+    },
+    "c533b72f2f81e2a7": {
+      "answer_hash": "6ecd8a77dbeaee0724be5fa0735c0a398d42b082b6b073721f5fade4999073bc",
+      "correct": true,
+      "reason": "Includes both changing body and friends who could not handle the transition.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508243+00:00"
+    },
+    "5071fa38bc99d9c1": {
+      "answer_hash": "b741bc5f7d72869f04a1ea5fda62c13dbf61880e5b794e9ee6c2365fe69426aa",
+      "correct": false,
+      "reason": "Includes the youth mentorship program but omits the school speech required by the reviewed reference.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508254+00:00"
+    },
+    "40d1869063a9ba55": {
+      "answer_hash": "4b05609e14b5136e2ceedfa0edb1f5b7c9b547c0bf14042cad31b12ec220b980",
+      "correct": false,
+      "reason": "Lists other volunteering activities but does not identify both the mentorship program and school speech.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508263+00:00"
+    },
+    "cf24ad984bb71a40": {
+      "answer_hash": "bef0990f0c4a479c8ffccfdfe8e1c77e3551859f3cee803c4d65de6eaa5a658e",
+      "correct": false,
+      "reason": "Names adoption and a planned talent show but omits the mentorship program and school speech.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508271+00:00"
+    },
+    "96d6df1f6fd293b9": {
+      "answer_hash": "c11478f9e207c994597b1e8ad2deb2d2f706372c8c3d09735237d586106ae4dd",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508279+00:00"
+    },
+    "4dc096267e488d42": {
+      "answer_hash": "d3a19d970fc3ace0d1cb34a3e7e6ae6f54b7e1bc3cb58c96e1239445928a7a64",
+      "correct": true,
+      "reason": "Includes LGBTQ youth mentoring and the school event/speech about her transgender journey.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508287+00:00"
+    },
+    "c0a62a1c49c4c85f": {
+      "answer_hash": "e7b85feff27ccc5d1115afd750e0879ecc3a5ae090f4e6a3e32c63ea6f5d673c",
+      "correct": true,
+      "reason": "Includes all four required activities: activist group, pride parade, art show and youth mentorship. Added youth-center volunteering and school speech are source-supported.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508296+00:00"
+    },
+    "98a83af6045f594b": {
+      "answer_hash": "a6514963d1523dd6b1af9816045cf8274deb03542e410fd4a3a60e2e6f2c6885",
+      "correct": false,
+      "reason": "Includes activism, pride and art shows, but omits the mentorship program. Generic youth-center volunteering does not identify that distinct program.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508304+00:00"
+    },
+    "ddeb8977b065da39": {
+      "answer_hash": "c1a1b031031ddd9731e2636d8136c78779dc71daa09edebc8180815bc9258370",
+      "correct": false,
+      "reason": "Includes activism and pride, but does not identify the art show or mentorship program required by the reference.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508312+00:00"
+    },
+    "93c57780be16e8e4": {
+      "answer_hash": "a480f978d65162f80d5573da4d5b9a2510906f43d7944817783d4028dbb176e5",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508320+00:00"
+    },
+    "bc08642d52ad872e": {
+      "answer_hash": "933bb58512177432eca11f2ead2504595f83a4f6fce1f610bfbf3ba99bb06c18",
+      "correct": true,
+      "reason": "Explicitly includes all four reviewed activities.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508327+00:00"
+    },
+    "c8046f174984958f": {
+      "answer_hash": "b1ebf8a948805aacc449c9b58d4678b2f949adfa9a9f2f25b18ee47c227749d1",
+      "correct": false,
+      "reason": "Names clarinet but omits violin, explicitly supported by D2:5.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508336+00:00"
+    },
+    "54f0432c19c5cf24": {
+      "answer_hash": "a41fc105a3fa383577d7e34272c99faf78e8da5d47f6aeab892c0ed20918cdbd",
+      "correct": false,
+      "reason": "Names clarinet but omits violin.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508343+00:00"
+    },
+    "51773e6c20c1f191": {
+      "answer_hash": "f89ef26409e74a399c4b4e56e76a2467f70bd214adada8ff6e94a98b24f43519",
+      "correct": false,
+      "reason": "Names clarinet but omits violin.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508358+00:00"
+    },
+    "9b09a9d6cae10ce7": {
+      "answer_hash": "80a84ba12f2b0505932bab180f8a4cfd4631e8505f6184f75d591def62a14eed",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508365+00:00"
+    },
+    "6c30ff8d08106c7a": {
+      "answer_hash": "0631502f896470f48229eb6f1fab411012516d7fb9e634b381fa0c32c3e744c8",
+      "correct": true,
+      "reason": "Names both clarinet and violin.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508373+00:00"
+    },
+    "452e1d09117afa2d": {
+      "answer_hash": "07efa4007611652f9e8d5cf56bea0651282e1f4120d8a32217b39e51ec88b002",
+      "correct": true,
+      "reason": "Includes both dinosaurs and nature. Added pottery, painting and beach activities are supported in the conversation, including D8:4 and D10:8-10.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508382+00:00"
+    },
+    "b78e0eecf2dbe790": {
+      "answer_hash": "135067e68c7806bfd79384f5db0acc50d96d092c4039c866fec7db1ff2af7f8b",
+      "correct": false,
+      "reason": "States that information is unavailable, despite the answerable reference containing dinosaurs and nature.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508389+00:00"
+    },
+    "9be397f38b9f37c5": {
+      "answer_hash": "97c5b70545183c58ecaa181e81b38918651a52a921c4adfbc251ca4227c73d18",
+      "correct": false,
+      "reason": "Includes nature and other supported activities but omits dinosaurs.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508396+00:00"
+    },
+    "c83c89c9eb493f7b": {
+      "answer_hash": "0ffee86c2684851da677b6b262a6ab5f8874a779ddde6f99277e47c9a7ea7943",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508403+00:00"
+    },
+    "f6be7deb1dd15e10": {
+      "answer_hash": "01425e950b336bffb897d109d822b2a5f90a1391f6160586a0e9abc9f3d429b8",
+      "correct": true,
+      "reason": "Includes both dinosaurs and nature; the additional animals/family context is source-supported.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:26:50.508411+00:00"
+    },
+    "334650b11c7d342e": {
+      "answer_hash": "da878d861a839039253d66a08b843f9963b28ceacb95828f775a54fe7d1c2606",
+      "correct": false,
+      "reason": "Correctly names adoption agencies, but adds researched lawyers and completed document gathering. D17:7 is advice Caroline gives Melanie, not evidence that Caroline performed those actions.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:42:41.877518+00:00"
+    },
+    "39107456e78d3ea6": {
+      "answer_hash": "816379059899b1a963a544b311bffa8dae3d1648e6cb65204b834653fece3c57",
+      "correct": true,
+      "reason": "Correctly identifies adoption agencies without unsupported additions.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:42:41.877577+00:00"
+    },
+    "7cc2282df546ff64": {
+      "answer_hash": "48b866a07fa57abb881a8f1e4729ece0fd882c6c03b7355f8530ef2a3085a98b",
+      "correct": false,
+      "reason": "Names adoption agencies but also claims Caroline researched lawyers. The only lawyer passage, D17:7, gives advice to Melanie and does not establish Caroline researched lawyers.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:42:41.877587+00:00"
+    },
+    "306285210e70cf79": {
+      "answer_hash": "4aaf1cc43d2d7f10c55795714ebaf4a84064f376c9233df1975ed76ec067241f",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:42:41.877594+00:00"
+    },
+    "e0423e8d01331f99": {
+      "answer_hash": "402be596db841caaa2c600acc852b9dd91693d3a076790139b4548e450b1520d",
+      "correct": true,
+      "reason": "Correctly identifies adoption agencies.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:42:41.877599+00:00"
+    },
+    "9002042c9e1e2319": {
+      "answer_hash": "6633dc2f4a4bffc261f99c214dfb0a2fee9153043809e9117bcbaad95f145a1f",
+      "correct": false,
+      "reason": "Denies that the status is available, while D2:14 explicitly describes Caroline as a prospective single parent and the reference is single.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:42:41.877607+00:00"
+    },
+    "af98a08b9e2e132e": {
+      "answer_hash": "5b669e6190583af9c76fc3f6186d1350cf3db5acdbfa27fd1e3a012c03b22c93",
+      "correct": true,
+      "reason": "Correctly identifies Caroline as single.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:42:41.877620+00:00"
+    },
+    "e9244b5f6c07428b": {
+      "answer_hash": "330ab0b62ce944fb891340cde8de0f54727662e98d55eb82047b770a50c4a120",
+      "correct": true,
+      "reason": "Correctly identifies her as single; pursuing adoption is also explicitly supported.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:42:41.877633+00:00"
+    },
+    "7ad3fb1d09b8a56e": {
+      "answer_hash": "147a6305e768c43429b9f9bdb05cb061eb1b182300328b9918c1fb151b2a52a7",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:42:41.877641+00:00"
+    },
+    "ef8b25c515260604": {
+      "answer_hash": "9375c6c9fcb1a845a272d5aa1aa79cdbcfc6461d3630d604ecc5391baff6583b",
+      "correct": true,
+      "reason": "Correctly identifies her as single from the supplied source.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:42:41.877647+00:00"
+    },
+    "4a606021d7829fba": {
+      "answer_hash": "b72743a8bec668f906a98dd1f82e9e420dd583c5dd43b7fed4591266d545ab41",
+      "correct": false,
+      "reason": "Uses the conversation date, 27 June, as the camping date; the source says last week.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:42:41.877654+00:00"
+    },
+    "a524a24e2405add3": {
+      "answer_hash": "9194ba2762d010b4bb6aca5ff1f403f0f36bdc2789cc7f8fc5bc24b52a7b85ec",
+      "correct": false,
+      "reason": "Uses 27 June as the camping date rather than the preceding week.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:42:41.877660+00:00"
+    },
+    "22765c04d5aa0a45": {
+      "answer_hash": "5553b32dcc3b401b010a27d7edc0022ec15c3a6aa3fad91f19e25d711accad8d",
+      "correct": false,
+      "reason": "Abstains on a source-answerable temporal question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:42:41.877670+00:00"
+    },
+    "5abf0b2f6071715c": {
+      "answer_hash": "4c42912a5ef77d8181cec9c689f7140cd5bab0b82031df6efd064f4dc1e3cc24",
+      "correct": false,
+      "reason": "Abstains on a source-answerable temporal question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:42:41.877677+00:00"
+    },
+    "f930ace441df29ef": {
+      "answer_hash": "e627e5c77705e23ea2d19f089483a757e5e3423d57b51875c8f8cda2c7e9f333",
+      "correct": true,
+      "reason": "Preserves last week relative to 27 June and gives the preceding seven-day period, June 20-26, consistent with one reading of the reference. Flagged because calendar-week interpretation would instead be June 19-25; the source does not disambiguate.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:42:41.877684+00:00",
+      "human_adjudication_recommended": true
+    },
+    "da1d5d4c72493d6c": {
+      "answer_hash": "6125c872186987749f2ed1d3dc708f64a3e31eac6b84513fb93cd3fa57b057f1",
+      "correct": true,
+      "reason": "Correctly resolves last Tuesday before Thursday 20 July to 18 July 2023.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:42:41.877691+00:00"
+    },
+    "e89a80527e101206": {
+      "answer_hash": "4aa07cc513f56b4827d6128b1c6a83f664293e5a9110076403d704efdfe08e56",
+      "correct": true,
+      "reason": "Correctly gives Tuesday 18 July 2023; Connected LGBTQ Activists is supported by D10:5.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:42:41.877697+00:00"
+    },
+    "dca66973919f076e": {
+      "answer_hash": "a7e3f030d58888196ae94ec4138e777d368cc111d331cc8063edf8184a270f38",
+      "correct": true,
+      "reason": "Correctly gives Tuesday 18 July 2023 with the supported group name.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:42:41.877706+00:00"
+    },
+    "b63b9036d5806036": {
+      "answer_hash": "2d40a73e11ace6f2dbf3b0b877e2c031b4e7a1ebab9e35f85881998e44dca6f9",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:42:41.877712+00:00"
+    },
+    "232f9b850dc800d4": {
+      "answer_hash": "c6a37eece5c8e044b8740a22796d029cf6b2305c3c3a2720a2761ee3e66c666e",
+      "correct": true,
+      "reason": "Correctly resolves the relative date to 18 July 2023.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:42:41.877718+00:00"
+    },
+    "abdb9fbadcd5f83e": {
+      "answer_hash": "d65801f2860bec3edd6128dab92ae99da05d7b9b33d2dd1c86b52f292d0b2d1d",
+      "correct": true,
+      "reason": "Correctly resolves last Friday before Monday 14 August to 11 August 2023.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:58:56.338053+00:00"
+    },
+    "7ee2ef6e0b96d9d7": {
+      "answer_hash": "7fea8a3b830422b2504cf143e10d4861393f5dc1a619d389670ee413d1afdd79",
+      "correct": true,
+      "reason": "Correctly gives 11 August 2023.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:58:56.338154+00:00"
+    },
+    "a9ca4e88ae7fc693": {
+      "answer_hash": "6413573355f0a1863db37967bafc006eff90e487f8f7983ef82a945c8727a361",
+      "correct": true,
+      "reason": "Correctly gives 11 August 2023.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:58:56.338168+00:00"
+    },
+    "9ca31749971a97c5": {
+      "answer_hash": "6eeca4baca7ae217f33c214e38311a43fa39c19815ca68c2f7e66832e1107f2d",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:58:56.338180+00:00"
+    },
+    "17c55f4204dcb5d4": {
+      "answer_hash": "76dd8187e5cd2b020e4f323da0a2ad3c1f6491ec926afd0117d951e664d25df7",
+      "correct": false,
+      "reason": "Abstains even though the supplied dated source explicitly supports last Friday, 11 August 2023.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:58:56.338189+00:00"
+    },
+    "1a21551f68a03f1e": {
+      "answer_hash": "f9b4e6be18a8b09cfaee586568d6aafadf30b2eacbbe125e6a61e6aa3d0784ff",
+      "correct": true,
+      "reason": "Correctly resolves last year relative to October 2023 as 2022.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:58:56.338199+00:00"
+    },
+    "9546de2a75c652e8": {
+      "answer_hash": "27ac2a178bdcc62a0302aca9489b1f9dbe160ee82c5efac30ae1cd2e26783b6f",
+      "correct": true,
+      "reason": "Explicitly anchors last year to 13 October 2023, equivalent to 2022.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:58:56.338219+00:00"
+    },
+    "3f113ebec6ffebc3": {
+      "answer_hash": "405aeb40f78572b08d2a6ec6641a18ab371d5dc83c0d15d32bb054767e71cc16",
+      "correct": true,
+      "reason": "Correctly gives 2022 with the source-date anchor.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:58:56.338233+00:00"
+    },
+    "7b22036eca274d7c": {
+      "answer_hash": "9f58c1225f557c9a54c9d54008ed72c5385662b3383cb94dee27f723a09426e9",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:58:56.338242+00:00"
+    },
+    "c8d1fa16dae0e25c": {
+      "answer_hash": "080a7abadd26533b26c5efe6fbfb844cf5f718635546f574bb14c4fb2b2b7e38",
+      "correct": true,
+      "reason": "Explicitly anchors last year to 13 October 2023, equivalent to 2022.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:58:56.338250+00:00"
+    },
+    "460a0c66bad635a1": {
+      "answer_hash": "5fa00b8c53b7e958ead83fbf7a914b121835d32768ef7f3df0b4736a85aa89c7",
+      "correct": true,
+      "reason": "This month is explicitly anchored to 3 July 2023, equivalent to July 2023.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:58:56.338260+00:00"
+    },
+    "3ad36ad745e950c0": {
+      "answer_hash": "41c4186650d195772d92ce4121f909a4e190cf145ceb35969f5374973ce30a96",
+      "correct": true,
+      "reason": "Explicitly anchors this month to 3 July 2023, equivalent to July 2023.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:58:56.338269+00:00"
+    },
+    "4e4e375b2a7f2a56": {
+      "answer_hash": "8504c4be4504cf2164c9b5d0b39b6bea3d0b23dba27ac8cceae291d6a478c2cf",
+      "correct": false,
+      "reason": "Says the month following 3 July, implying August; the source says this month, July.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:58:56.338276+00:00"
+    },
+    "b092818964573807": {
+      "answer_hash": "44717b38cc9727ac2e490472a608395bc2308357d04f2af78090ca9a193871f9",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:58:56.338283+00:00"
+    },
+    "bd0de4139e1e7bfb": {
+      "answer_hash": "2985c7306a648453c81cdd53847fd496e47d5a475e196f3e7fd64f771ca996fb",
+      "correct": true,
+      "reason": "Quotes this month and cites its sole supplied source G-D5:13, dated 3 July 2023, supporting July. Flagged because the answer text itself omits an explicit date anchor; a standalone-answer interpretation could reject it.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:58:56.338291+00:00",
+      "human_adjudication_recommended": true
+    },
+    "23b3fd976968b5c6": {
+      "answer_hash": "c9d366f6bd9a35ad795bfbdc02767b679948c3e058e0b2e25b68a0f1b878b2a4",
+      "correct": true,
+      "reason": "Correctly gives last weekend anchored to 17 July 2023.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:59:09.752944+00:00"
+    },
+    "694200f48a5f247b": {
+      "answer_hash": "c10578f49e8ea2592820ec98ab5148f4badb1f272b203823775ac968555d536a",
+      "correct": true,
+      "reason": "Correctly gives the weekend before 17 July 2023.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:59:09.753054+00:00"
+    },
+    "bddb176ace11da3b": {
+      "answer_hash": "0753785dac22bc1527643306efa8b8ebc24273fcfd0eddc58f50c215e6c10a55",
+      "correct": true,
+      "reason": "Correctly gives the weekend before 17 July 2023.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:59:09.753069+00:00"
+    },
+    "2a3f6b730348a0cc": {
+      "answer_hash": "2d066e53b05d3b4f232927888a445ed79554efa81c0714cc36e969fe1b9aabbd",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:59:09.753079+00:00"
+    },
+    "f9ddeaf40f9782da": {
+      "answer_hash": "026536d1bc2d2588842b23a7858dcafcda732a2993dd94e2d4e8cb78da6d3121",
+      "correct": true,
+      "reason": "Correctly anchors last weekend to 17 July 2023.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T20:59:09.753089+00:00"
+    },
+    "8e8c7bd93c2f353c": {
+      "answer_hash": "1c7bbdfd3d404205593fcd145340ff4c8a33e212a46666ea76cba9dc8a4bfde2",
+      "correct": true,
+      "reason": "Provides next month explicitly anchored to August 2023, which means September 2023. Flagged because its opening claim that the month is not specified could be interpreted as an inconsistent abstention, although the following relative answer is sufficient.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:15:17.112171+00:00",
+      "human_adjudication_recommended": true
+    },
+    "5c5040a05ac4cde5": {
+      "answer_hash": "f3c3398ce6bc4435aeba138f4810cfae2852dca38ed70aa385d82d99ee2055d3",
+      "correct": true,
+      "reason": "Next month after 28 August 2023 is September 2023.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:15:17.112227+00:00"
+    },
+    "b380c868d9b9712c": {
+      "answer_hash": "66ae88d0093ee51ee6d89e0e45a48a1f8f7b1d5df1276803be28b45a3a90a476",
+      "correct": true,
+      "reason": "Next month after 28 August 2023 is September 2023.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:15:17.112234+00:00"
+    },
+    "ecf553f4a4bdabdb": {
+      "answer_hash": "ac852a8cb9647b4a0f84bf586e02fbefb8475bb92d24efcf29b65ddf10990c4d",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:15:17.112242+00:00"
+    },
+    "0a5958438ad28422": {
+      "answer_hash": "1cb10bb1580527242f4059c4c1b9d30ceca6aaa96fd38f60eab5882b86a5b02b",
+      "correct": true,
+      "reason": "Next month is anchored by the sole cited source G-D15:11 dated 28 August, supporting September. Flagged consistently with q017 because the answer text omits the anchor and a standalone-answer interpretation could reject it.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:15:17.112246+00:00",
+      "human_adjudication_recommended": true
+    },
+    "ba63c8fea7e8d82d": {
+      "answer_hash": "a71c740455b1b2c218da8a6b00f1fa0a9a538fe2cd2c64d677289d6eeceb070f",
+      "correct": false,
+      "reason": "Substitutes conversation dates July 3 and August 14 for parade dates, rather than the week before July 3.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:15:17.112252+00:00"
+    },
+    "b8e7bf3b479a3b5f": {
+      "answer_hash": "407fae0a04f68b037b6a5c7b02365d1991dc34ddf8f4f3106cafa0a42082187d",
+      "correct": false,
+      "reason": "States July 3 as the event date, contradicting the accompanying last-week phrase. The supported later August parade does not repair the incorrect target date.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:15:17.112263+00:00"
+    },
+    "15e7c6124c81b85b": {
+      "answer_hash": "31baa55fe15e52e1e75b555a2bb05f1fd4fd8146a00c58f2c48e078aac0260f3",
+      "correct": false,
+      "reason": "Lists unsupported dates for the target event, including the July 3 conversation date; does not give the preceding week.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:15:17.112269+00:00"
+    },
+    "e5c7c66ab14048a9": {
+      "answer_hash": "03d3c57134beb09f0c36ccbe5f1d03a3e437d15e64191d8b80efd38844997934",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:15:17.112273+00:00"
+    },
+    "ceff028be883dc01": {
+      "answer_hash": "88e30de68c941608f380c1b4b35a37830cecdd080df1b88250c05d3ecc33e95b",
+      "correct": false,
+      "reason": "Uses July 3, the conversation date, rather than last week.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:15:17.112277+00:00"
+    },
+    "992877463b9dca44": {
+      "answer_hash": "68b92e06ff247ccc3ea7ade5a0042b0847b17868412a2b9fff14cb477acb49b0",
+      "correct": false,
+      "reason": "Uses May 25, the conversation date. The corrected source-grounded reference is Saturday May 20.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:15:17.112281+00:00"
+    },
+    "d3e8cebd5d95fbd6": {
+      "answer_hash": "4f888344050652ec70370368004e9e2fdcee711c0ddc3317d0c5f4eafe72161c",
+      "correct": false,
+      "reason": "Uses May 25 instead of the preceding Saturday, May 20.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:15:17.112284+00:00"
+    },
+    "924a86a4a5a9f0a5": {
+      "answer_hash": "bf5c780ad58c6d12284432fb5515f0fd12dc869e334c1565b5e6a36fa817c821",
+      "correct": false,
+      "reason": "Incorrectly calls May 25 a Saturday and uses it as the event date; the source supports May 20.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:15:17.112287+00:00"
+    },
+    "4b2aa37ff8a7187a": {
+      "answer_hash": "72e922132df765d04c5c0865cce3f664dda64916f4613df5ec9aae990daac0d8",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:15:17.112291+00:00"
+    },
+    "60d6df8f71acfefe": {
+      "answer_hash": "cf15087100efde47a0a396eca02c3da8191d2b1ea284cab44401ab7a0e06f56b",
+      "correct": false,
+      "reason": "Gives May 18, a Thursday, rather than the Saturday before May 25, which is May 20.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:15:17.112294+00:00"
+    },
+    "fd8433da43ce8e5c": {
+      "answer_hash": "297c6d8cdb8a8c0ab87284868716791bd58747b858d3e4198736912501230984",
+      "correct": false,
+      "reason": "Gives unsupported July 15 and July 20 dates, including an inconsistent last-year reference; omits the source-supported two weekends before July 17.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:31:38.207022+00:00"
+    },
+    "7700e7fcb7f1efed": {
+      "answer_hash": "6e3e2c937739dbb665c080f000b00562751583fb5ceeb9ad901d1b75c4ab98de",
+      "correct": false,
+      "reason": "Includes the correct two-weekends-before-July-17 relation, but also asserts a July 6 beach camping date. D6:16 shares a camping photo on July 6 without establishing that as the trip date.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:31:38.207115+00:00"
+    },
+    "721ac0d43297664b": {
+      "answer_hash": "59ffc78bd08f55e1f3da4b1f1913e4f339459aa8aaf96041859e4965f7b3e9f4",
+      "correct": false,
+      "reason": "Uses July 6 and July 20 conversation dates as camping dates without support and omits the reviewed relative date.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:31:38.207127+00:00"
+    },
+    "78dda342baf36638": {
+      "answer_hash": "2e07faf7cc87e8237d6328c3f225564cecbbb089c899842efae9562948f4c4e4",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:31:38.207135+00:00"
+    },
+    "8a5a181cfb595518": {
+      "answer_hash": "9a53f8739222053f196823d892580757b4e5d872728cf0a5dbf43d75844c24c5",
+      "correct": false,
+      "reason": "Abstains despite the explicit two-weekends-ago relation and July 17 source date.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:31:38.207142+00:00"
+    },
+    "893f9f655f651e36": {
+      "answer_hash": "dafe1c60a43628b1e094d0e34727606b88f02d03b3da82050857d718be22308c",
+      "correct": true,
+      "reason": "Correctly resolves next month from May 25 to June 2023.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:31:38.207150+00:00"
+    },
+    "e199fe36297d64fd": {
+      "answer_hash": "5a4ca13085adb340372d0b218d7298dba143aea37f7b1abc3bec86bc0b3381b9",
+      "correct": true,
+      "reason": "Correctly anchors next month to May 25 and identifies June 2023.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:31:38.207169+00:00"
+    },
+    "854138ada90b2a40": {
+      "answer_hash": "aab518a9899adb1fd1aae8859501f80db8549f42a14cf114932dc31c11572bc4",
+      "correct": true,
+      "reason": "Correctly gives June 2023.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:31:38.207183+00:00"
+    },
+    "f75d9230f95f53d4": {
+      "answer_hash": "0b453853a8c2deb59184d3e8658e0d9461b4886f35eb21bf902aa0bc98c6cea4",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:31:38.207190+00:00"
+    },
+    "a8eb053040aee887": {
+      "answer_hash": "37e449634f487dc4df27d438bcdd6e5f43b1c18ab83a3b34487a8e781d29b850",
+      "correct": true,
+      "reason": "Next month is anchored by sole cited source G-D2:7 dated May 25, supporting June. Flagged consistently with prior relative-only gold answers because the answer text itself omits the date anchor.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:31:38.207196+00:00",
+      "human_adjudication_recommended": true
+    },
+    "5b870d0a47c88596": {
+      "answer_hash": "144057ebbef0f57833cf5b59512d441e1d8ef8d2ea4b9925af2eb1ae0f7ad2c9",
+      "correct": false,
+      "reason": "Uses August 25, the conversation date, rather than yesterday, August 24.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:31:38.207207+00:00"
+    },
+    "d5cc30076f80c318": {
+      "answer_hash": "52478bda9edf5fd9f5df621befcdf9a176c1740655235d88f6cc6a8c56442141",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:31:38.207219+00:00"
+    },
+    "86bc27e41a3ac753": {
+      "answer_hash": "923b1ab77a01556e7ea40dbb90abf8692dbba357f46a37e821e66a4849382e1b",
+      "correct": false,
+      "reason": "Uses August 25 rather than the preceding day, August 24.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:31:38.207225+00:00"
+    },
+    "b8dcc85c88d69d0f": {
+      "answer_hash": "eb5f52f30429ef307e1668c43f577937bb774879590087ce2fe6553eb3e0c4d3",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:31:38.207231+00:00"
+    },
+    "d6283d128d861b0d": {
+      "answer_hash": "879326ba857c88459c09337b7c1841ed12a41d2b59e7a063c3e676ec8becdfb6",
+      "correct": true,
+      "reason": "Correctly resolves yesterday before August 25 to August 24, 2023.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:31:38.207238+00:00"
+    },
+    "08117c95b2816b94": {
+      "answer_hash": "007c5bc7debeeec13f310c588d7cb4b018b47e0a14de26c853de01b44f95b712",
+      "correct": true,
+      "reason": "Correctly gives July 10, 2023.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:31:38.207244+00:00"
+    },
+    "079f2d57f7700f5e": {
+      "answer_hash": "9b8c739daba0721e7aff4a93485fe5d699beb3dc6d48357059c253edd7e66172",
+      "correct": false,
+      "reason": "Gives July 3, when a conference was discussed as upcoming, instead of the attended conference on July 10.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:31:38.207250+00:00"
+    },
+    "fae157f6e5813423": {
+      "answer_hash": "10e9cc08da1022ffe020649a5c4818d57fb2aac804ffd5d3af7f65068f60fa7f",
+      "correct": true,
+      "reason": "Correctly resolves two days before July 12 to July 10, 2023.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:31:38.207257+00:00"
+    },
+    "78c53cfd735f071b": {
+      "answer_hash": "ccd2fcad0d7fe23369a70c5bcca97da64babf3eca926d2d4dfc16171a57b2d61",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:31:38.207262+00:00"
+    },
+    "8f8487847fa80241": {
+      "answer_hash": "67eaca60956121774ed945cbd1ac684c535750a09fc04e81e124eccd1a990303",
+      "correct": true,
+      "reason": "Correctly resolves the source date to July 10, 2023.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:31:38.207268+00:00"
+    },
+    "959b1fe42b81f8c7": {
+      "answer_hash": "66b1d1a8936dff272f662e37226a4af993a06637f3d974daf473f091e1f709c6",
+      "correct": false,
+      "reason": "Gives July 12 rather than the Friday before July 15, which is July 14.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:47:51.809495+00:00"
+    },
+    "7b79086372a2ad3a": {
+      "answer_hash": "514879b5b45526d25d9e219bb6d9f270f93f1594c2b3b566922ec76fdc170446",
+      "correct": false,
+      "reason": "Gives July 10 and incorrectly calls it Friday; the source supports Friday July 14.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:47:51.811908+00:00"
+    },
+    "c8f0f149fac44427": {
+      "answer_hash": "7bc35105b4d3f99f93ac6dcca7a716e97f58025034780f167e4f2addfe862104",
+      "correct": false,
+      "reason": "Gives July 10 rather than Friday July 14.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:47:51.811917+00:00"
+    },
+    "e151029a3b06dadc": {
+      "answer_hash": "a22d6b8d2ef56ab0e5154d5dd798ceb7124ed16ded58e1a634bf53b1175d36cc",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:47:51.811923+00:00"
+    },
+    "d773f60052d7b710": {
+      "answer_hash": "3e6e8492bd35d402869f3fb38ed9b526c81c2275345320d40894fff2cca7e6c9",
+      "correct": true,
+      "reason": "Correctly anchors last Friday to July 15, equivalent to July 14, 2023.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:47:51.811928+00:00"
+    },
+    "f727dad92a0ba668": {
+      "answer_hash": "ce29e125d1c0f70bc8f8799818fdfcb1010748d9d563f0ebcfd09f81e091c523",
+      "correct": false,
+      "reason": "Uses the May 8 conversation date rather than yesterday, May 7.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:47:51.811935+00:00"
+    },
+    "b20dd4a9940fa322": {
+      "answer_hash": "0e37a8459948228305616aed60f98dc1672e40247dee4d14dc035291b62da44a",
+      "correct": false,
+      "reason": "Uses May 8 instead of May 7.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:47:51.811946+00:00"
+    },
+    "685300bcef0569b7": {
+      "answer_hash": "941159ce334753c8ea81f498e90fbddabc1af17735795ebbb1aabc4cb4d2350f",
+      "correct": true,
+      "reason": "Correctly resolves yesterday before May 8 to May 7, 2023.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:47:51.811952+00:00"
+    },
+    "09110cb9b79c5059": {
+      "answer_hash": "3fb724ace4ab12eaf6f2eddee89313315f7e6409c410ad73a0c2e28fc7bd0c6d",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:47:51.811957+00:00"
+    },
+    "0555c630031548f6": {
+      "answer_hash": "92139390479b3d39402d43510959fd0029e4ead8c455a4d7882ecbf0d180a2e2",
+      "correct": false,
+      "reason": "Uses May 8 rather than the preceding day, May 7.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:47:51.811961+00:00"
+    },
+    "4426d0facf9ec191": {
+      "answer_hash": "a8797d6309b7f18850fc924490f457cfb6da61e0019a829707b3167add30a335",
+      "correct": false,
+      "reason": "Uses June 9, the conversation date, rather than the preceding week.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:47:51.811966+00:00"
+    },
+    "04b711369bb5c67a": {
+      "answer_hash": "856b09d921962c6fb33edf849bd82a596d01779ba32b147fce0b1b437ab64986",
+      "correct": false,
+      "reason": "Uses June 9 rather than the preceding week.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:47:51.811971+00:00"
+    },
+    "d122d161c4960fc5": {
+      "answer_hash": "42c323adaef4c8f92ea98fa5b6f61ef43c7a64e8bd3db2472313df7c00286b9d",
+      "correct": false,
+      "reason": "Invents the exact day June 2 when the source supports only last week. Flagged because the date lies within one possible reading of the referenced week, but primary source-grounded grading rejects unsupported day precision.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:47:51.811981+00:00",
+      "human_adjudication_recommended": true
+    },
+    "b7237da3ef824028": {
+      "answer_hash": "99366d8d4efeb29208e3134719df952be64c8458839008a231527e9efae58b09",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:47:51.811988+00:00"
+    },
+    "1900138792f758a3": {
+      "answer_hash": "9c029a58c3738d2f920a9a62a1825c4936d63d675b7067a5d5ce1066d3869377",
+      "correct": true,
+      "reason": "Preserves last week anchored to June 9 and gives the preceding seven-day period June 2-8. Flagged consistently with q031 because calendar-week interpretation would instead be May 29-June 4.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:47:51.811993+00:00",
+      "human_adjudication_recommended": true
+    },
+    "ba10852e43b911ac": {
+      "answer_hash": "9464ffc48e134f1619d1e088469b03510d1c28c1d3d46bb8a1ba797f548fca8a",
+      "correct": true,
+      "reason": "Includes nature/forest exploration, marshmallows and hiking. The additional camping locations and Perseid meteor shower are supported by D8:32-34 and D10:14.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:47:51.811998+00:00"
+    },
+    "eda46187fbc0a6e8": {
+      "answer_hash": "65a2955135236db767bab536818409f74450c7e9f2e2d47becbd73e7478f89d6",
+      "correct": true,
+      "reason": "Includes hiking and marshmallows in the supported mountain/forest/beach camping context; accepted as covering outdoor nature exploration. Flagged because exploration is implicit rather than separately stated, so a stricter item-completeness reading could reject it.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:47:51.812002+00:00",
+      "human_adjudication_recommended": true
+    },
+    "b35f696ea4953eb9": {
+      "answer_hash": "8274f3240c0c8e740bdc9d3e97ab1ecbca563162b018310427dea9aec617519d",
+      "correct": false,
+      "reason": "Includes camping locations, marshmallows and stories, but omits the hike and does not describe nature exploration required by the reviewed reference.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:47:51.812006+00:00"
+    },
+    "e5c6cae83e11bacc": {
+      "answer_hash": "9d9de81b9936f2dfb89aa4905f99b3cb8aef1ba7b7193e9806185dd6c8250ca4",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:47:51.812009+00:00"
+    },
+    "dfb191a8a5e85b1d": {
+      "answer_hash": "02a759be7e1488f4eae08e4d192f1189a5e4fbe45a25cffa1fc60e2df6944682",
+      "correct": true,
+      "reason": "Explicitly includes all three reference activities: nature exploration, marshmallows and hiking.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T21:47:51.812015+00:00"
+    },
+    "9d4c8bf80152f5cd": {
+      "answer_hash": "9c1c1c854f91b22640ce6b5608d5207b7f57a754d32679f701e1fe6fbc32e253",
+      "correct": true,
+      "reason": "Includes researching adoption agencies and the loving-home aim. The additional possible summer outing with Melanie is supported by D12:17.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:03:32.286651+00:00"
+    },
+    "f3cd3298ac084edc": {
+      "answer_hash": "432fb63af3068bcb8989890f814c14246b8e98c52f28a49b0969241d3318dd3d",
+      "correct": false,
+      "reason": "Includes adoption-agency research but adds a false exact interview date, October 19. D19:1 says last Friday before Sunday October 22, supporting October 20, not October 19.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:03:32.286705+00:00"
+    },
+    "e4b57f34a7b3b1ff": {
+      "answer_hash": "cdcfb0bd5680e497111008c057acbb780270d69e77f9033c49fbac505d220181",
+      "correct": false,
+      "reason": "Lists other plans but omits adoption-agency research, the required summer-plan reference.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:03:32.286712+00:00"
+    },
+    "df5189e10db75681": {
+      "answer_hash": "166c8d926d7cbc9c2183fa614d6ab2d018cf1a43bdc39d450da3d8942dd1a903",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:03:32.286717+00:00"
+    },
+    "2fc642abd670e74e": {
+      "answer_hash": "3db2aa73b3ea369da94a5c9a2ef8e5c6534a47d4687ef6d256aab04a3e6498ea",
+      "correct": false,
+      "reason": "Abstains despite the explicit summer-plans question and adoption-research response in the supplied source.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:03:32.286722+00:00"
+    },
+    "1ef49e815b487c4a": {
+      "answer_hash": "5075e787f2b86ed17d39174fff2b996b855c536159b377d66ef036a774d3cc83",
+      "correct": true,
+      "reason": "Correctly gives seven years, explicitly stated by Melanie in D16:8.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:03:32.286728+00:00"
+    },
+    "f7387f698d2f52c5": {
+      "answer_hash": "fc28a610414f1304886a7aca1bcaafc6d43e2c64630ddd444084528cd022fabd",
+      "correct": true,
+      "reason": "Correctly gives seven years.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:03:32.286738+00:00"
+    },
+    "379f85033c4901bc": {
+      "answer_hash": "db8f0c0f9be4f871966ad79dce9e3a1325ae805c10f2c838b3bf6e0a40684f41",
+      "correct": true,
+      "reason": "Correctly gives seven years.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:03:32.286744+00:00"
+    },
+    "ff5877573ebcbe4f": {
+      "answer_hash": "3ca22513a00d39e023fc3852b94053b95e745922c09e511049af4b75342b6b65",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:03:32.286749+00:00"
+    },
+    "91453ce872c1a56c": {
+      "answer_hash": "8eb64928fc4838155118e5bf7a83e320629be366ccf29929abab4d8c3dc9bd2e",
+      "correct": true,
+      "reason": "Correctly gives seven years.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:03:32.286756+00:00"
+    },
+    "fcc7b2a3a816f859": {
+      "answer_hash": "1cf208faa7c3f9c9fe026d73900e52b25ae4f798d54d668dbabae97827c076ea",
+      "correct": true,
+      "reason": "Correctly identifies LGBTQ+ people receiving adoption support.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:03:32.286762+00:00"
+    },
+    "3befd3483fad79cc": {
+      "answer_hash": "bd6fd4d40c0846caaaf84ddb76ab42aa9500acbf6c75dd86262e739537c1daee",
+      "correct": true,
+      "reason": "Correctly identifies LGBTQ+ individuals.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:03:32.286766+00:00"
+    },
+    "b48e5c877ad059f3": {
+      "answer_hash": "67ba793e528fd174786578e419799697bd2b88866affa98e29fc31b7ddf6951b",
+      "correct": true,
+      "reason": "Correctly identifies LGBTQ+ individuals.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:03:32.286770+00:00"
+    },
+    "759dc956514138cf": {
+      "answer_hash": "985d53f3d76e7f3adfde6d8b30b6c6e5b1294835137894bc0981c84a403cc1b9",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:03:32.286775+00:00"
+    },
+    "9abcf256fb22dd60": {
+      "answer_hash": "79a5178abf9c387c62ac7c76286228cb0b4330ea3b8ef81257a7e77367b44ba8",
+      "correct": true,
+      "reason": "LGBTQ+ folks is equivalent to LGBTQ+ individuals.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:03:32.286779+00:00"
+    },
+    "1979cf90735afa26": {
+      "answer_hash": "6cc3670dbe102c3b02c67ae53537e218ab6d6bda774c27fd3c26d3dcd4eb7171",
+      "correct": true,
+      "reason": "Includes both fear and reassurance that their brother would be OK; toughness is also source-supported.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:19:01.585902+00:00"
+    },
+    "77036da52179ed03": {
+      "answer_hash": "b847dcfd49ec18585b6b891d5e9108d341de17f33157bbd824f16cfa8efa8e8e",
+      "correct": false,
+      "reason": "Includes fear and resilience but omits the family reassurance required by this reviewed reference. Resilience alone does not state that reassurance occurred.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:19:01.586031+00:00"
+    },
+    "52014b5b5f073c11": {
+      "answer_hash": "0709519671cbc8a681b776bbdea506cc9927f513402ee845010ae30b6547940d",
+      "correct": true,
+      "reason": "Includes fear and reassurance that their brother would be OK, with supported resilience.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:19:01.586046+00:00"
+    },
+    "9544720a978548bb": {
+      "answer_hash": "b7b3a01cd16b851c79cba4b7435f7963d1a452cf770d5d6a2fcf3d11c61f39c2",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:19:01.586056+00:00"
+    },
+    "efed5bd695382d4a": {
+      "answer_hash": "58a53c31b80186ceb937e6f8772e4e38f56ef5b0624ef36b4f83676661308b9b",
+      "correct": true,
+      "reason": "Correctly describes the children as scared and reassured about their brother.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:19:01.586066+00:00"
+    },
+    "ba01eb1fc04eeec4": {
+      "answer_hash": "cc8995a964c078dfbaacdef849f6df178df8027692acbe9a9e44884f8a4eaf11",
+      "correct": true,
+      "reason": "Correctly names warmth and happiness.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:19:01.586087+00:00"
+    },
+    "bb16678ee4aae835": {
+      "answer_hash": "681fe14fdcf8fe68ff9a8abc9e7a8de225b8b94f149f1732690ccd438b844dae",
+      "correct": true,
+      "reason": "Correctly names warmth and happiness.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:19:01.586115+00:00"
+    },
+    "617906520282e3e2": {
+      "answer_hash": "b47c7455d82dcc30c7892701044d78a29cdc7ba39c7e08feed7a03acdf949cb6",
+      "correct": true,
+      "reason": "Correctly names warmth and happiness.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:19:01.586132+00:00"
+    },
+    "51d98a9a81ba2bff": {
+      "answer_hash": "603df8ce02e51f8b01a9c82d1b17ff3590d1cc28d102cba7ba3b3209993f1895",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:19:01.586142+00:00"
+    },
+    "0484c85eeeb43100": {
+      "answer_hash": "4feb595c670c489d1eeb00cbf72511f2cb19af6ec8f78cfb79d4b1080ecac821",
+      "correct": true,
+      "reason": "Correctly names warmth and happiness.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:19:01.586152+00:00"
+    },
+    "38f3ee969d3f96cc": {
+      "answer_hash": "ca39516c1b87005b9c00b2dedcb0441e701df3d63aa170fb35500fe71a796300",
+      "correct": true,
+      "reason": "Correctly gives art and self-expression for the source-corrected bowl owner Caroline.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:19:01.586164+00:00"
+    },
+    "d6231d3b17c602c6": {
+      "answer_hash": "b50414eafe02111f25393198a05c6022406da638e49e7843709b022a230ab6de",
+      "correct": false,
+      "reason": "Gives the birthday occasion when the bowl was received, but omits its stated reminder: art and self-expression.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:19:01.586173+00:00"
+    },
+    "2a829d5b002b72ea": {
+      "answer_hash": "68f758ea47c9473713008727e02a3b31dc6bcb5d8f05a334409f4171329a7b71",
+      "correct": true,
+      "reason": "Correctly gives art and self-expression.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:19:01.586189+00:00"
+    },
+    "07988d6ce351c5e6": {
+      "answer_hash": "91de81948adcd04d126c4eb91045d2d5517bc48b76fc5a3c55e887fca58d77ad",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:19:01.586197+00:00"
+    },
+    "6f95206419ea5207": {
+      "answer_hash": "ae0a06ecf4f3b9281f0c23cd2a9881bd8a4e0a5e72d32fd0e1c88e07408c8020",
+      "correct": true,
+      "reason": "Correctly gives art and self-expression.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:19:01.586205+00:00"
+    },
+    "7644f006dba9b7fc": {
+      "answer_hash": "65f900e5b991a48da5a1428477ce967253cad70edfacc5bdfce77261993e7352",
+      "correct": true,
+      "reason": "Correctly identifies the rainbow sidewalk; Pride Month is explicitly supported.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:19:01.586215+00:00"
+    },
+    "ff93c8754f4eb5f4": {
+      "answer_hash": "9f3ab3b6b0e96c0c1cfcdff80f850b8d07ca9d08769e8c39a43d9f05df2a94e8",
+      "correct": true,
+      "reason": "Correctly identifies the rainbow sidewalk.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:19:01.586225+00:00"
+    },
+    "06f598a59c25ef7c": {
+      "answer_hash": "5649f344766415804e150b57bbb643d1c99689fee3d31d78160d369b5ed7ee10",
+      "correct": true,
+      "reason": "Correctly identifies the rainbow sidewalk.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:19:01.586233+00:00"
+    },
+    "20959bc269899ad8": {
+      "answer_hash": "8455c7006d120ecc51cc1e51627a83d8fd1d18bc261deb19e9e9fdd271779786",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:19:01.586241+00:00"
+    },
+    "28a60420c68bad4a": {
+      "answer_hash": "90bf79ed78a1796c29aed50d6178c87d80e7b040cf410af4f56d6b308bc74af5",
+      "correct": true,
+      "reason": "Correctly identifies the rainbow sidewalk.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:19:01.586249+00:00"
+    },
+    "90766b835febe4ad": {
+      "answer_hash": "1a925b9fbcb27c25be535624c62f5478105dba3d5ef67bb12c8150e387a2055f",
+      "correct": true,
+      "reason": "Correctly identifies Melanie's daughter as the birthday celebrant.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:35:31.793840+00:00"
+    },
+    "9848d1463a90949a": {
+      "answer_hash": "ab096610c75c2f104e649eff3ac8fbcc2c6610b7e0c2fa4c758ff06c4b5a182c",
+      "correct": true,
+      "reason": "Correctly identifies her daughter.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:35:31.793928+00:00"
+    },
+    "3a3b8cc51f46435b": {
+      "answer_hash": "7214aa0124f616f57452fc468cd0f306738ca9aee7fdea6f24ca4fafe41bdff7",
+      "correct": true,
+      "reason": "Correctly identifies her daughter.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:35:31.793943+00:00"
+    },
+    "01c699bc02273e6d": {
+      "answer_hash": "c0878b13a253de44e86ef9057b86d1824a478fd8c4ec4f9b329bbd3820524a4f",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:35:31.793955+00:00"
+    },
+    "671c000dacf67ae4": {
+      "answer_hash": "dd920e606948563fd6c85f500eb234bdc45fd724c57f184b1f33cdce2b4e5d6d",
+      "correct": true,
+      "reason": "Correctly identifies Melanie's daughter.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:35:31.793965+00:00"
+    },
+    "643b59b7eae0889b": {
+      "answer_hash": "9e1ba05b83fa12fb24a3f5928985f1e995aadfb4344ae743bf2d750b7934ada9",
+      "correct": true,
+      "reason": "Correctly confirms Melanie made the black-and-white bowl, explicitly established by D5:7-8.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:35:31.793977+00:00"
+    },
+    "78aac835fb34d0c8": {
+      "answer_hash": "a65c33a05cbbbab8f1ea4c3cd44e366197b375ac896e018c6820b155697f3c7b",
+      "correct": true,
+      "reason": "Yes correctly answers the source-grounded question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:35:31.794005+00:00"
+    },
+    "a9dd3479dc63c1e3": {
+      "answer_hash": "3d23ba06540572fa2f009d347a754614d6d9e87c0afa735a4072e0ec25d52924",
+      "correct": true,
+      "reason": "Yes correctly answers the source-grounded question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:35:31.794021+00:00"
+    },
+    "c1e051989477aeaf": {
+      "answer_hash": "cc81f34ebbbd86b3aadb4efe6309605d4321ed146d025c7fce20332a370fa732",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:35:31.794031+00:00"
+    },
+    "1c011aeb96bdce24": {
+      "answer_hash": "9045be1bbaee30b551ec4b9330b41d812fb41be23ceac7fb1d88814f5120af17",
+      "correct": true,
+      "reason": "Yes correctly answers the source-grounded question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:35:31.794048+00:00"
+    },
+    "b7a7bef175ad33fa": {
+      "answer_hash": "2070f95ffa7ae76b3d555c41c208226babfb978306788afecf9e3860c5ec0546",
+      "correct": true,
+      "reason": "Correctly identifies a guinea pig named Oscar.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:35:31.794060+00:00"
+    },
+    "0b6eabe6068a6157": {
+      "answer_hash": "57219dba8bdcae977ed5b795625056f7532351a4946c64e5bb20acc6cf08238e",
+      "correct": true,
+      "reason": "Correctly identifies a guinea pig named Oscar.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:35:31.794075+00:00"
+    },
+    "576b382dd40edf38": {
+      "answer_hash": "1771ca04b4d2535ceb122a07a8c8e63a3a2b9ca4b13ae05e4d87d83482329217",
+      "correct": true,
+      "reason": "Correctly identifies a guinea pig named Oscar.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:35:31.794084+00:00"
+    },
+    "37f882ac4cb38654": {
+      "answer_hash": "63e524ee315841e88805e7df475220ce4ee3af9c6650ddce5413e6ec13e90202",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:35:31.794093+00:00"
+    },
+    "d9f0807a27d28c3c": {
+      "answer_hash": "0fec5036c0a6d9fa623cd30aeef6f07d430faf5b30779ab04e8418a04cbc362c",
+      "correct": true,
+      "reason": "Correctly identifies a guinea pig named Oscar.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:35:31.794101+00:00"
+    },
+    "bff552e2cd7e9e3b": {
+      "answer_hash": "824f28310e690255582aba3f24f9082d26168530a34f2830acf16efba43374ef",
+      "correct": true,
+      "reason": "Calling family support awesome and helpful through tough times expresses the supported appreciation, closely matching D8:32.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:35:31.794111+00:00"
+    },
+    "8c3c225ec4bc1360": {
+      "answer_hash": "29d9f78c430e1850c145b4cf561b84c772edd09a5c60f315fd44fde1e128bc9e",
+      "correct": true,
+      "reason": "Positive valuation of strength, motivation, love and support is accepted as appreciation. Move and accident support are grounded in D8:29-32 and D18. Flagged because appreciation is implicit and recent setback is vague; it is read as the supported tough-times account, not a separately established injury-support event.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:35:31.794121+00:00",
+      "human_adjudication_recommended": true
+    },
+    "c7a89f2ee6566f30": {
+      "answer_hash": "304662301ca3bdbb55e3f0a7c91c290dcb59c961eed1dd9492eb0bd5b74e72e3",
+      "correct": true,
+      "reason": "Explicit thankfulness and strength to keep going express appreciation; peace through creativity/family is also supported by D8:28.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:35:31.794138+00:00"
+    },
+    "f6169ef90063a082": {
+      "answer_hash": "cd86aa7a4275b53955c6218ca1c4d01f9de5da8cad1483e4f0123e2172ba309d",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:35:31.794147+00:00"
+    },
+    "55db0cff287528aa": {
+      "answer_hash": "77ba4b5eb8b179521ef6428ec6bcd6e867514dbf9ab29198acb1038784bf2e4e",
+      "correct": true,
+      "reason": "Explicitly states that she appreciated the family support a lot.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:35:31.794155+00:00"
+    },
+    "6df7579c003dde9f": {
+      "answer_hash": "c84761246fef329bce72ebad527cfcdb2ab849f38b8e5d40ae0c604e582466f4",
+      "correct": true,
+      "reason": "D13:7 explicitly identifies horseback riding with her father.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:52:26.961531+00:00"
+    },
+    "b25f8f1f41bf4518": {
+      "answer_hash": "cb6eb8b44c5a886907ed1bd140340e999d6b380358d87348c928b218046a648e",
+      "correct": true,
+      "reason": "Horseback riding with her father matches D13:7.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:52:26.961636+00:00"
+    },
+    "33714ed10b2b226d": {
+      "answer_hash": "f963e59c65b42fdd83beb643f2475b6a1cf804c628313caeb0d3cd540d53db7a",
+      "correct": true,
+      "reason": "Horseback riding and the added fields detail are both supported by D13:7.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:52:26.961651+00:00"
+    },
+    "c00d2d40c352fdc6": {
+      "answer_hash": "727be123b055f7f28196b83284f1f4cbbe7eca69f4872e218ae3e5f8d6f1f09b",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:52:26.961662+00:00"
+    },
+    "9ae0f4e8fc63eab8": {
+      "answer_hash": "1e02d552068c6d5e5af74917ae267929a5e0a3a934c27361c4fccdfc978433ce",
+      "correct": true,
+      "reason": "Horseback riding with her father matches D13:7.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:52:26.961672+00:00"
+    },
+    "e7512ffd1a1790d7": {
+      "answer_hash": "a7ad81d38c2f9ae9d2c970b3818025978dcfeb30c0d3fc75efc6ee1cee296f0d",
+      "correct": true,
+      "reason": "Includes all four requested advice components from D17:7; document examples are supported.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:52:26.961691+00:00"
+    },
+    "159b0f27275fbf3b": {
+      "answer_hash": "e0f84bb76402d75d09c608fd7c40fc8d2d5e3fe166a69ae15de6ccd79f9c2e84",
+      "correct": false,
+      "reason": "Denies that advice is available and does not provide the requested advice, explicitly present in D17:7.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:52:26.961713+00:00"
+    },
+    "926ae2e8f7edb655": {
+      "answer_hash": "383178203c6f877f30a33ab547d697e16a66e6cd4a56a5318b193a0d0bd63b31",
+      "correct": true,
+      "reason": "Includes research, agency/lawyer, documents and emotional preparation, all supported by D17:7.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:52:26.961727+00:00"
+    },
+    "98adfdb540787da1": {
+      "answer_hash": "4a2de296d111b6e94bda5493671447a60ceb4a529cc7032d050f2e72e26292e1",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:52:26.961738+00:00"
+    },
+    "e9b2b66cfd70c76b": {
+      "answer_hash": "0805fc84e173c25216bfce308418a3780f800d1b63b3233a2841f1d3fdc845bc",
+      "correct": false,
+      "reason": "Includes agency/lawyer, documents and emotional preparation but omits the separately requested instruction to do research. Flagged because finding an agency and obtaining information could be interpreted as implicit research; strict completeness rejects the omission.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:52:26.961747+00:00",
+      "human_adjudication_recommended": true
+    },
+    "f0df7a7569d54bb2": {
+      "answer_hash": "01cdad3a93426babc4debf19117417dc93ddb661d53061eb323efdd222be04a3",
+      "correct": true,
+      "reason": "Matches D8:9: many people wanted to create loving homes for children in need.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:52:26.961759+00:00"
+    },
+    "bb0878e043c24a7d": {
+      "answer_hash": "55d97ea9399e20dc19b7c6a58e4c2dc08dc347515c6035cf2092d1f6d5f5e559",
+      "correct": false,
+      "reason": "Abstains despite the source-answerable fact in D8:9.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:52:26.961768+00:00"
+    },
+    "e552bb1527499173": {
+      "answer_hash": "c2b9ac79bfe285a4f05c94a236fa3c701f8e6581ce72d785cbdcdbf1d6316def",
+      "correct": true,
+      "reason": "Matches D8:9: many people wanted to create loving homes for children in need.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:52:26.961775+00:00"
+    },
+    "e41a456dd4719f66": {
+      "answer_hash": "5521ad2aa455ba94f70a66e16966edd4e153a7236e32b92f2a7595489c5b7ae2",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:52:26.961783+00:00"
+    },
+    "417f97fa8cafe17a": {
+      "answer_hash": "cf7456b779b694b62aeb4118224c1869bfcf8b9f6e943d0f705fd642131baef5",
+      "correct": true,
+      "reason": "Matches D8:9: many people wanted to create loving homes for children in need.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:52:26.961790+00:00"
+    },
+    "3bb409213b14e56b": {
+      "answer_hash": "848b794565f17d707af19e32c8a029e442e7218e88c569fc9e4f3e60eb0fa55c",
+      "correct": true,
+      "reason": "Self-acceptance and finding support match D7:13; hope, love and temporary tough times are supported extras.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:52:26.961799+00:00"
+    },
+    "7b8d5669f67df528": {
+      "answer_hash": "df4d3b6f5bbc7502fac4645ea0825094e2629c6bff8c0b3c9b69735c2f5a6acd",
+      "correct": true,
+      "reason": "Self-acceptance, support and hope are supported by D7:11-13.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:52:26.961806+00:00"
+    },
+    "e0b820575c121480": {
+      "answer_hash": "168c73ec20eccf0ff8b11d1a93061de795c3a76d5e2120340d14b1eca97a93d6",
+      "correct": true,
+      "reason": "Self-acceptance and finding support match D7:13; hope, love and temporary tough times are supported extras.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:52:26.961813+00:00"
+    },
+    "84e2b0a676ff0348": {
+      "answer_hash": "5c56cb18ab8f0ba72c93ccacbfb9a9816e8d867ccb70e467f9de538f6aecce28",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:52:26.961821+00:00"
+    },
+    "5c8b92b857e87176": {
+      "answer_hash": "ed45d02d97ad220b2fe4ba3f6a4c2f0298580c5e4a7b660e6cf50daf3e7a0ed7",
+      "correct": true,
+      "reason": "Self-acceptance and finding support match D7:13; hope, love and temporary tough times are supported extras.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T22:52:26.961830+00:00"
+    },
+    "1e527a3d9323c22e": {
+      "answer_hash": "7e3a208d7d936ae3f2d2506f2b4618dc9f695c42d1c1ea5260216970cbf08c0e",
+      "correct": true,
+      "reason": "De-stressing and clearing her mind match D7:20 and D7:22.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:08:02.363398+00:00"
+    },
+    "042defcf7f574bf6": {
+      "answer_hash": "0a8c3dc2d988916656800244221607e5795266ca658ee49ad0a0b79dd44e2495",
+      "correct": true,
+      "reason": "De-stressing and mental-health improvement paraphrase the source headspace benefit (D7:20-22); self-care and family presence are supported by D2:5.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:08:02.363465+00:00"
+    },
+    "f9a9837aa740d8c1": {
+      "answer_hash": "a652314e1193adf40785a93ba36a0d0e8dec9ceb09481816cea3709c76f082fc",
+      "correct": true,
+      "reason": "De-stressing and improving mental health reasonably paraphrase the source de-stress/headspace rationale in D7:20-22.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:08:02.363472+00:00"
+    },
+    "5265e7233f2b89bb": {
+      "answer_hash": "a03c448c43e36acc165cef93dab2f27c2f8d3f75331841674d1dfd2138fa35cd",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:08:02.363476+00:00"
+    },
+    "03d5b8eeb068650f": {
+      "answer_hash": "7172169264a17e46a94d341467644bebbf4fc8d926dc9f18475d31589481b255",
+      "correct": false,
+      "reason": "Only states de-stressing, omitting the requested mind-clearing/headspace benefit. Flagged because these related benefits could be treated as one compressed rationale, but strict completeness requires both.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:08:02.363480+00:00",
+      "human_adjudication_recommended": true
+    },
+    "8d48fbf02ac07c60": {
+      "answer_hash": "02fea304227d61626e893916773215a3454b3fa2c05cafa48a0a2daf0a7e144e",
+      "correct": true,
+      "reason": "Transgender people sharing stories through poetry matches D17:19.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:08:02.363487+00:00"
+    },
+    "e7a70a65b3fe0e64": {
+      "answer_hash": "d3cf2bb38c34749efaf6fd23be5a2554853e47124b7e3ee53b6d925891626493",
+      "correct": false,
+      "reason": "Identifies transgender themes but omits that transgender people shared their stories, the requested content of the reading in D17:19.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:08:02.363499+00:00"
+    },
+    "570a24895533fc55": {
+      "answer_hash": "ed12bc4bfc5a53e6195cc89a205509e60fea7085662d401449efb37683d63a98",
+      "correct": true,
+      "reason": "Transgender people sharing stories and the safe self-expression setting are both supported by D17:19.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:08:02.363505+00:00"
+    },
+    "a7e3511700953ebd": {
+      "answer_hash": "c9baf681163ca986ebfffec68263ee2acff2c4e50c54963259f1bcf54abbcfac",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:08:02.363509+00:00"
+    },
+    "1164af2629b8799b": {
+      "answer_hash": "5c05c8c97367b66c0517bdbf314f9e6a6f2a5d9e8cc42cb60bd691476d80b6ff",
+      "correct": true,
+      "reason": "Transgender people sharing stories through poetry matches D17:19.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:08:02.363512+00:00"
+    },
+    "6adbf28328c7f10f": {
+      "answer_hash": "cd791e5dd50c6c39b3af7365f879d989b6cca66b597474f0a4a9c67531453e1e",
+      "correct": true,
+      "reason": "Scared and tough kids capture both fear and resilience in D18:7; reassurance detail is supported.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:08:02.363516+00:00"
+    },
+    "0a130f5f72aba74d": {
+      "answer_hash": "34e7d7ad3b4da0a7559bb8190bc3e812e60ea8135c392753f2e1a63becbe49ef",
+      "correct": true,
+      "reason": "Scared but resilient matches scared/tough kids in D18:7; reassurance detail is supported.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:08:02.363519+00:00"
+    },
+    "b5278de3143e4e80": {
+      "answer_hash": "e5cd41915543555de1fe0de1a545087cb5191505063dfe5698897e283d623800",
+      "correct": true,
+      "reason": "Scared but resilient matches scared/tough kids in D18:7; reassurance detail is supported.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:08:02.363522+00:00"
+    },
+    "91967f102be95652": {
+      "answer_hash": "be9da175315a8a401f006b2ef40dd5ec0660f06abb79b496d8c44ac5b0b52e4e",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:08:02.363526+00:00"
+    },
+    "1f8b6ba603055965": {
+      "answer_hash": "73a94704e4c3f2cd5d4b6232186b49b9ecd2575a8649539105f47e7672cf66b7",
+      "correct": false,
+      "reason": "Accurately describes fear and reassurance but omits the children being tough/resilient. Flagged because a looser handling-of-accident rubric might accept reassurance as sufficient, whereas the frozen reference requires resilience.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:08:02.363529+00:00",
+      "human_adjudication_recommended": true
+    },
+    "6c7817fdfabc1262": {
+      "answer_hash": "53349fcc72ce09105523ac614bf5cee588462f951d5834fa94a07d19ca339a63",
+      "correct": true,
+      "reason": "Mental health matches D2:2.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:23:33.341412+00:00"
+    },
+    "820b69020b876098": {
+      "answer_hash": "3cea99e3f22c79fa68c74aaa730863014e50cbdee455ff836357ece45e8ee6d6",
+      "correct": true,
+      "reason": "Mental health matches D2:2.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:23:33.341550+00:00"
+    },
+    "1e546dab76476a27": {
+      "answer_hash": "bfd3fae662b1975384d878ee6df5279601130034bd2d0050ed1e7115e3d01007",
+      "correct": true,
+      "reason": "Mental health matches D2:2.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:23:33.341565+00:00"
+    },
+    "e3a17dc9469195d7": {
+      "answer_hash": "dd0216440196c4bca07ae98425d65ddaf706da3a3e57a8996620f4977512837e",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:23:33.341576+00:00"
+    },
+    "45d74df06a0304c7": {
+      "answer_hash": "3fedd629f9ec847abedace448948a380a3ad11075d7b7cffff2b4221ae95431f",
+      "correct": true,
+      "reason": "Mental health matches D2:2.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:23:33.341595+00:00"
+    },
+    "15d222e414a32577": {
+      "answer_hash": "e3d8aee78ec1c03f41446dc4c4234e5a3d7710997079d8618b3891b48cd409d0",
+      "correct": true,
+      "reason": "Includes kids books, classics, stories from different cultures and educational books, matching D6:9.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:23:33.341609+00:00"
+    },
+    "92cb408440644a36": {
+      "answer_hash": "795fdb809a7735745789e5dd5fd15b25bb4356c6bf658014f34ccaa132eb2c82",
+      "correct": true,
+      "reason": "Kids books, classics, cultural stories and educational titles cover all D6:9 categories.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:23:33.341632+00:00"
+    },
+    "82ed05b793dd8f3a": {
+      "answer_hash": "19a996da1fd2eceef110106b24893549b85c504550559670765671dbfc815325",
+      "correct": true,
+      "reason": "Includes kids books, classics, stories from different cultures and educational books, matching D6:9.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:23:33.341647+00:00"
+    },
+    "057bd8b9afe17257": {
+      "answer_hash": "afe0d5a590eb76bc76f783525a280cd9f163772878d437c68c1212d37dedfd55",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:23:33.341657+00:00"
+    },
+    "63053fd27578248c": {
+      "answer_hash": "baf98f700caa3aaeca701a7da0ee53bac0957bf6bb234224a8078f166f6f13d9",
+      "correct": true,
+      "reason": "Includes kids books, classics, stories from different cultures and educational books, matching D6:9.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:23:33.341666+00:00"
+    },
+    "9eefb31003154354": {
+      "answer_hash": "cd6902a99c67e85e888842c1ed02ede6ceddbeeb62cb8c69cac003a27557970a",
+      "correct": true,
+      "reason": "Covers her own mental-health journey, beneficial support and improvement through counseling (D4:15/D7:7). Added workshop and pride motivations are supported by D4:13 and D5:1-3.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:23:33.341678+00:00"
+    },
+    "9312c73de1bd2d98": {
+      "answer_hash": "236538e130e67303d5cfbee39406279af8064671e4053fcbcab6283498977973",
+      "correct": false,
+      "reason": "Mentions her counseling/support-group journey and past struggles but does not state the beneficial support or improvement that motivated helping others. Flagged because the compressed causal wording may imply positive experience; strict completeness requires that benefit.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:23:33.341686+00:00",
+      "human_adjudication_recommended": true
+    },
+    "8a2d020e53a6196d": {
+      "answer_hash": "36dddb1b81df2d4e04ef57d18280cc32c8ffcf741341834c2d7da26b225650d5",
+      "correct": true,
+      "reason": "Covers her own journey, beneficial support and improved life (D4:15/D7:7). Workshop, pride and support-network details are supported by D4:13, D5:1-3, D3:11 and D6:13.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:23:33.341696+00:00"
+    },
+    "68be93206931c983": {
+      "answer_hash": "fcbe55a97c7e2f3563b72ed114521d38776076bae4d89deecc3e53dd4d52a96b",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:23:33.341711+00:00"
+    },
+    "edb71b497f99737c": {
+      "answer_hash": "762038177b6632a6c5a3b417c8805f3ce0b538025a0302167cf70d09f333d4ae",
+      "correct": false,
+      "reason": "Abstains despite explicit motivation in D4:15.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:23:33.341720+00:00"
+    },
+    "03030b4bec01bb71": {
+      "answer_hash": "c6fd5964dcad5ae4d374c8e8bbebd672cfae4455c6240c28526dbd8d128c0197",
+      "correct": false,
+      "reason": "Summarizes friendship, activities and support but omits their requested description as an ongoing adventure of learning and growing in D17:25.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:23:33.341730+00:00"
+    },
+    "adc7df14133252fe": {
+      "answer_hash": "a20c266455137d75d359e95504789aa9ca1996d1f1130a68a20dbee6025e4f8e",
+      "correct": false,
+      "reason": "Summarizes support and life events but omits the ongoing learning-and-growing description in D17:25.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:23:33.341738+00:00"
+    },
+    "c8238df01b5342cd": {
+      "answer_hash": "4fb9b84b3756386dde3a65af6b0c913844d363e41e39b3dfd1c9e8e02f3e29f6",
+      "correct": false,
+      "reason": "Summarizes mutual support, challenges and gratitude but omits the ongoing learning-and-growing description in D17:25.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:23:33.341745+00:00"
+    },
+    "14947eff8f2f79e7": {
+      "answer_hash": "44b6a8aaa8d5f23b690b4755341113e59d98dd60f88e380fc103bd3562a244db",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:23:33.341752+00:00"
+    },
+    "9fbfa9d0f44d5d84": {
+      "answer_hash": "b928d8abc44a76e90174bbaf447ba0b80093fb3d779bd841e4bd4492003bc8b6",
+      "correct": true,
+      "reason": "Matches the ongoing adventure of learning and growing in D17:25; showing true selves is supported by D17:24.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:23:33.341776+00:00"
+    },
+    "b6b9b8d6af051590": {
+      "answer_hash": "44745f2a77c268c5f36bea0fd49389cda20f436dd719e23e022f6f86bbe2ed3e",
+      "correct": true,
+      "reason": "Includes working with trans people, self-acceptance and mental-health support, matching D4:13.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:39:03.530339+00:00"
+    },
+    "539fe7a19f6ad074": {
+      "answer_hash": "4c905ca671ee19e9b54dba08ef288b18b6cfd8ad70afa1afa2a6e15245f0355c",
+      "correct": false,
+      "reason": "Specifies trans people and similar issues but omits the explicitly requested self-acceptance focus in D4:13.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:39:03.530410+00:00"
+    },
+    "571e63c4bbdbcb03": {
+      "answer_hash": "99d7718525fa793d4de614f24c293d3518a6e39a8a7f74bae08aa0f66697aa12",
+      "correct": true,
+      "reason": "Includes working with trans people, self-acceptance and mental-health support, matching D4:13.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:39:03.530432+00:00"
+    },
+    "f19784073aa4c095": {
+      "answer_hash": "d0c3aeaabd01a9e5ea3f43d2d28d798027b12f5e47be77a7deaa3b482d5acc92",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:39:03.530438+00:00"
+    },
+    "108bf9b87ff9b313": {
+      "answer_hash": "7ce7630c3e8201c16ab23d72f67d0d76a939b94b02690de9289ce461fdea0c20",
+      "correct": true,
+      "reason": "Includes working with trans people, self-acceptance and mental-health support, matching D4:13.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:39:03.530444+00:00"
+    },
+    "998873cf597378cd": {
+      "answer_hash": "cb6e9d55d9288ceb6fd5a9d01ef4072b5a09cf2748f79327ca39168833615008",
+      "correct": true,
+      "reason": "Getting hurt and taking a pottery break matches D17:8 without moving the injury date to October.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:39:03.530452+00:00"
+    },
+    "eb4a93a590a90ce9": {
+      "answer_hash": "79a2ae11dca8a26522b7f98542615c6171097583df8eee336312a96f2694acc4",
+      "correct": true,
+      "reason": "Injury and pottery break match D17:8; pottery for self-expression and peace is explicitly supported.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:39:03.530468+00:00"
+    },
+    "2812abee487bb00d": {
+      "answer_hash": "16ba1c7373bd6bb3e6ee6ce160d42c2272f3500fa3127d98dbf5dc7f7d49bb25",
+      "correct": true,
+      "reason": "Includes injury and pottery break. October is accepted as the report date, matching the corrected question. Flagged because the trailing time phrase could instead be read as incorrectly dating the September injury/break to October.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:39:03.530478+00:00",
+      "human_adjudication_recommended": true
+    },
+    "2ee966ab6b28a517": {
+      "answer_hash": "c1059718bf52e60db0e2769af0485f9b40fc6053510069c5e8c16ba09cc21dfe",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:39:03.530485+00:00"
+    },
+    "3051266e1224e65a": {
+      "answer_hash": "bb33b56642c0a16180a462a7870c9425734f1365bd1e05711fbec0f8681014df",
+      "correct": true,
+      "reason": "Getting hurt and taking a pottery break matches D17:8 without moving the injury date to October.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:39:03.530490+00:00"
+    },
+    "f450ac06d0241774": {
+      "answer_hash": "eb7f97b53f99b640797ca4072101a570ea3c78a10403b06cf1e0a065ea0d28e1",
+      "correct": true,
+      "reason": "Strength and motivation match D18:9-11; love is supported by D3:10 and D10:24.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:39:03.530497+00:00"
+    },
+    "23aa476e6121ee28": {
+      "answer_hash": "7f0676ad6c17742eb53ff9f55d786e1fee94261b4d7c543bd5ece5f76cbed08a",
+      "correct": true,
+      "reason": "Strength and motivation match D18:9-11; peace (D8:28), joy and love (D10:24) are supported extras.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:39:03.530502+00:00"
+    },
+    "895c96c7fc7a277c": {
+      "answer_hash": "5cd4762e5eb3cc101ae3269d31b9d0e3587c4844e2b12f65c2afd40355c15e3e",
+      "correct": true,
+      "reason": "Strength and motivation match D18:9-11; joy and love are supported by D10:24.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:39:03.530507+00:00"
+    },
+    "8e7b884f64157de4": {
+      "answer_hash": "8651ae450c4acebc5132935cd99bc0a2f4fbd600b0554e6d38fa8b2e3c28bda3",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:39:03.530512+00:00"
+    },
+    "dd155986bd07f42c": {
+      "answer_hash": "66c2b50c3a00e11630eca87d3a43ea76a12cdd75be4b5b804a435bb6d943cec7",
+      "correct": true,
+      "reason": "Strength to keep going directly reproduces D18:9 and semantically conveys both strength and motivation to persevere.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:39:03.530518+00:00"
+    },
+    "b22236db7d9698c6": {
+      "answer_hash": "8a680f959d2486d01add8919a882f37ab0f7a8fd36bb3e1c2cd5df4d882376a2",
+      "correct": true,
+      "reason": "Daily me-time with running, reading or violin matches D2:5. Creative outlets and their benefits are supported by D1:16, D5:4-10 and D16:8; charity-race/self-care connection is supported by D2:1-3.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:54:31.575730+00:00"
+    },
+    "70ff684d9db269b5": {
+      "answer_hash": "f10df40a885c172468bfb61f2009b6d44a7817ce571330eb32fbe4822b8e65e0",
+      "correct": false,
+      "reason": "Includes the required activities but extends daily frequency to painting and pottery without source support. D2:5 describes daily me-time with alternative activities, not all five as daily practices.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:54:31.575795+00:00"
+    },
+    "2f8834558113f5aa": {
+      "answer_hash": "37fbcbf4c91e89ff0fd948d30a25aa133b483a7879d5299bdbef54fe6d8a576b",
+      "correct": false,
+      "reason": "Includes the required daily activities, but adds volunteering as a self-care practice and habitual pottery breaks when needed. D14:10 reports volunteering without that purpose, and D17:8 reports an injury-forced break, not a routine self-care strategy. Flagged because a looser reading could regard these as benign summaries of supported activities.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:54:31.575803+00:00",
+      "human_adjudication_recommended": true
+    },
+    "d54095347eae99ec": {
+      "answer_hash": "3f68dd0bc04fd67374e3feb8c55759b589cf9c5ba2d0ca956e981cc15d72d020",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:54:31.575809+00:00"
+    },
+    "5e58d4b350b3d062": {
+      "answer_hash": "0c207264d68c99d30ce62fcc6bc83b690d436b92c9165f1a058bfaaa755296cf",
+      "correct": true,
+      "reason": "Carving out daily time for running, reading or violin matches D2:5.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:54:31.575814+00:00"
+    },
+    "4dec03147cf847e9": {
+      "answer_hash": "554e731f6995c0edae137e94169a948426b99fcd93aa54d19c11f0540731a0a8",
+      "correct": true,
+      "reason": "LGBTQ-center visit and capturing unity and strength match D9:16.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:54:31.575823+00:00"
+    },
+    "27e3c6364362327c": {
+      "answer_hash": "ccadb91ae80b6f88db122fcb5051b5bdc92a7597efdafef245ed58ef9739e4ec",
+      "correct": false,
+      "reason": "Describes other paintings and her transition rather than the center visit and unity/strength inspiration requested for this painting.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:54:31.575835+00:00"
+    },
+    "9e133d7dc031fca4": {
+      "answer_hash": "fb63d1f48b02045d530c485e26eca064502712ac2456858a84b06c68e034e8b6",
+      "correct": true,
+      "reason": "LGBTQ-center visit and capturing unity and strength match D9:16.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:54:31.575841+00:00"
+    },
+    "2fdd72793dea8677": {
+      "answer_hash": "dee88d9af2bebc0ce6732524ba30a55b34325370605821377e5d8191d6683749",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:54:31.575849+00:00"
+    },
+    "3651a0f7497c41cc": {
+      "answer_hash": "ee524869760239244ac66a3323c42000c1e1e975aeec3cb384e456589a62d1d7",
+      "correct": true,
+      "reason": "LGBTQ-center visit and capturing unity and strength match D9:16.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:54:31.575854+00:00"
+    },
+    "e0852df3e6eaec94": {
+      "answer_hash": "fe40fa30a41bb158efd7897578555744c508cb4c2057b270d4e57f432f705e29",
+      "correct": true,
+      "reason": "Helping LGBTQ+ people with adoption, inclusivity and support match D2:12.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:54:31.575860+00:00"
+    },
+    "ba813dceecb06135": {
+      "answer_hash": "c3177b96f9445540a4a9adaa263f8517af7864cad21f67af1cf079a9bc741b82",
+      "correct": true,
+      "reason": "Supporting LGBTQ+ individuals captures the inclusive support rationale in D2:12. Flagged because inclusivity is implicit rather than separately stated, which a stricter fact-list reading could reject.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:54:31.575865+00:00",
+      "human_adjudication_recommended": true
+    },
+    "66b51c2c09a781f5": {
+      "answer_hash": "5db9395f80610741a85d4739d9fdf3bc7244751f169dca8321fd9880613425fa",
+      "correct": true,
+      "reason": "Supporting LGBTQ+ people and inclusive support that resonated with her match D2:12.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:54:31.575870+00:00"
+    },
+    "506c4097f23cb6a0": {
+      "answer_hash": "dc7fca0c00efa0a2b7c986efab9b8d2913a3f529e5b3321966f23c716a9ad8fa",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:54:31.575874+00:00"
+    },
+    "0179d05a3d6c498c": {
+      "answer_hash": "7cf14ef8afa18a44fa70c6205427ea58e93a1a7440b0bb625aca6c83ccdab95b",
+      "correct": true,
+      "reason": "Helping LGBTQ+ people with adoption, inclusivity and support match D2:12.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:54:31.575877+00:00"
+    },
+    "3ea2005be9c45166": {
+      "answer_hash": "debfc8bd01e2fbac8ab989b4c15aafa085bf17905a271cc34cd67f5da05bf0ab",
+      "correct": true,
+      "reason": "Brave by Sara Bareilles matches D15:23.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:54:46.745830+00:00"
+    },
+    "8b984554af3a7cc5": {
+      "answer_hash": "c2f671222d09f0e6053c4975079e6f5946283285405bedbd9b778591505a8937",
+      "correct": false,
+      "reason": "Abstains despite explicit song information in D15:23.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:54:46.745944+00:00"
+    },
+    "20e9f2a6cb4e18c1": {
+      "answer_hash": "fce75f807c678ab06cf0362fd7739e0024819ab8751a77517a5f54fbfe508011",
+      "correct": true,
+      "reason": "Brave by Sara Bareilles matches D15:23.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:54:46.745959+00:00"
+    },
+    "52da8e515591cc37": {
+      "answer_hash": "c8efa7d46943cdae70c740943f156827ba5f95273c38e95e28e53a2616112dfa",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:54:46.745970+00:00"
+    },
+    "4798cb628bc82a38": {
+      "answer_hash": "33e5fc2968d7f90690f1e47b3451c6496c50299d59f62f2f309e17e2ba478fbc",
+      "correct": false,
+      "reason": "Provides the correct title Brave but omits Sara Bareilles from the reference identification. Flagged because the question asks which song and a title-only answer could be sufficient under a less strict identification rubric.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-10-31T23:54:46.745981+00:00",
+      "human_adjudication_recommended": true
+    },
+    "8104f4c853ad7c49": {
+      "answer_hash": "3efc6301036ed751616805046ad5b5ebfd23fe708f03557e0a83fa37b0c503a8",
+      "correct": true,
+      "reason": "Making a family for children who need one matches D2:14; safe/loving home and building her family are supported across the adoption discussion.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:10:31.579271+00:00"
+    },
+    "78c1586e0d7753f1": {
+      "answer_hash": "107e13861251bb6c701ef7ed74fa6e1c22e8b81cd95f40ec21da5af41ea0eaf2",
+      "correct": true,
+      "reason": "Creating a family for children in need matches D2:14; shelter, love and acceptance are supported by D19:3.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:10:31.579341+00:00"
+    },
+    "82cce898f343313c": {
+      "answer_hash": "165dff4e97b125f3fcd7fe01c8868908d0061646b6383c79f6bb1348a5289c95",
+      "correct": true,
+      "reason": "Creating a family for children in need matches D2:14; shelter, love and acceptance are supported by D19:3.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:10:31.579349+00:00"
+    },
+    "ad5bda54bc34144e": {
+      "answer_hash": "999dc1ce62a8a514b3d4c3465dd7ee6ff47871fe8bd09aea6bdc4c895f2bd36b",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:10:31.579355+00:00"
+    },
+    "8f87eebe12afc48a": {
+      "answer_hash": "d3a6a05587f7d4e2b4cdeebbbd195b7627c3b20d3ba60ee58011038b1539de0d",
+      "correct": true,
+      "reason": "Making a family for children who need one matches D2:14.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:10:31.579361+00:00"
+    },
+    "5397dc17c328ca08": {
+      "answer_hash": "7181ce7c7103e3273b35472fb4d41dd60446683169a7bc107754c2637380ce9c",
+      "correct": true,
+      "reason": "Love, faith and strength exactly match D4:3.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:10:31.579368+00:00"
+    },
+    "98092d6bbceb547d": {
+      "answer_hash": "7b166b70dab2786818258b4908b6405f1df9ed0d60b9455049cca7559b724fad",
+      "correct": true,
+      "reason": "Love, faith and strength exactly match D4:3.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:10:31.579381+00:00"
+    },
+    "d1c491feeffd6794": {
+      "answer_hash": "7a87972507dfe7f7ecb04afae4d4ded1b734d093239d18045fdff34c4e3f937b",
+      "correct": true,
+      "reason": "Love, faith and strength exactly match D4:3.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:10:31.579388+00:00"
+    },
+    "ce8e5985cdae5f52": {
+      "answer_hash": "bfd28be7a84b507287ec642bbb7a03a0075c4f8a7c66f89bb3bec9838280590b",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:10:31.579397+00:00"
+    },
+    "617ea30267aad8b5": {
+      "answer_hash": "996e5969ebd54cbaada231e4d65eea5c2df09091c987750c4419fd52a03dcea9",
+      "correct": true,
+      "reason": "Love, faith and strength exactly match D4:3.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:10:31.579402+00:00"
+    },
+    "87f3ec95d2cde2b3": {
+      "answer_hash": "e4f9f2804ee6f199a9050ce6bfcf4b5136d4ddb7956a876b00b63a3631b89963",
+      "correct": true,
+      "reason": "LGBTQ+ counseling workshop matches D4:13.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:10:31.579408+00:00"
+    },
+    "30b2ed57c23b980a": {
+      "answer_hash": "c5d064613fcb474e9e628f0aa4bc4d523af8479d67fd20f96ae8c9b5cd945845",
+      "correct": true,
+      "reason": "LGBTQ+ counseling workshop matches D4:13.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:10:31.579413+00:00"
+    },
+    "a452da5bb78fbe6d": {
+      "answer_hash": "2d1a8ed05225e87f9cfe99561962597b558c88ef4eaada69790974d21e5172f3",
+      "correct": true,
+      "reason": "LGBTQ+ counseling workshop matches D4:13.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:10:31.579426+00:00"
+    },
+    "531d900e70e47a42": {
+      "answer_hash": "15a2964224a55a807b590419436b6ec023bd17d3fb05cccf4fbab49f3b906509",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:10:31.579432+00:00"
+    },
+    "0134f205d39e36c3": {
+      "answer_hash": "9639730870161143033e77be419de14f32356183dcb71d3c517b717ab9067e80",
+      "correct": true,
+      "reason": "LGBTQ+ counseling workshop matches D4:13.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:10:31.579436+00:00"
+    },
+    "898998eafdeafbee": {
+      "answer_hash": "a5fc61044568e565610178a3d5cb2c7a7e38e094099413a1cb5edb588fa53d38",
+      "correct": true,
+      "reason": "Therapeutic methods and working with trans people match D4:13.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:35:57.411929+00:00"
+    },
+    "2ec9809f2a6b621b": {
+      "answer_hash": "16a56bdc5fa7b2dccf4627cf6c0159a0a7e729b6fd1e4261370c1372f6a038eb",
+      "correct": false,
+      "reason": "Denies information about topics despite both topics being explicit in D4:13.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:35:57.411963+00:00"
+    },
+    "93e7e3aa54ecad67": {
+      "answer_hash": "125b51bb3d9d1a03de18705568404860fbc3c6ef7a144f82b770c28809de121d",
+      "correct": true,
+      "reason": "Therapeutic methods and working with trans people match D4:13.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:35:57.411965+00:00"
+    },
+    "318694dfb4c8fab4": {
+      "answer_hash": "99370be3f697da409a343f74474d11186e2ecd914b486a2b0b46038eab9742f7",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:35:57.411967+00:00"
+    },
+    "3e16d11112dc5b0d": {
+      "answer_hash": "cb5cddbee045dcd7b4efc770d6636e3afa3b32244d0ed30cf97ec82d9d11c46c",
+      "correct": true,
+      "reason": "Therapeutic methods and working with trans people match D4:13.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:35:57.411968+00:00"
+    },
+    "ccb5a27036f9c610": {
+      "answer_hash": "25aef956c661eb4c513a40e189ccd6df6bc3b7c2eb99bbdd2419a183e61b2089",
+      "correct": true,
+      "reason": "Safe, inviting place for growth matches D4:15; added adoption/home and love/acceptance aims are supported by D2:10-14 and D19:3.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:35:57.411970+00:00"
+    },
+    "094bbcbb104e7f36": {
+      "answer_hash": "ad9e445b6feb9e6d73fa52aa13c7b11e371ab5bdb9edf916bf85635c7f37c391",
+      "correct": false,
+      "reason": "Answers with her adoption goal but omits the requested safe, inviting place for people to grow in the counseling context (D4:15).",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:35:57.411978+00:00"
+    },
+    "7deb263ace093f4c": {
+      "answer_hash": "6e7bdec39c151c44a1e9b02fdefbb7bc0ff826d4f39d9993ab38cfeee79c8652",
+      "correct": true,
+      "reason": "Safe, inviting place for growth matches D4:15; added adoption and trans mental-health support aims are supported by D2:10-14 and D4:13.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:35:57.411981+00:00"
+    },
+    "11a6cdbacbb89c0d": {
+      "answer_hash": "7e7d560bbfd6c185cf97b2944665f486e7f1282249e73cb859669e6a2f56f8f7",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:35:57.411983+00:00"
+    },
+    "02494f0ed0a7ef58": {
+      "answer_hash": "dbd8f5fef1e3b257d5278ec42be57ebd437669a8845d98bdb519228bf2e437cc",
+      "correct": true,
+      "reason": "Safe, inviting place for growth matches D4:15.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:35:57.411984+00:00"
+    },
+    "a6cf27f7fc086b66": {
+      "answer_hash": "f8570bdedf33ad00c7a26113e9a64a945ac6a7fb2f1041014866f816bba26797",
+      "correct": true,
+      "reason": "Realizing self-care matters matches D2:3.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:35:57.411986+00:00"
+    },
+    "f9458ff7cf4cc4f4": {
+      "answer_hash": "9f9d7522bd31e4bd931e63cc5cc7c80b531aec327c5653a0b517707f5f922e21",
+      "correct": false,
+      "reason": "Rewarding and thought-provoking describes the race but omits the requested realization that self-care is important in D2:3.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:35:57.411987+00:00"
+    },
+    "4eccbebfeb309f26": {
+      "answer_hash": "3cae0b2aa54cad331e859e6eeee27a543cca20f4693cd630a10630ab0f401f78",
+      "correct": true,
+      "reason": "Self-care importance and improved ability to care for family are both explicit in D2:3.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:35:57.411989+00:00"
+    },
+    "3053f2973cb1092b": {
+      "answer_hash": "f767b403660ffe9f6d7655692f9a1abc9938127bae42e312c8e5f0aa04a52c75",
+      "correct": false,
+      "reason": "Abstains on an answerable question.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:35:57.411990+00:00"
+    },
+    "b100a5ed80efe4ed": {
+      "answer_hash": "f66db52df08b8f856adeb8d71ef1ab94593646575a57a18700406f4909719349",
+      "correct": true,
+      "reason": "Self-care importance and improved ability to care for family are both explicit in D2:3.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "Codex implementation assistant (unblinded)",
+      "reviewed_utc": "2026-11-01T00:35:57.411991+00:00"
+    }
+  },
+  "ORACLE_MEMORY": {
+    "conv-26-q061": {
+      "unit_ids": [
+        "M016-02",
+        "M011-00"
+      ],
+      "expected_text": {
+        "M016-02": "[Session 2023-08-28T15:19] Melanie attended a show featuring the band 'Summer Sounds' and plays the clarinet, having started when she was young.",
+        "M011-00": "[Session 2023-08-14T14:24] Melanie celebrated her daughter's birthday with a concert featuring Matt Patterson on 2023-08-14."
+      },
+      "source_review_hash": "3a0631f2b4fffa186c8905f587ca94dd89dec87782594d66dc3798b8d15b5789",
+      "reason": "Post-hoc diagnostic for the pilot disagreement: both notes explicitly preserve the two named live performers. The preference-only note M016-05 does not establish concert attendance. The birthday note's extra date is inaccurate, but its performer name is supported by D11:1 and D11:3.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "implementation assistant"
+    },
+    "conv-26-q093": {
+      "unit_ids": [
+        "M003-00"
+      ],
+      "expected_text": {
+        "M003-00": "[Session 2023-06-27T10:37] Caroline received a necklace from her grandma in Sweden representing love, faith, and strength."
+      },
+      "source_review_hash": "d7389cb783d8880557824d348f6789d13792c0527beb251afdffed4ec1fe289b",
+      "reason": "Before QA generation, inspected D4:3 and M003-00: both explicitly identify the necklace as the grandmother's gift.",
+      "reviewer_type": "AI-assisted",
+      "reviewer": "implementation assistant"
+    }
+  }
+}

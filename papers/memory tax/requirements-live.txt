@@ -1,0 +1,2 @@
+-r requirements-report.txt
+tokenizers==0.22.2

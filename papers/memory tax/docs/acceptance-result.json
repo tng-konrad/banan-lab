@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "project": "/Users/kbanachewicz/Documents/banan-lab/memory tax",
+  "launch_cwd": "/Users/kbanachewicz/Documents/banan-lab",
+  "seconds": 2.5217944169417024,
+  "network": "Python socket connect/create_connection and urllib blocked in kernel",
+  "assets": 35,
+  "inline_equals_saved": true,
+  "metrics_preserved": true,
+  "record_equality": "asserted in notebook against checksum-validated immutable original",
+  "historical_run_id": "9ee46c37f1ae8c4fb11e8b23cbf38b7947b2ff24beab4f72073d6aaefe79e283",
+  "kernel": "memory-tax",
+  "export_timestamp": "2026-11-15T18:25:56.965788+01:00"
+}

@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "project": "/private/var/folders/p7/1x2749b14hj0xrrrwm84gh8m0000gn/T/memory-tax-portability-yt6_kzom/memory tax",
+  "launch_cwd": "/private/var/folders/p7/1x2749b14hj0xrrrwm84gh8m0000gn/T/memory-tax-portability-yt6_kzom/memory tax",
+  "seconds": 2.8580585001036525,
+  "network": "Python socket connect/create_connection and urllib blocked in kernel",
+  "assets": 35,
+  "inline_equals_saved": true,
+  "metrics_preserved": true,
+  "record_equality": "asserted in notebook against checksum-validated immutable original",
+  "historical_run_id": "9ee46c37f1ae8c4fb11e8b23cbf38b7947b2ff24beab4f72073d6aaefe79e283",
+  "kernel": "memory-tax",
+  "export_timestamp": "2026-11-15T18:26:00.012631+01:00"
+}

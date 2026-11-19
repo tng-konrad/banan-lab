@@ -1,0 +1,6 @@
+{
+  "wrong_kernel_rejected": true,
+  "missing_evidence_rejected": true,
+  "missing_evidence_no_export_writes": true,
+  "evidence_restored": true
+}
