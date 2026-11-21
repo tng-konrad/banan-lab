@@ -1,0 +1,24 @@
+# Source from this paper workspace before setup, live runs or replay.
+export DEFT_WORKSPACE="/Users/kbanachewicz/Documents/banan-lab/papers/deft-expert-guided-forecast-editing"
+export TMPDIR="$DEFT_WORKSPACE/tmp"
+export XDG_CACHE_HOME="$DEFT_WORKSPACE/cache/xdg"
+export UV_CACHE_DIR="$DEFT_WORKSPACE/cache/uv"
+export UV_PYTHON_INSTALL_DIR="$DEFT_WORKSPACE/cache/python"
+export HF_HOME="$DEFT_WORKSPACE/cache/huggingface"
+export HF_HUB_CACHE="$DEFT_WORKSPACE/cache/huggingface/hub"
+export HF_DATASETS_CACHE="$DEFT_WORKSPACE/cache/huggingface/datasets"
+export TORCH_HOME="$DEFT_WORKSPACE/cache/torch"
+export MPLCONFIGDIR="$DEFT_WORKSPACE/cache/matplotlib"
+export JUPYTER_CONFIG_DIR="$DEFT_WORKSPACE/cache/jupyter/config"
+export JUPYTER_DATA_DIR="$DEFT_WORKSPACE/cache/jupyter/data"
+export JUPYTER_RUNTIME_DIR="$DEFT_WORKSPACE/cache/jupyter/runtime"
+export IPYTHONDIR="$DEFT_WORKSPACE/cache/ipython"
+export PYTHONPYCACHEPREFIX="$DEFT_WORKSPACE/cache/pycache"
+export HF_HUB_DISABLE_TELEMETRY=1
+export HF_HUB_DISABLE_XET=1
+export TOKENIZERS_PARALLELISM=false
+export OMP_NUM_THREADS=8
+export MKL_NUM_THREADS=8
+export VECLIB_MAXIMUM_THREADS=8
+export OPENBLAS_NUM_THREADS=8
+export PYTHONUNBUFFERED=1

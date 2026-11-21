@@ -15,3 +15,10 @@ Memory Tax investigates whether building dedicated agent memory improves on retr
 
 - **Notebook:** [memory_tax_ollama_demo.ipynb](papers/memory%20tax/memory_tax_ollama_demo.ipynb)
 - **Original Paper:** [Memory Tax: Dissecting the Net Value of Agent Memory (arXiv:2610.34073)](https://arxiv.org/abs/2610.34073)
+
+## DEFT
+
+DEFT investigates whether a frozen time-series foundation model's forecasts can be improved under a tight budget of trajectory-level scores by decomposing candidate paths into trend and residual components and refining them separately. This adaptation compares DEFT against Best-of-N quantile selection, raw-horizon Cross-Entropy Method variants (including prior-seeded CEM), pool-only recombination, and random search using a frozen `amazon/chronos-2` checkpoint on 64 M4 monthly and 64 NN5 daily series under coarse five-level and continuous hindsight MSE feedback, alongside follow-up checks on implementation conventions and proposal-variance smoothing. The accompanying notebook recomputes all metrics, tables, and figures offline from cached forecasts and retained search traces without requiring model inference.
+
+- **Notebook:** [deft_forecast_editing.ipynb](papers/deft-expert-guided-forecast-editing/deft_forecast_editing.ipynb)
+- **Original Paper:** [Expert-Guided Forecast Editing for Time-Series Foundation Models (arXiv:2607.19659v1)](https://arxiv.org/abs/2607.19659v1)
