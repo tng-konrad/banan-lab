@@ -22,3 +22,10 @@ DEFT investigates whether a frozen time-series foundation model's forecasts can 
 
 - **Notebook:** [deft_forecast_editing.ipynb](papers/deft-expert-guided-forecast-editing/deft_forecast_editing.ipynb)
 - **Original Paper:** [Expert-Guided Forecast Editing for Time-Series Foundation Models (arXiv:2607.19659v1)](https://arxiv.org/abs/2607.19659v1)
+
+## e-means
+
+e-means investigates whether replacing Lloyd's full-batch k-means with exponential moving average mini-batch updates, empirical scaling laws, cosine annealing, and dead-cluster revival improves Inverted File (IVF) indexing for Retrieval-Augmented Generation without per-dataset tuning. This local Apple Silicon CPU adaptation compares 2-epoch and 3-epoch `NumpyEmeans` (`faiss-cpu==1.16.0`) against 25-epoch, wall-clock-matched 9-epoch, and 3-epoch Lloyd's k-means, controlled and out-of-the-box `scikit-learn` Mini-Batch k-means, stale Wave-0 Lloyd, and an Exact Flat oracle using `BAAI/bge-base-en-v1.5` (768-d) embeddings across six complete CQADupStack StackExchange domains (215,185 posts, 5,030 queries, k = 2,048, five seeds) under both static indexing and moderate-to-severe corpus drift. The accompanying executed notebook embeds all rendered outputs, tables, and figures, with standalone scripts included to re-download, embed, and reproduce the full run locally.
+
+- **Notebook:** [emeans_rag_demo.ipynb](papers/emeans-rag-ivf/emeans_rag_demo.ipynb)
+- **Original Paper:** [E-Means: Scaling Laws for Mini-Batch K-Means (arXiv:2611.09501)](https://arxiv.org/abs/2611.09501)
