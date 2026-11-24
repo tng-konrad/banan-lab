@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.0",
+  "frozen_at_utc": "2026-11-24T07:16:16.057610+00:00",
+  "timezone": "Europe/Amsterdam",
+  "paper": {
+    "title": "E-Means: Scaling Laws for Mini-Batch K-Means",
+    "arxiv_id": "2611.09501",
+    "faiss_version": "1.16.0",
+    "study_classification": "local_mechanism_and_rag_retrieval_adaptation"
+  },
+  "hardware_and_threading": {
+    "host_chip": "Apple M4 Max (arm64, 16 cores: 12P + 4E, 128 GB unified memory)",
+    "omp_num_threads": 8,
+    "veclib_maximum_threads": 8,
+    "openblas_num_threads": 8,
+    "mkl_num_threads": 8
+  },
+  "data": {
+    "dev_domains": [
+      "android",
+      "english"
+    ],
+    "eval_wave0_domains": [
+      "programmers",
+      "unix",
+      "webmasters"
+    ],
+    "eval_wave1a_domains": [
+      "stats"
+    ],
+    "eval_wave1b_domains": [
+      "physics",
+      "gis"
+    ],
+    "eval_total_docs": 215185,
+    "eval_total_queries": 5030,
+    "eval_total_qrels": 8723,
+    "embedding_model": "BAAI/bge-base-en-v1.5",
+    "embedding_model_sha": "a5beb1e3e68b9ab74eb54cfd186867f64f240e1a",
+    "embedding_dim": 768,
+    "max_length": 512,
+    "bge_query_prefix": "Represent this sentence for searching relevant passages: ",
+    "dev_audit_sha256": "89df8bab604abe36ed1b9d620c2689d3ff70527b6cfc457c77dfa05d9f78aebf",
+    "eval_audit_sha256": "10bec56bc0fa059067c83386c0ccb703d1430e47c25e8575b765e7c0711cdb1e",
+    "download_manifest_sha256": "6db6c7601a983659c6d653157ebe05954481797f8188936505cfe6739296cff6",
+    "requirements_lock_sha256": "a0f9aae070286f82d1f903d883bb2fa3a3a543c2a347f4ff941c4cd93c6613ce"
+  },
+  "experiment": {
+    "k": 2048,
+    "nprobe_grid": [
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "primary_nprobe": 16,
+    "top_k": 10,
+    "context_hit_k": 5,
+    "seeds": [
+      42,
+      137,
+      2026,
+      777,
+      9001
+    ],
+    "cooldown_s": 2.0,
+    "spherical": false,
+    "max_points_per_centroid": 100000,
+    "min_points_per_centroid": 1,
+    "comparators": {
+      "Oracle_Flat": {
+        "type": "flat_l2"
+      },
+      "A2_Lloyd_3ep": {
+        "type": "faiss_kmeans",
+        "niter": 3
+      },
+      "A3_Lloyd_WallMatched": {
+        "type": "faiss_kmeans",
+        "niter": 9,
+        "calibration_source": "dev_k2048_pilot"
+      },
+      "C_Lloyd_25ep": {
+        "type": "faiss_kmeans",
+        "niter": 25,
+        "capture_iteration_stats": true
+      },
+      "D2_Emeans_2ep": {
+        "type": "faiss_emeans",
+        "nepochs": 2,
+        "batch_law": "auto"
+      },
+      "D3_Emeans_3ep": {
+        "type": "faiss_emeans",
+        "nepochs": 3,
+        "batch_law": "auto"
+      },
+      "B_Ctrl_MiniBatch_3ep": {
+        "type": "sklearn_minibatch",
+        "max_iter": 3,
+        "init": "random",
+        "n_init": 1,
+        "max_no_improvement": null,
+        "reassignment_ratio": 0.0,
+        "batch_size_source": "matched_to_D3_emeans_recipe",
+        "citation": "Sculley (2010), WWW"
+      },
+      "B_Default_Sklearn": {
+        "type": "sklearn_minibatch_default",
+        "note": "Out-of-the-box sklearn defaults; library reference only, not algorithm-only timing race"
+      }
+    },
+    "drift_regimes": {
+      "moderate_wave1a": {
+        "base_waves": [
+          "wave0"
+        ],
+        "added_waves": [
+          "wave1a"
+        ],
+        "comparators": [
+          "A1_Stale_Wave0_Lloyd",
+          "A2_Lloyd_3ep",
+          "A3_Lloyd_WallMatched",
+          "B_Ctrl_MiniBatch_3ep",
+          "C_Lloyd_25ep",
+          "D3_Emeans_3ep"
+        ]
+      },
+      "severe_wave1b": {
+        "base_waves": [
+          "wave0"
+        ],
+        "added_waves": [
+          "wave1a",
+          "wave1b"
+        ],
+        "comparators": [
+          "A1_Stale_Wave0_Lloyd",
+          "A2_Lloyd_3ep",
+          "A3_Lloyd_WallMatched",
+          "B_Ctrl_MiniBatch_3ep",
+          "B_Default_Sklearn",
+          "C_Lloyd_25ep",
+          "D2_Emeans_2ep",
+          "D3_Emeans_3ep"
+        ]
+      }
+    }
+  },
+  "inference_and_outcomes": {
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20261123,
+    "bootstrap_type": "domain_stratified_paired_query_resampling",
+    "co_primary_contrasts": [
+      {
+        "id": "P1_static_D3_vs_C",
+        "regime": "static_full",
+        "metric": "ann_recall10_np16",
+        "non_inferiority_margin_ci_low": -0.005,
+        "secondary_rag_ndcg10_non_inferiority_ci_low": -0.002
+      },
+      {
+        "id": "P2_drift_D3_vs_A1",
+        "regime": "drift_moderate_and_severe",
+        "metric": "wave1_rag_ndcg10_np16",
+        "superiority_margin_ci_low": 0.0
+      }
+    ],
+    "runtime_cap_s": 2700,
+    "rss_cap_gb": 16.0,
+    "silent_retries_allowed": false
+  }
+}
